@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="790" height="1440" viewBox="0 0 790 1440">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, DejaVu Sans, sans-serif">
+<polyline points="390.00,102.00 390.00,151.00 390.00,200.00" fill="none" stroke="#24334a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="390.00,200.00 394.32,191.00 385.68,191.00" fill="#24334a"/>
+<polyline points="390.00,272.00 390.00,321.00 390.00,370.00" fill="none" stroke="#24334a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="390.00,370.00 394.32,361.00 385.68,361.00" fill="#24334a"/>
+<polyline points="390.00,442.00 390.00,491.00 390.00,540.00" fill="none" stroke="#24334a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="390.00,540.00 394.32,531.00 385.68,531.00" fill="#24334a"/>
+<polyline points="500.00,610.00 517.50,610.00 517.50,746.00 535.00,746.00" fill="none" stroke="#24334a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="535.00,746.00 526.00,741.68 526.00,750.32" fill="#24334a"/>
+<polyline points="390.00,680.00 390.00,780.00 390.00,880.00" fill="none" stroke="#24334a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="390.00,880.00 394.32,871.00 385.68,871.00" fill="#24334a"/>
+<polyline points="280.00,610.00 262.50,610.00 262.50,746.00 245.00,746.00" fill="none" stroke="#24334a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="245.00,746.00 254.00,750.32 254.00,741.68" fill="#24334a"/>
+<polyline points="245.00,746.00 559.00,746.00 559.00,406.00 500.00,406.00" fill="none" stroke="#24334a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="500.00,406.00 509.00,410.32 509.00,401.68" fill="#24334a"/>
+<rect x="280.0" y="30.0" width="220.0" height="72.0" rx="36.0" fill="#dff3ec" stroke="#24334a" stroke-width="2"/>
+<text x="390.0" y="66.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">Application begins</text>
+<rect x="280.0" y="200.0" width="220.0" height="72.0" rx="8" fill="#e7effb" stroke="#24334a" stroke-width="2"/>
+<text x="390.0" y="236.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">Collect documents</text>
+<rect x="280.0" y="370.0" width="220.0" height="72.0" rx="8" fill="#e7effb" stroke="#24334a" stroke-width="2"/>
+<text x="390.0" y="406.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">Review application</text>
+<polygon points="390.00,540.00 500.00,610.00 390.00,680.00 280.00,610.00" fill="#fff1cb" stroke="#24334a" stroke-width="2"/>
+<text x="390.0" y="600.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">Application</text>
+<text x="390.0" y="620.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">complete?</text>
+<rect x="25.0" y="710.0" width="220.0" height="72.0" rx="8" fill="#e7effb" stroke="#24334a" stroke-width="2"/>
+<text x="135.0" y="746.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">Request missing documents</text>
+<rect x="535.0" y="710.0" width="220.0" height="72.0" rx="8" fill="#e7effb" stroke="#24334a" stroke-width="2"/>
+<text x="645.0" y="746.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">Submit application</text>
+<rect x="280.0" y="880.0" width="220.0" height="72.0" rx="36.0" fill="#f9e3e5" stroke="#24334a" stroke-width="2"/>
+<text x="390.0" y="916.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">Application workflow complete</text>
+<rect x="513.0078125" y="668.0" width="28.984375" height="20" rx="3" fill="white"/>
+<text x="527.5" y="678.0" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#24334a">Yes</text>
+<rect x="260.5" y="668.0" width="24.0" height="20" rx="3" fill="white"/>
+<text x="272.5" y="678.0" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#24334a">No</text>
+</g></svg>

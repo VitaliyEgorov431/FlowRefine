@@ -1,0 +1,100 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Letter begins",
+      "type": "start",
+      "label": "Letter begins",
+      "x": 25.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Write message",
+      "type": "process",
+      "label": "Write message",
+      "x": 25.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Fold paper",
+      "type": "process",
+      "label": "Fold paper",
+      "x": 25.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Seal envelope",
+      "type": "process",
+      "label": "Seal envelope",
+      "x": 25.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Post letter",
+      "type": "process",
+      "label": "Post letter",
+      "x": 25.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Letter sent",
+      "type": "end",
+      "label": "Letter sent",
+      "x": 25.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Letter begins",
+      "target": "Write message",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Write message",
+      "target": "Fold paper",
+      "label": "Yes"
+    },
+    {
+      "id": "e3",
+      "source": "Write message",
+      "target": "Fold paper",
+      "label": "No"
+    },
+    {
+      "id": "e4",
+      "source": "Fold paper",
+      "target": "Seal envelope",
+      "label": ""
+    },
+    {
+      "id": "e5",
+      "source": "Seal envelope",
+      "target": "Post letter",
+      "label": ""
+    },
+    {
+      "id": "e6",
+      "source": "Post letter",
+      "target": "Letter sent",
+      "label": ""
+    }
+  ]
+}

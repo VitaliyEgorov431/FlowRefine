@@ -1,0 +1,7 @@
+{
+  "valid": false,
+  "parse_errors": [
+    "Grid positions must be finite numbers",
+    "Grid positions must be finite numbers"
+  ]
+}

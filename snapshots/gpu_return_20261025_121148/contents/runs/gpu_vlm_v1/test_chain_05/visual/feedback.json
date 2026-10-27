@@ -1,0 +1,3 @@
+{
+  "text": "1. Missing stage: \"Record interview\"\n2. Wrong arrow direction: \"Publish episode\" should point to \"Podcast workflow completes\"\n3. Overlapping boxes: \"Podcast workflow begins\" and \"Podcast workflow completes\" should be separate nodes\n4. Unreadable text: \"Podcast workflow completes\" should be corrected to \"Podcast workflow complete\"\n\nCorrected labels:\n- Podcast workflow begins\n- Record interview\n- Edit recording\n- Normalize audio\n- Export episode\n- Publish episode\n- Podcast workflow complete"
+}

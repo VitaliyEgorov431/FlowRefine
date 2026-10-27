@@ -1,0 +1,137 @@
+{
+  "experiment": "gpu_vlm_only_v1",
+  "tasks": [
+    {
+      "id": "dev_chain_01",
+      "split": "development",
+      "family": "chain",
+      "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Follow this exact sequence: \"Breakfast begins\" -> \"Boil water\" -> \"Add oats\" -> \"Cook porridge\" -> \"Serve breakfast\" -> \"Breakfast ready\"."
+    }
+  ],
+  "baseline_sha256": {
+    "manifest.json": "d0fd244b22f794a8990b8748c673a8f00f38c609176fc1bfd6e3fc56ff188b43",
+    "tasks_public.json": "a7c3df271e59158582755526a4c61ab95a13de52d697a6ef3be5272e5c74c21a",
+    "dev_chain_01/B0/call_generate_0.json": "48c1d1cf7200d8b6a003b00c9385b01b7b4205a5fb4b46828ad7ba63e91234ca",
+    "dev_chain_01/B0/chart.png": "258a86e3db4d997a064166bcbd9e9c0ae27e47d1771dd8e76603b24840726cf6",
+    "dev_chain_01/B0/chart.svg": "c161a27972683cb82c2987282fb52a7e02f362246d61eee434469abfe1643f1c",
+    "dev_chain_01/B0/program_feedback.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "dev_chain_01/B0/scene.json": "dc25288618bb68cb39f909bca6d539f7533c6167d4374bcc9351f7206a52d857",
+    "dev_chain_01/B0/status.json": "222a231b697a02e7317ab9e6e82bfd418658aed225b3249a0fc8a143cbe3dd40",
+    "dev_chain_01/B1/call_repair_0.json": "f5d65361632a0810901e7accf12ed846a983b29512f51588dcc808ba8cc0b097",
+    "dev_chain_01/B1/chart.png": "bb0191f1229c0d896f2ec116644ce305c12b72419f2e338586afe0484896fa31",
+    "dev_chain_01/B1/chart.svg": "c52bdd84c602d0737bf036baeb657705e63ba85a257490ff30a3e20a6b40c096",
+    "dev_chain_01/B1/program_feedback.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "dev_chain_01/B1/scene.json": "436745a7649e4c334b6476f235dccf52f359dfa58914818de51b3775f18e46fe",
+    "dev_chain_01/B1/status.json": "222a231b697a02e7317ab9e6e82bfd418658aed225b3249a0fc8a143cbe3dd40",
+    "dev_chain_01/B2/call_repair_0.json": "c5cddd6cf43b606dec2fe55740f00a32eeacfef742bd537a1e544e19d29725ee",
+    "dev_chain_01/B2/chart.png": "258a86e3db4d997a064166bcbd9e9c0ae27e47d1771dd8e76603b24840726cf6",
+    "dev_chain_01/B2/chart.svg": "c161a27972683cb82c2987282fb52a7e02f362246d61eee434469abfe1643f1c",
+    "dev_chain_01/B2/program_feedback.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "dev_chain_01/B2/scene.json": "dc25288618bb68cb39f909bca6d539f7533c6167d4374bcc9351f7206a52d857",
+    "dev_chain_01/B2/status.json": "222a231b697a02e7317ab9e6e82bfd418658aed225b3249a0fc8a143cbe3dd40",
+    "dev_chain_01/B3/call_repair_0.json": "7723d49224e51cc022654a5d5890b25be2b4822112afd2a9defdc9e60a6f49f2",
+    "dev_chain_01/B3/chart.png": "258a86e3db4d997a064166bcbd9e9c0ae27e47d1771dd8e76603b24840726cf6",
+    "dev_chain_01/B3/chart.svg": "c161a27972683cb82c2987282fb52a7e02f362246d61eee434469abfe1643f1c",
+    "dev_chain_01/B3/program_feedback.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "dev_chain_01/B3/scene.json": "dc25288618bb68cb39f909bca6d539f7533c6167d4374bcc9351f7206a52d857",
+    "dev_chain_01/B3/status.json": "222a231b697a02e7317ab9e6e82bfd418658aed225b3249a0fc8a143cbe3dd40",
+    "dev_chain_01/visual/call_visual_0.json": "90cfd6662e9cb3eda69e7280d50a446100542bc18725a2c6b74cc7ba60e38db4",
+    "dev_chain_01/visual/feedback.json": "7b3ba95c8617bf70d1ffb6cdd1837c51be876ff000d34d071e92fef803773a5b",
+    "dev_chain_01/visual/status.json": "19dd4a89f073aa78f73512fd7e48c6fc2e5a208c780da1edf94c3b23cf57f6d1"
+  },
+  "reused_sha256": {
+    "dev_chain_01/B0/call_generate_0.json": "48c1d1cf7200d8b6a003b00c9385b01b7b4205a5fb4b46828ad7ba63e91234ca",
+    "dev_chain_01/B0/chart.png": "258a86e3db4d997a064166bcbd9e9c0ae27e47d1771dd8e76603b24840726cf6",
+    "dev_chain_01/B0/chart.svg": "c161a27972683cb82c2987282fb52a7e02f362246d61eee434469abfe1643f1c",
+    "dev_chain_01/B0/program_feedback.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "dev_chain_01/B0/scene.json": "dc25288618bb68cb39f909bca6d539f7533c6167d4374bcc9351f7206a52d857",
+    "dev_chain_01/B0/status.json": "222a231b697a02e7317ab9e6e82bfd418658aed225b3249a0fc8a143cbe3dd40",
+    "dev_chain_01/B1/call_repair_0.json": "f5d65361632a0810901e7accf12ed846a983b29512f51588dcc808ba8cc0b097",
+    "dev_chain_01/B1/chart.png": "bb0191f1229c0d896f2ec116644ce305c12b72419f2e338586afe0484896fa31",
+    "dev_chain_01/B1/chart.svg": "c52bdd84c602d0737bf036baeb657705e63ba85a257490ff30a3e20a6b40c096",
+    "dev_chain_01/B1/program_feedback.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "dev_chain_01/B1/scene.json": "436745a7649e4c334b6476f235dccf52f359dfa58914818de51b3775f18e46fe",
+    "dev_chain_01/B1/status.json": "222a231b697a02e7317ab9e6e82bfd418658aed225b3249a0fc8a143cbe3dd40"
+  },
+  "source_sha256": {
+    "__init__.py": "464c895911ec044ee0152335a5b279b1dd39aaa0155a653966147e2b8f3606c9",
+    "analysis.py": "c16dcc01ae7f3b1c4dd4892a3cee9c7c8c512d962b7aa8036cf6f1ea6104355f",
+    "backends.py": "fb11191ee92b323759c21b44aa275429cc588fe4d5da58614ffee87cf2308d85",
+    "cli.py": "eaa6bce376ba23b80adcc91f5feef9e4ff1e3f04bd1f64de8e036a90fc4d3c7b",
+    "compact.py": "03fac9e895fa898ab340d46690047b89bd94fb509a03c0e3909655771097083f",
+    "dataset.py": "f6811e28f1d164979c04580f8b381ceb487096f9abb4884543e6ad7a284a30da",
+    "evaluation.py": "82d01806a9d986a4f5c1c9ce270228d7dd8006d349eead5e2075682e8e2a255c",
+    "followup.py": "21c11fff0d64520e5a5752e777f612caa1f2c52ef63604325f4d6f3c9cb8ccc8",
+    "followup_analysis.py": "9e945941806f3d0045d65a742bff1ab405e889bf6147bb559ba6c7832cf10d1d",
+    "gallery.py": "e4bea2b8cd672115425ee3f80d866e5dccede3f8ddfa5d54553e82b71801c323",
+    "gpu_backend.py": "30389969d3f1fd3971d596341aa99e841c06c53c8c66f9416746f98a49948c35",
+    "gpu_experiment.py": "c4e6843c231e39286d0b809e46e1f3766a8d8bb33aef2dfbc548e012ef98f430",
+    "layout_followup.py": "072b23f1f48f8c4f2d042f9a3cc8fbf6d393fcf6ce607274375e3c5dcb77107d",
+    "prompts.py": "ecc07927d1816bf1ec7d59c1ddc24cc3acda2fdd2dd5941f887c707446900c64",
+    "rendering.py": "252ab8935c074ee83c135673a0e5d96438534cbcd2e3528fe80f99258b956f9d",
+    "runner.py": "2b9788fe148fd2bbb4ddb769f9920febb4891535f63891c728531ffda1e6199f",
+    "schema.py": "3a42e03de331c2ceb871b13c6bbc9faa0fc3e11e220431c037423540a30e9011",
+    "validators.py": "a1eaba028b5707c14b98a4884391378f968d7aac7341b34297fa559174ee022f"
+  },
+  "runtime": {
+    "python": "3.12.10",
+    "packages": {
+      "torch": "2.8.0+cu126",
+      "torchvision": "0.23.0+cu126",
+      "transformers": "4.57.1",
+      "accelerate": "1.11.0",
+      "huggingface-hub": "0.36.0",
+      "llama-cpp-python": "0.3.36",
+      "Pillow": "12.2.0"
+    }
+  },
+  "vlm_lock": {
+    "repo_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "local_path": "models/Qwen2.5-VL-3B-Instruct",
+    "dtype": "float16",
+    "license": "qwen-research (see upstream model card)",
+    "files_sha256": {
+      "chat_template.json": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
+      "config.json": "7ed3eed5be6924cc800e8a5e53fc405c1aab1aaf36bad65c33403b36c56827f5",
+      "generation_config.json": "533f191cc257b7de37a4fccd0a7a1706d75e1aa660f93efaa54e5a2a9f9aace9",
+      "LICENSE": "b5c0e5cf74cf51af1ecbc4af597cfcd13fd9925611838884a681070838a14a50",
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "model-00001-of-00002.safetensors": "41a8895c164b4d32bae6b302f4603fcbc1797f32dafa45c7e9bcda23c6755df8",
+      "model-00002-of-00002.safetensors": "365531ff8752420e89dee707b79d021fb2d6e25abafe486f080555a4fe6972e4",
+      "model.safetensors.index.json": "c7dd78a4c6bea60b51332f1baf37b8f8124ecab2c35395a29a29825bf2619768",
+      "preprocessor_config.json": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+      "README.md": "0b6da5a154b923da4dc66e416140c9b7f235f9b08fbbcc27fd9df7b586e3150d",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  },
+  "text_model_sha256": "626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+  "settings": {
+    "max_tokens": 900,
+    "vision_max_tokens": 180,
+    "temperature": 0.0,
+    "format_repairs": 1,
+    "threads": 4,
+    "seed": 241024,
+    "dtype": "float16",
+    "attention": "sdpa",
+    "min_pixels": 200704,
+    "max_pixels": 802816,
+    "batch_size": 1,
+    "modes": [
+      "B2",
+      "B3"
+    ],
+    "device_map": {
+      "": 0
+    },
+    "text_backend": "LlamaCPU",
+    "n_gpu_layers": 0
+  },
+  "created_at_utc": "2026-10-25T08:47:50.550561+00:00",
+  "provenance": "real_model_inference_with_historical_B0_B1_reused",
+  "reference_access": "analysis phase only",
+  "cost_note": "B0/B1 calls are historical reused calls; only visual/B2/B3 are newly executed. No CPU/GPU speed comparison."
+}

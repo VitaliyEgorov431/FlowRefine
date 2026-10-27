@@ -1,0 +1,8 @@
+{
+  "stopped_at_utc": "2026-10-24T17:54:07.042123+00:00",
+  "reason": "Coordinate tuple output confused node indices and coordinates; repeated invalid outputs. Stopped to develop stricter per-node object schema on development tasks; original source and saved outputs preserved.",
+  "completed_layout_statuses": 8,
+  "valid_layout_statuses": 0,
+  "interruption": "Process stopped by Ctrl+C. In-flight call may have no saved response; actual incurred time/tokens for that call are unknown. Logged costs describe persisted calls only.",
+  "next_experiment": "runs/layout_v2 after development validation"
+}

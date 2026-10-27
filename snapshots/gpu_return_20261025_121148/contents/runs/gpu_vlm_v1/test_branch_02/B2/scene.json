@@ -1,0 +1,100 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Expense review begins",
+      "type": "start",
+      "label": "Expense review begins",
+      "x": 280.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Receipt attached?",
+      "type": "decision",
+      "label": "Receipt attached?",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "Approve reimbursement",
+      "type": "process",
+      "label": "Approve reimbursement",
+      "x": 25.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Reject reimbursement",
+      "type": "process",
+      "label": "Reject reimbursement",
+      "x": 535.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Record decision",
+      "type": "process",
+      "label": "Record decision",
+      "x": 280.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Expense review complete",
+      "type": "end",
+      "label": "Expense review complete",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Expense review begins",
+      "target": "Receipt attached?",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Receipt attached?",
+      "target": "Approve reimbursement",
+      "label": "Yes"
+    },
+    {
+      "id": "e3",
+      "source": "Receipt attached?",
+      "target": "Reject reimbursement",
+      "label": "No"
+    },
+    {
+      "id": "e4",
+      "source": "Approve reimbursement",
+      "target": "Record decision",
+      "label": ""
+    },
+    {
+      "id": "e5",
+      "source": "Reject reimbursement",
+      "target": "Record decision",
+      "label": ""
+    },
+    {
+      "id": "e6",
+      "source": "Record decision",
+      "target": "Expense review complete",
+      "label": ""
+    }
+  ]
+}

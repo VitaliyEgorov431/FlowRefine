@@ -1,0 +1,11 @@
+[
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e4",
+      "Approve reimbursement"
+    ],
+    "message": "Edge e4 crosses unrelated node Approve reimbursement."
+  }
+]

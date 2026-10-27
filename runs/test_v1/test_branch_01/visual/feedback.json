@@ -1,0 +1,3 @@
+{
+  "text": " Order Begins is connected with Check stock which is then connected with Item available? If Item available? is No then Reserve item and if Item available? is Yes then Request replenishment and if Item available? is Yes then Item available? Also, Reserve item is connected with both Order review complete and Order review complete which is then connected with both Order review complete and Order review complete. If Reservation dey is No then Reserve item and if Reservation dey is Yes then Request replenishment and if Reservation dey is No then Order review complete."
+}

@@ -1,0 +1,3 @@
+{
+  "text": " Account recovery begins with Check security answer and If Check security answer is No then Answer correct? Also, If Answer correct? is Yes then Send reset link and If Answer correct? is No then Escalate to support. Also, If Answer correct? is Yes then Send reset link and If Answer correct? is No then Log recovery attempt. Also, If Log recovery attempt is Recovery attempt complete then Recovery attempt complete. If Recovery attempt complete is Yes then Send reset link and If Recovery attempt complete is No then Escalate to support. If Recovery attempt complete is Answer correct? then Recovery attempt and if Recovery attempt complete is No then Escalate to support."
+}

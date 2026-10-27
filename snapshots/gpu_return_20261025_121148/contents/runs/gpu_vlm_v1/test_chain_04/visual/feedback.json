@@ -1,0 +1,3 @@
+{
+  "text": "1. Missing stage: \"Prepare sample\"\n2. Wrong arrow direction: \"Measure sample\" should point to \"Save measurements\"\n3. Overlapping boxes: \"Experiment begins\" and \"Experiment complete\" should be separate nodes\n4. Readable text: Ensure all labels are clear and legible\n\nCorrected flowchart:\n\n- Experiment begins\n- Prepare sample\n- Calibrate sensor\n- Measure sample\n- Save measurements\n- Clean equipment\n- Experiment complete"
+}

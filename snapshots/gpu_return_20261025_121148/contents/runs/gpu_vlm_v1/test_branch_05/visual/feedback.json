@@ -1,0 +1,3 @@
+{
+  "text": "1. **Wrong arrow direction**: The arrow from \"Read destination\" should point towards the decision node.\n2. **Overlapping boxes**: The decision node and the \"Yes\" branch box overlap slightly.\n3. **Unreadable text**: The text in the decision node is not clear enough.\n4. **Missing stages**: There is no explicit mention of \"Delivery planning begins\" as a separate stage; it should be included at the beginning.\n\nCorrected flowchart:\n\n- **Start Node**: Delivery planning begins\n- **Process Node**: Read destination\n- **Decision Node**: Destination local?\n  - **Yes Branch**: Assign bicycle courier\n  - **No Branch**: Assign van courier\n- **Process Node**: Send route details\n- **End Node**: Delivery planning complete"
+}

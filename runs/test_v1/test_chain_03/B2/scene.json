@@ -1,0 +1,109 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Library intake begins",
+      "type": "start",
+      "label": "Library intake begins",
+      "x": 280.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Receive donated book",
+      "type": "process",
+      "label": "Receive donated book",
+      "x": 280.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Inspect book",
+      "type": "process",
+      "label": "Inspect book",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Assign catalogue number",
+      "type": "process",
+      "label": "Assign catalogue number",
+      "x": 280.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Attach shelf label",
+      "type": "process",
+      "label": "Attach shelf label",
+      "x": 280.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Place book on shelf",
+      "type": "process",
+      "label": "Place book on shelf",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Library intake complete",
+      "type": "end",
+      "label": "Library intake complete",
+      "x": 280.0,
+      "y": 1050.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Library intake begins",
+      "target": "Receive donated book",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Receive donated book",
+      "target": "Inspect book",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Inspect book",
+      "target": "Assign catalogue number",
+      "label": ""
+    },
+    {
+      "id": "e4",
+      "source": "Assign catalogue number",
+      "target": "Attach shelf label",
+      "label": ""
+    },
+    {
+      "id": "e5",
+      "source": "Attach shelf label",
+      "target": "Place book on shelf",
+      "label": ""
+    },
+    {
+      "id": "e6",
+      "source": "Place book on shelf",
+      "target": "Library intake complete",
+      "label": ""
+    }
+  ]
+}

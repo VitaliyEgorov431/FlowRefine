@@ -1,0 +1,20 @@
+[
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e5",
+      "Deliver translation"
+    ],
+    "message": "Edge e5 crosses unrelated node Deliver translation."
+  },
+  {
+    "code": "edge_label_overlap",
+    "severity": "warning",
+    "affected_ids": [
+      "e6",
+      "Terminology consistent?"
+    ],
+    "message": "Label of edge e6 overlaps node Terminology consistent? description."
+  }
+]

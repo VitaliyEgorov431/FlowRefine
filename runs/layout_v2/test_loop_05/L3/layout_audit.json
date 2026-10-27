@@ -1,0 +1,9 @@
+{
+  "topology_preserved": true,
+  "changed_fields": [
+    "nodes[].x",
+    "nodes[].y"
+  ],
+  "source_scene_sha256": "bb69d5bceb729b11ccaf4ddce7762f004e1866d7d1e5ab30812f52ab1d36cebd",
+  "format": "layout-object-enums-v2"
+}

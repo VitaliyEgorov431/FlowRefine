@@ -1,0 +1,38 @@
+[
+  {
+    "code": "edge_label_overlap",
+    "severity": "warning",
+    "affected_ids": [
+      "e3",
+      "Member?"
+    ],
+    "message": "Label of edge e3 overlaps node Member? description."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e5",
+      "Enter gallery"
+    ],
+    "message": "Edge e5 crosses unrelated node Enter gallery."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e6",
+      "Enter gallery"
+    ],
+    "message": "Edge e6 crosses unrelated node Enter gallery."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e8",
+      "Buy ticket"
+    ],
+    "message": "Edge e8 crosses unrelated node Buy ticket."
+  }
+]

@@ -1,0 +1,109 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Podcast workflow begins",
+      "type": "start",
+      "label": "Podcast workflow begins",
+      "x": 280.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Record interview",
+      "type": "process",
+      "label": "Record interview",
+      "x": 280.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Edit recording",
+      "type": "process",
+      "label": "Edit recording",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Normalize audio",
+      "type": "process",
+      "label": "Normalize audio",
+      "x": 280.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Export episode",
+      "type": "process",
+      "label": "Export episode",
+      "x": 280.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Publish episode",
+      "type": "process",
+      "label": "Publish episode",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Podcast workflow complete",
+      "type": "end",
+      "label": "Podcast workflow complete",
+      "x": 280.0,
+      "y": 1050.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Podcast workflow begins",
+      "target": "Record interview",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Record interview",
+      "target": "Edit recording",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Edit recording",
+      "target": "Normalize audio",
+      "label": ""
+    },
+    {
+      "id": "e4",
+      "source": "Normalize audio",
+      "target": "Export episode",
+      "label": ""
+    },
+    {
+      "id": "e5",
+      "source": "Export episode",
+      "target": "Publish episode",
+      "label": "Yes"
+    },
+    {
+      "id": "e6",
+      "source": "Publish episode",
+      "target": "Podcast workflow complete",
+      "label": "No"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Waste sorting begins",
+      "type": "start",
+      "label": "Waste sorting begins",
+      "x": 280,
+      "y": 30,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Inspect container",
+      "type": "process",
+      "label": "Inspect container",
+      "x": 280,
+      "y": 200,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Container recyclable?",
+      "type": "decision",
+      "label": "Container recyclable?",
+      "x": 280,
+      "y": 370,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "Use recycling bin",
+      "type": "process",
+      "label": "Use recycling bin",
+      "x": 25,
+      "y": 540,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Use general waste bin",
+      "type": "process",
+      "label": "Use general waste bin",
+      "x": 535,
+      "y": 540,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Clean sorting area",
+      "type": "process",
+      "label": "Clean sorting area",
+      "x": 280,
+      "y": 710,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Waste sorting complete",
+      "type": "end",
+      "label": "Waste sorting complete",
+      "x": 280,
+      "y": 880,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Waste sorting begins",
+      "target": "Inspect container",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Inspect container",
+      "target": "Container recyclable?",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Container recyclable?",
+      "target": "Use recycling bin",
+      "label": "Yes"
+    },
+    {
+      "id": "e4",
+      "source": "Container recyclable?",
+      "target": "Use general waste bin",
+      "label": "No"
+    },
+    {
+      "id": "e5",
+      "source": "Use recycling bin",
+      "target": "Clean sorting area",
+      "label": ""
+    },
+    {
+      "id": "e6",
+      "source": "Use general waste bin",
+      "target": "Clean sorting area",
+      "label": ""
+    },
+    {
+      "id": "e7",
+      "source": "Clean sorting area",
+      "target": "Waste sorting complete",
+      "label": ""
+    }
+  ]
+}

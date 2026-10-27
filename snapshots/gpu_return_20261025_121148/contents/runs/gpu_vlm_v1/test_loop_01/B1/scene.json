@@ -1,0 +1,109 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Software release begins",
+      "type": "start",
+      "label": "Software release begins",
+      "x": 280.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Prepare build",
+      "type": "process",
+      "label": "Prepare build",
+      "x": 280.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Run test suite",
+      "type": "process",
+      "label": "Run test suite",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "All tests pass?",
+      "type": "decision",
+      "label": "All tests pass?",
+      "x": 280.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "Fix implementation",
+      "type": "process",
+      "label": "Fix implementation",
+      "x": 25.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Publish release",
+      "type": "process",
+      "label": "Publish release",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Software release complete",
+      "type": "end",
+      "label": "Software release complete",
+      "x": 280.0,
+      "y": 1050.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Software release begins",
+      "target": "Prepare build",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Prepare build",
+      "target": "Run test suite",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Run test suite",
+      "target": "All tests pass?",
+      "label": "No"
+    },
+    {
+      "id": "e4",
+      "source": "All tests pass?",
+      "target": "Fix implementation",
+      "label": ""
+    },
+    {
+      "id": "e5",
+      "source": "All tests pass?",
+      "target": "Publish release",
+      "label": "Yes"
+    },
+    {
+      "id": "e6",
+      "source": "Publish release",
+      "target": "Software release complete",
+      "label": ""
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Visit begins",
+      "type": "start",
+      "label": "Visit begins",
+      "x": 280,
+      "y": 30,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Read admission rules",
+      "type": "process",
+      "label": "Read admission rules",
+      "x": 280,
+      "y": 200,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Member?",
+      "type": "decision",
+      "label": "Member?",
+      "x": 280,
+      "y": 370,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "Show membership card",
+      "type": "process",
+      "label": "Show membership card",
+      "x": 25,
+      "y": 540,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Buy ticket",
+      "type": "process",
+      "label": "Buy ticket",
+      "x": 535,
+      "y": 540,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Enter gallery",
+      "type": "process",
+      "label": "Enter gallery",
+      "x": 280,
+      "y": 710,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Admission complete",
+      "type": "end",
+      "label": "Admission complete",
+      "x": 280,
+      "y": 880,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Visit begins",
+      "target": "Read admission rules",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Read admission rules",
+      "target": "Member?",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Member?",
+      "target": "Show membership card",
+      "label": "Yes"
+    },
+    {
+      "id": "e4",
+      "source": "Member?",
+      "target": "Buy ticket",
+      "label": "No"
+    },
+    {
+      "id": "e5",
+      "source": "Show membership card",
+      "target": "Admission complete",
+      "label": ""
+    },
+    {
+      "id": "e6",
+      "source": "Buy ticket",
+      "target": "Admission complete",
+      "label": ""
+    },
+    {
+      "id": "e7",
+      "source": "Admission complete",
+      "target": "Enter gallery",
+      "label": ""
+    }
+  ]
+}

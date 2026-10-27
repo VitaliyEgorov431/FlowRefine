@@ -1,0 +1,11 @@
+[
+  {
+    "code": "edge_label_overlap",
+    "severity": "warning",
+    "affected_ids": [
+      "e6",
+      "Application complete?"
+    ],
+    "message": "Label of edge e6 overlaps node Application complete? description."
+  }
+]

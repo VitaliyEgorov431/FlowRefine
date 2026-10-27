@@ -1,0 +1,3 @@
+{
+  "text": " Visit begins is connected with Read admission rules which is then connected with Member? If Member? is No then Buy ticket and if Member? is Yes then Show membership card which is then connected with Enter gallery which is further connected with Admission complete. Also, Enter gallery is connected with both Admission complete and Show membership card. If Show membership card is No then Read admission rules and if Show membership card is Yes then Member? which is then connected with Enter gallery. Also, Admission complete is connected with Enter gallery which is then connected with Admission complete."
+}

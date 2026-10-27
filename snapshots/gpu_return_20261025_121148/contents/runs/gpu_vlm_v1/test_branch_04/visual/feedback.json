@@ -1,0 +1,3 @@
+{
+  "text": "1. **Wrong arrow direction**: The arrow from \"Inspect container\" to \"Container recyclable?\" should point downwards.\n2. **Overlapping boxes**: The \"Use recycling bin\" and \"Use general waste bin\" boxes overlap.\n3. **Unreadable text**: The text in the \"Waste sorting completes\" box is not clear.\n4. **Missing stages**: There is no explicit mention of \"Waste sorting begins\" as a separate stage; it's implied at the top of the chart.\n\n**Corrected flowchart:**\n\n- Waste sorting begins\n- Inspect container\n  - Container recyclable?\n    - Yes: Use recycling bin\n    - No: Use general waste bin\n      - Clean sorting area\n        - Waste sorting complete"
+}

@@ -1,0 +1,133 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Bread making begins",
+      "type": "start",
+      "label": "Bread making begins",
+      "x": 280.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Mix ingredients",
+      "type": "process",
+      "label": "Mix ingredients",
+      "x": 280.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Inspect dough",
+      "type": "process",
+      "label": "Inspect dough",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Dough elastic?",
+      "type": "decision",
+      "label": "Dough elastic?",
+      "x": 280.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "Knead dough",
+      "type": "process",
+      "label": "Knead dough",
+      "x": 280.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Bake loaf",
+      "type": "process",
+      "label": "Bake loaf",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Bread making complete",
+      "type": "end",
+      "label": "Bread making complete",
+      "x": 280.0,
+      "y": 1050.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Bread making begins",
+      "target": "Mix ingredients",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Mix ingredients",
+      "target": "Inspect dough",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Inspect dough",
+      "target": "Dough elastic?",
+      "label": ""
+    },
+    {
+      "id": "e4",
+      "source": "Dough elastic?",
+      "target": "Knead dough",
+      "label": "No"
+    },
+    {
+      "id": "e5",
+      "source": "Knead dough",
+      "target": "Inspect dough",
+      "label": "Yes"
+    },
+    {
+      "id": "e6",
+      "source": "Inspect dough",
+      "target": "Bake loaf",
+      "label": ""
+    },
+    {
+      "id": "e7",
+      "source": "Bake loaf",
+      "target": "Bread making complete",
+      "label": ""
+    },
+    {
+      "id": "e8",
+      "source": "Bread making complete",
+      "target": "Dough elastic?",
+      "label": "No"
+    },
+    {
+      "id": "e9",
+      "source": "Dough elastic?",
+      "target": "Knead dough",
+      "label": "Yes"
+    },
+    {
+      "id": "e10",
+      "source": "Knead dough",
+      "target": "Bake loaf",
+      "label": ""
+    }
+  ]
+}

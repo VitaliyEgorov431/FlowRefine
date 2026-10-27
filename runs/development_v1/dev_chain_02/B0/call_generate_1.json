@@ -1,0 +1,38 @@
+{
+  "role": "generate",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You create accurate editable flowcharts. Return ONLY a JSON object in this compact format:\n{\"nodes\":[[\"id\",\"type\",\"short label\",column,row]],\"edges\":[[\"source_id\",\"target_id\",\"branch label\"]]}\nTypes: start, end, process, decision. Column: 0,1,2; row: 0..7.\nInclude exactly one start and one end. Use each explicit stage name in the request.\nEach id must be unique and each edge endpoint must exist. Use an empty string for\nordinary edge labels, and Yes/No on decision branches. Preserve loops and direction.\nPlace nodes on different grid cells. Prefer downward flow and short edges.\nDo not add explanations, markdown, or numeric scores."
+    },
+    {
+      "role": "user",
+      "content": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Follow this exact sequence: \"Letter begins\" -> \"Write message\" -> \"Fold paper\" -> \"Seal envelope\" -> \"Post letter\" -> \"Letter sent\"."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"nodes\":[[\"Letter begins\",\"process\",\"Write message\",\"0\",\"0\"],[\"Write message\",\"process\",\"Fold paper\",\"0\",\"1\"],[\"Fold paper\",\"process\",\"Seal envelope\",\"0\",\"2\"],[\"Seal envelope\",\"process\",\"Post letter\",\"0\",\"3\"],[\"Post letter\",\"process\",\"Letter sent\",\"0\",\"4\"]],\"edges\":[[\"Letter begins\",\"Write message\",\"Letter begins\",\"0\",\"0\"],[\"Write message\",\"Fold paper\",\"Write message\",\"0\",\"1\"],[\"Fold paper\",\"Seal envelope\",\"Fold paper\",\"0\",\"2\"],[\"Seal envelope\",\"Post letter\",\"Seal envelope\",\"0\",\"3\"],[\"Post letter\",\"Letter sent\",\"Post letter\",\"0\",\"4\"]]}"
+    },
+    {
+      "role": "user",
+      "content": "The JSON could not be rendered: Grid positions must be finite numbers. Return a valid complete compact flowchart JSON only."
+    }
+  ],
+  "response": {
+    "text": "{\"nodes\":[[\"Letter begins\",\"process\",\"Write message\",\"0\",\"0\"],[\"Write message\",\"process\",\"Fold paper\",\"0\",\"1\"],[\"Fold paper\",\"process\",\"Seal envelope\",\"0\",\"2\"],[\"Seal envelope\",\"process\",\"Post letter\",\"0\",\"3\"],[\"Post letter\",\"process\",\"Letter sent\",\"0\",\"4\"]],\"edges\":[[\"Letter begins\",\"Write message\",\"Letter begins\",\"0\",\"0\"],[\"Write message\",\"Fold paper\",\"Write message\",\"0\",\"1\"],[\"Fold paper\",\"Seal envelope\",\"Fold paper\",\"0\",\"2\"],[\"Seal envelope\",\"Post letter\",\"Seal envelope\",\"0\",\"3\"],[\"Post letter\",\"Letter sent\",\"Post letter\",\"0\",\"4\"]]}",
+    "elapsed_seconds": 14.848150200001328,
+    "usage": {
+      "prompt_tokens": 434,
+      "completion_tokens": 139,
+      "total_tokens": 573
+    },
+    "finish_reason": "stop",
+    "backend": "llama-cpp-python",
+    "runtime_version": "0.3.36",
+    "model": "C:\\Users\\User\\Desktop\\учеба\\GenAI_Final_Project\\models\\qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "device": "cpu",
+    "seed": 241024,
+    "temperature": 0.0
+  },
+  "reference_access": false
+}

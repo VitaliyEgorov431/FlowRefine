@@ -1,0 +1,8 @@
+[
+  {
+    "id": "custom_b12c31cff243",
+    "split": "custom",
+    "family": "custom",
+    "prompt": "Create a flowchart for this booking workflow. Connect exactly these six stages in order: Start booking, Choose date, Enter contact details, Review booking, Confirm booking, Booking complete. The first stage is start, the last stage is end, the other stages are process nodes."
+  }
+]

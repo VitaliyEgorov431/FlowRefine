@@ -1,0 +1,3 @@
+{
+  "text": " Software release begins with Prepare build which is then connected with All tests pass? which is then connected with Publish release which is finally connected with Software release complete. Fix implementation is connected with All tests pass? which is then connected with Publish release which is finally connected with Software release complete. Also, Fix implementation is connected with All tests pass? which is then connected with Publish release which is finally connected with Software release complete."
+}

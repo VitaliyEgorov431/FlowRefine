@@ -1,0 +1,13 @@
+task_id,split,family,arm,executed,valid,reason,invalid_scene_count,geometry_errors,geometry_warnings,render_available,render_error,standalone_calls,standalone_cached_calls,standalone_inference_seconds,standalone_prompt_tokens,standalone_completion_tokens,node_precision,node_recall,node_f1,node_tp,node_fp,node_fn,node_predicted,node_expected,edge_precision,edge_recall,edge_f1,edge_tp,edge_fp,edge_fn,edge_predicted,edge_expected,exact_semantic
+dev_chain_01,development,chain,B0,True,True,,0,0,0,True,,1,0,18.86978959999942,264,150,1.0,1.0,1.0,6,0,0,6,6,0.6666666666666666,0.8,0.7272727272727272,4,2,1,6,5,0
+dev_chain_01,development,chain,B1,False,,unexecuted,,,,,,,,,,,,,,,,,,,,,,,,,,,
+dev_chain_01,development,chain,B2,False,,unexecuted,,,,,,,,,,,,,,,,,,,,,,,,,,,
+dev_chain_01,development,chain,B3,False,,unexecuted,,,,,,,,,,,,,,,,,,,,,,,,,,,
+dev_chain_02,development,chain,B0,True,False,,1,,,False,,2,0,31.37827070000094,695,278,0,0,0,0,0,6,0,6,0,0,0,0,0,5,0,5,0
+dev_chain_02,development,chain,B1,False,,unexecuted,,,,,,,,,,,,,,,,,,,,,,,,,,,
+dev_chain_02,development,chain,B2,False,,unexecuted,,,,,,,,,,,,,,,,,,,,,,,,,,,
+dev_chain_02,development,chain,B3,False,,unexecuted,,,,,,,,,,,,,,,,,,,,,,,,,,,
+dev_branch_01,development,branch,B0,True,False,,1,,,False,,2,0,22.117037100000744,692,259,0,0,0,0,0,7,0,7,0,0,0,0,0,7,0,7,0
+dev_branch_01,development,branch,B1,False,,unexecuted,,,,,,,,,,,,,,,,,,,,,,,,,,,
+dev_branch_01,development,branch,B2,False,,unexecuted,,,,,,,,,,,,,,,,,,,,,,,,,,,
+dev_branch_01,development,branch,B3,False,,unexecuted,,,,,,,,,,,,,,,,,,,,,,,,,,,

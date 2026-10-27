@@ -1,0 +1,3 @@
+{
+  "text": " Expense review begins with Read expense claim being connected with Receipt claim which if Receipt claim is No then Reject reimbursement which if Receipt claim is Yes then Approve reimbursement which if Receipt claim is Yes then Record decision which if Record decision is Expense review complete then Expense review complete. Also, Receive reimbursement is connected with Record decision which if Record decision is Expense review complete then Expense review complete."
+}

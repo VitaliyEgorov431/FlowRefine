@@ -1,0 +1,140 @@
+{
+  "provenance": "real_model_inference",
+  "task_count": 3,
+  "arms": {
+    "B0": {
+      "task_count": 3,
+      "executed": 3,
+      "unexecuted": 0,
+      "valid": 1,
+      "invalid": 2,
+      "exact_semantic_mean": 0,
+      "node_f1_mean": 0.3333333333333333,
+      "edge_f1_mean": 0.2424242424242424,
+      "geometry_errors_valid_mean": 0,
+      "geometry_warnings_valid_mean": 0,
+      "standalone_inference_seconds_mean": 24.121699133333703
+    },
+    "B1": {
+      "task_count": 3,
+      "executed": 0,
+      "unexecuted": 3,
+      "valid": 0,
+      "invalid": 0,
+      "exact_semantic_mean": null,
+      "node_f1_mean": null,
+      "edge_f1_mean": null,
+      "geometry_errors_valid_mean": null,
+      "geometry_warnings_valid_mean": null,
+      "standalone_inference_seconds_mean": null
+    },
+    "B2": {
+      "task_count": 3,
+      "executed": 0,
+      "unexecuted": 3,
+      "valid": 0,
+      "invalid": 0,
+      "exact_semantic_mean": null,
+      "node_f1_mean": null,
+      "edge_f1_mean": null,
+      "geometry_errors_valid_mean": null,
+      "geometry_warnings_valid_mean": null,
+      "standalone_inference_seconds_mean": null
+    },
+    "B3": {
+      "task_count": 3,
+      "executed": 0,
+      "unexecuted": 3,
+      "valid": 0,
+      "invalid": 0,
+      "exact_semantic_mean": null,
+      "node_f1_mean": null,
+      "edge_f1_mean": null,
+      "geometry_errors_valid_mean": null,
+      "geometry_warnings_valid_mean": null,
+      "standalone_inference_seconds_mean": null
+    }
+  },
+  "paired_differences": {
+    "B1_minus_B0": {
+      "node_f1": {
+        "n": 0,
+        "mean": null,
+        "ci95": null
+      },
+      "edge_f1": {
+        "n": 0,
+        "mean": null,
+        "ci95": null
+      },
+      "exact_semantic": {
+        "n": 0,
+        "mean": null,
+        "ci95": null
+      },
+      "geometry_errors_valid_pairs": {
+        "n": 0,
+        "mean": null,
+        "ci95": null
+      }
+    },
+    "B2_minus_B0": {
+      "node_f1": {
+        "n": 0,
+        "mean": null,
+        "ci95": null
+      },
+      "edge_f1": {
+        "n": 0,
+        "mean": null,
+        "ci95": null
+      },
+      "exact_semantic": {
+        "n": 0,
+        "mean": null,
+        "ci95": null
+      },
+      "geometry_errors_valid_pairs": {
+        "n": 0,
+        "mean": null,
+        "ci95": null
+      }
+    },
+    "B3_minus_B0": {
+      "node_f1": {
+        "n": 0,
+        "mean": null,
+        "ci95": null
+      },
+      "edge_f1": {
+        "n": 0,
+        "mean": null,
+        "ci95": null
+      },
+      "exact_semantic": {
+        "n": 0,
+        "mean": null,
+        "ci95": null
+      },
+      "geometry_errors_valid_pairs": {
+        "n": 0,
+        "mean": null,
+        "ci95": null
+      }
+    }
+  },
+  "actual_logged_calls": 5,
+  "actual_cached_calls": 0,
+  "actual_logged_inference_seconds": 72.3650974000011,
+  "actual_logged_prompt_tokens": 1651,
+  "actual_logged_completion_tokens": 687,
+  "reference_access_violations": [],
+  "notes": [
+    "Pilot on a small template-based dataset; no population-level claim.",
+    "Unexecuted arms are excluded, never assigned zero quality.",
+    "Executed invalid scenes score zero semantics; geometry is undefined.",
+    "Standalone arm costs reuse shared initial generation and visual critique costs; actual total counts each saved call once.",
+    "Intervals use 1000 task-level bootstrap resamples with a fixed seed; not corrected for multiple comparisons.",
+    "Model latency excludes local CPU validation and rendering."
+  ]
+}

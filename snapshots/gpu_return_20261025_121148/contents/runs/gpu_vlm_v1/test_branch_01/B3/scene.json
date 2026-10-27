@@ -1,0 +1,109 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Order begins",
+      "type": "start",
+      "label": "Order begins",
+      "x": 280.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Check stock",
+      "type": "process",
+      "label": "Check stock",
+      "x": 280.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Item available?",
+      "type": "decision",
+      "label": "Item available?",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "Reserve item",
+      "type": "process",
+      "label": "Reserve item",
+      "x": 25.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Request replenishment",
+      "type": "process",
+      "label": "Request replenishment",
+      "x": 535.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Notify customer",
+      "type": "process",
+      "label": "Notify customer",
+      "x": 280.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Order review complete",
+      "type": "end",
+      "label": "Order review complete",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Order begins",
+      "target": "Check stock",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Check stock",
+      "target": "Item available?",
+      "label": "Yes"
+    },
+    {
+      "id": "e3",
+      "source": "Item available?",
+      "target": "Reserve item",
+      "label": ""
+    },
+    {
+      "id": "e4",
+      "source": "Item available?",
+      "target": "Request replenishment",
+      "label": "No"
+    },
+    {
+      "id": "e5",
+      "source": "Request replenishment",
+      "target": "Notify customer",
+      "label": ""
+    },
+    {
+      "id": "e6",
+      "source": "Notify customer",
+      "target": "Order review complete",
+      "label": ""
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "code": "out_of_bounds",
+    "severity": "error",
+    "affected_ids": [
+      "Cook porridge"
+    ],
+    "message": "Node Cook porridge is outside the 790x1440 canvas."
+  },
+  {
+    "code": "out_of_bounds",
+    "severity": "error",
+    "affected_ids": [
+      "Serve breakfast"
+    ],
+    "message": "Node Serve breakfast is outside the 790x1440 canvas."
+  },
+  {
+    "code": "out_of_bounds",
+    "severity": "error",
+    "affected_ids": [
+      "Breakfast ready"
+    ],
+    "message": "Node Breakfast ready is outside the 790x1440 canvas."
+  },
+  {
+    "code": "edge_out_of_bounds",
+    "severity": "error",
+    "affected_ids": [
+      "e4"
+    ],
+    "message": "Route of edge e4 leaves the canvas."
+  },
+  {
+    "code": "edge_out_of_bounds",
+    "severity": "error",
+    "affected_ids": [
+      "e5"
+    ],
+    "message": "Route of edge e5 leaves the canvas."
+  },
+  {
+    "code": "edge_out_of_bounds",
+    "severity": "error",
+    "affected_ids": [
+      "e6"
+    ],
+    "message": "Route of edge e6 leaves the canvas."
+  }
+]

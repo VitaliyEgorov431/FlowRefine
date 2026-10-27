@@ -1,0 +1,11 @@
+[
+  {
+    "code": "edge_label_overlap",
+    "severity": "warning",
+    "affected_ids": [
+      "e3",
+      "Destination local?"
+    ],
+    "message": "Label of edge e3 overlaps node Destination local? description."
+  }
+]

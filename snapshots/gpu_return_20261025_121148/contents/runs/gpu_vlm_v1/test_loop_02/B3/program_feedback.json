@@ -1,0 +1,20 @@
+[
+  {
+    "code": "edge_label_overlap",
+    "severity": "warning",
+    "affected_ids": [
+      "e6",
+      "Application complete?"
+    ],
+    "message": "Label of edge e6 overlaps node Application complete? description."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e7",
+      "Submit application"
+    ],
+    "message": "Edge e7 crosses unrelated node Submit application."
+  }
+]

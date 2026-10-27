@@ -1,0 +1,3 @@
+{
+  "text": "1. **Missing stage**: There should be a \"Start\" node at the beginning.\n2. **Wrong arrow direction or branch**: There should be an \"End\" node at the end.\n3. **Overlapping boxes**: The \"Expense review begins\" and \"Read expense claim\" nodes should be distinct.\n4. **Unreadable text**: The text in the decision node should be clear and legible.\n\nVisible labels involved: Expense review begins, Read expense claim, Receipt attached?, Approve reimbursement, Reject reimbursement, Record decision, Expense review complete."
+}

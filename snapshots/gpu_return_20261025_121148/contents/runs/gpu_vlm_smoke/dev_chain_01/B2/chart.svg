@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="790" height="1440" viewBox="0 0 790 1440">
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, DejaVu Sans, sans-serif">
+<polyline points="390.00,272.00 390.00,406.00 390.00,540.00" fill="none" stroke="#24334a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="390.00,540.00 394.32,531.00 385.68,531.00" fill="#24334a"/>
+<polyline points="390.00,612.00 390.00,661.00 135.00,661.00 135.00,710.00" fill="none" stroke="#24334a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="135.00,710.00 139.32,701.00 130.68,701.00" fill="#24334a"/>
+<polyline points="245.00,746.00 262.50,746.00 262.50,780.00 280.00,780.00" fill="none" stroke="#24334a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="280.00,780.00 271.00,775.68 271.00,784.32" fill="#24334a"/>
+<polyline points="500.00,780.00 517.50,780.00 535.00,780.00" fill="none" stroke="#24334a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="535.00,780.00 526.00,775.68 526.00,784.32" fill="#24334a"/>
+<polyline points="500.00,780.00 645.00,780.00 790.00,780.00" fill="none" stroke="#24334a" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="790.00,780.00 781.00,775.68 781.00,784.32" fill="#24334a"/>
+<rect x="280.0" y="880.0" width="220.0" height="72.0" rx="36.0" fill="#f9e3e5" stroke="#24334a" stroke-width="2"/>
+<text x="390.0" y="916.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">Breakfast ready</text>
+<rect x="280.0" y="200.0" width="220.0" height="72.0" rx="8" fill="#e7effb" stroke="#24334a" stroke-width="2"/>
+<text x="390.0" y="236.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">Boil water</text>
+<rect x="280.0" y="370.0" width="220.0" height="72.0" rx="8" fill="#e7effb" stroke="#24334a" stroke-width="2"/>
+<text x="390.0" y="406.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">Add oats</text>
+<rect x="280.0" y="540.0" width="220.0" height="72.0" rx="8" fill="#e7effb" stroke="#24334a" stroke-width="2"/>
+<text x="390.0" y="576.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">Cook porridge</text>
+<polygon points="390.00,710.00 500.00,780.00 390.00,850.00 280.00,780.00" fill="#fff1cb" stroke="#24334a" stroke-width="2"/>
+<text x="390.0" y="770.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">Is porridge</text>
+<text x="390.0" y="790.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">ready?</text>
+<rect x="25.0" y="710.0" width="220.0" height="72.0" rx="8" fill="#e7effb" stroke="#24334a" stroke-width="2"/>
+<text x="135.0" y="746.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">Serve breakfast</text>
+<polygon points="645.00,710.00 755.00,780.00 645.00,850.00 535.00,780.00" fill="#fff1cb" stroke="#24334a" stroke-width="2"/>
+<text x="645.0" y="780.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">Yes</text>
+<polygon points="900.00,710.00 1010.00,780.00 900.00,850.00 790.00,780.00" fill="#fff1cb" stroke="#24334a" stroke-width="2"/>
+<text x="900.0" y="780.0" text-anchor="middle" dominant-baseline="central" font-size="15" fill="#24334a">No</text>
+<rect x="248.0078125" y="641.0" width="28.984375" height="20" rx="3" fill="white"/>
+<text x="262.5" y="651.0" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#24334a">Yes</text>
+<rect x="496.75" y="760.0" width="24.0" height="20" rx="3" fill="white"/>
+<text x="508.75" y="770.0" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#24334a">No</text>
+</g></svg>

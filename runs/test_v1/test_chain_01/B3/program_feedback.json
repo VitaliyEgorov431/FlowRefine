@@ -1,0 +1,38 @@
+[
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e7",
+      "Dispatch parcel"
+    ],
+    "message": "Edge e7 crosses unrelated node Dispatch parcel."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e8",
+      "Attach shipping label"
+    ],
+    "message": "Edge e8 crosses unrelated node Attach shipping label."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e8",
+      "Dispatch parcel"
+    ],
+    "message": "Edge e8 crosses unrelated node Dispatch parcel."
+  },
+  {
+    "code": "edge_label_overlap",
+    "severity": "warning",
+    "affected_ids": [
+      "e8",
+      "Attach shipping label"
+    ],
+    "message": "Label of edge e8 overlaps node Attach shipping label description."
+  }
+]

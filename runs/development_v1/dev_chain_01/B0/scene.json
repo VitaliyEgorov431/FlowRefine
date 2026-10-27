@@ -1,0 +1,100 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Breakfast begins",
+      "type": "start",
+      "label": "Breakfast begins",
+      "x": 25.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Boil water",
+      "type": "process",
+      "label": "Boil water",
+      "x": 25.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Add oats",
+      "type": "process",
+      "label": "Add oats",
+      "x": 25.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Cook porridge",
+      "type": "process",
+      "label": "Cook porridge",
+      "x": 25.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Serve breakfast",
+      "type": "process",
+      "label": "Serve breakfast",
+      "x": 25.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Breakfast ready",
+      "type": "end",
+      "label": "Breakfast ready",
+      "x": 25.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Breakfast begins",
+      "target": "Boil water",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Boil water",
+      "target": "Add oats",
+      "label": "Yes"
+    },
+    {
+      "id": "e3",
+      "source": "Add oats",
+      "target": "Cook porridge",
+      "label": ""
+    },
+    {
+      "id": "e4",
+      "source": "Cook porridge",
+      "target": "Serve breakfast",
+      "label": ""
+    },
+    {
+      "id": "e5",
+      "source": "Serve breakfast",
+      "target": "Breakfast ready",
+      "label": ""
+    },
+    {
+      "id": "e6",
+      "source": "Breakfast ready",
+      "target": "Breakfast ready",
+      "label": ""
+    }
+  ]
+}

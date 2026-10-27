@@ -1,0 +1,119 @@
+﻿**********************
+Начало записи сценария Windows PowerShell
+Время начала: 20261025114739
+Имя пользователя: DESKTOP-8SJ4PBL\vital
+Запуск от имени пользователя: DESKTOP-8SJ4PBL\vital
+Имя конфигурации: 
+Компьютер: DESKTOP-8SJ4PBL (Microsoft Windows NT 10.0.26200.0)
+Ведущее приложение: powershell.exe -NoProfile -ExecutionPolicy Bypass -File D:\FlowRefine_GPU_3060\FlowRefine_GPU\run_gpu.ps1
+ИД процесса: 16428
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Checking one saved DEVELOPMENT chart before the 15 test charts.
+CRITIQUE dev_chain_01
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model chec
+kpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continu
+e using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to al
+l models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████| 2/2 [00:04<00:00,  2.41s/it]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for
+more details.
+REPAIR B2 dev_chain_01
+REPAIR B3 dev_chain_01
+Saved isolated experiment: D:\FlowRefine_GPU_3060\FlowRefine_GPU\runs\gpu_vlm_smoke
+Starting frozen 15-task VLM comparison. Existing completed tasks are reused.
+CRITIQUE test_chain_01
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model chec
+kpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continu
+e using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to al
+l models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████| 2/2 [00:04<00:00,  2.41s/it]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for
+more details.
+CRITIQUE test_chain_02
+CRITIQUE test_chain_03
+CRITIQUE test_chain_04
+CRITIQUE test_chain_05
+CRITIQUE test_branch_01
+CRITIQUE test_branch_02
+CRITIQUE test_branch_03
+CRITIQUE test_branch_04
+CRITIQUE test_branch_05
+CRITIQUE test_loop_01
+CRITIQUE test_loop_02
+CRITIQUE test_loop_03
+CRITIQUE test_loop_04
+CRITIQUE test_loop_05
+REPAIR B2 test_chain_01
+REPAIR B3 test_chain_01
+REPAIR B2 test_chain_02
+REPAIR B3 test_chain_02
+REPAIR B2 test_chain_03
+REPAIR B3 test_chain_03
+REPAIR B2 test_chain_04
+REPAIR B3 test_chain_04
+REPAIR B2 test_chain_05
+REPAIR B3 test_chain_05
+REPAIR B2 test_branch_01
+REPAIR B3 test_branch_01
+REPAIR B2 test_branch_02
+REPAIR B3 test_branch_02
+REPAIR B2 test_branch_03
+REPAIR B3 test_branch_03
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\FlowRefine_GPU_3060\FlowRefine_GPU\src\flowrefine\gpu_experiment.py", line 256, in <module>
+    main()
+  File "D:\FlowRefine_GPU_3060\FlowRefine_GPU\src\flowrefine\gpu_experiment.py", line 249, in main
+    backend.close()
+  File "D:\FlowRefine_GPU_3060\FlowRefine_GPU\src\flowrefine\backends.py", line 52, in close
+    self.model.close()
+  File "D:\FlowRefine_GPU_3060\FlowRefine_GPU\.venv-gpu\Lib\site-packages\llama_cpp\llama.py", line 2297, in close
+    self._stack.close()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\contextlib.
+py", line 618, in close
+    self.__exit__(None, None, None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\contextlib.
+py", line 610, in __exit__
+    raise exc_details[1]
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\contextlib.
+py", line 595, in __exit__
+    if cb(*exc_details):
+       ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\contextlib.
+py", line 360, in __exit__
+    self.thing.close()
+  File "D:\FlowRefine_GPU_3060\FlowRefine_GPU\.venv-gpu\Lib\site-packages\llama_cpp\_internals.py", line 86, in close
+    self._exit_stack.close()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\contextlib.
+py", line 618, in close
+    self.__exit__(None, None, None)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\contextlib.
+py", line 610, in __exit__
+    raise exc_details[1]
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\contextlib.
+py", line 595, in __exit__
+    if cb(*exc_details):
+       ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\contextlib.
+py", line 478, in _exit_wrapper
+    callback(*args, **kwds)
+  File "D:\FlowRefine_GPU_3060\FlowRefine_GPU\.venv-gpu\Lib\site-packages\llama_cpp\_internals.py", line 75, in free_mod
+el
+    llama_cpp.llama_model_free(self.model)
+KeyboardInterrupt
+PS>TerminatingError(): "Конвейерная обработка была остановлена."
+**********************
+Конец записи протокола Windows PowerShell
+Время окончания: 20261025120032
+**********************

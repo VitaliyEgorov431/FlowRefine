@@ -1,0 +1,11 @@
+[
+  {
+    "code": "edge_label_overlap",
+    "severity": "warning",
+    "affected_ids": [
+      "e2",
+      "Receipt attached?"
+    ],
+    "message": "Label of edge e2 overlaps node Receipt attached? description."
+  }
+]

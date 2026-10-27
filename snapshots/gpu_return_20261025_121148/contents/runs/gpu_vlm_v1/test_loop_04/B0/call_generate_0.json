@@ -1,0 +1,30 @@
+{
+  "role": "generate",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You create accurate editable flowcharts. Return ONLY a JSON object in this compact format:\n{\"nodes\":[[\"exact stage label\",\"type\",column,row]],\"edges\":[[\"exact source label\",\"exact target label\",\"branch label\"]]}\nTypes: start, end, process, decision. Column: 0,1,2; row: 0..7.\nInclude exactly one start and one end. Use each explicit stage name in the request.\nEach stage label must be unique and each edge endpoint must be a stage label. Use an empty string for\nordinary edge labels, and Yes/No on decision branches. Preserve loops and direction.\nPlace nodes on different grid cells. Prefer downward flow and short edges.\nDo not add explanations, markdown, or numeric scores.\nExample only (use the actual requested stages instead):\nRequest: Start -> Check form -> Valid?; Yes -> Accept; No -> Reject; both -> Finish.\nOutput: {\"nodes\":[[\"Start\",\"start\",1,0],[\"Check form\",\"process\",1,1],[\"Valid?\",\"decision\",1,2],[\"Accept\",\"process\",0,3],[\"Reject\",\"process\",2,3],[\"Finish\",\"end\",1,4]],\"edges\":[[\"Start\",\"Check form\",\"\"],[\"Check form\",\"Valid?\",\"\"],[\"Valid?\",\"Accept\",\"Yes\"],[\"Valid?\",\"Reject\",\"No\"],[\"Accept\",\"Finish\",\"\"],[\"Reject\",\"Finish\",\"\"]]}\nEvery edge has exactly 3 entries. Ordinary edge labels are empty strings.\nNever add a self-loop at the end. Include ALL nodes AND edges."
+    },
+    {
+      "role": "user",
+      "content": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Begin with \"Translation begins\", then \"Draft translation\", then \"Review terminology\", then the decision \"Terminology consistent?\". On No, perform \"Revise word choices\" and return directly to \"Review terminology\" before evaluating the decision again. On Yes, perform \"Deliver translation\", then finish at \"Translation complete\"."
+    }
+  ],
+  "response": {
+    "text": "{\"nodes\":[[\"Translation begins\",\"start\",1,0],[\"Draft translation\",\"process\",1,1],[\"Review terminology\",\"process\",1,2],[\"Terminology consistent?\",\"decision\",1,3],[\"Revise word choices\",\"process\",0,4],[\"Deliver translation\",\"process\",1,5],[\"Translation complete\",\"end\",1,6]],\"edges\":[[\"Translation begins\",\"Draft translation\",\"\"],[\"Draft translation\",\"Review terminology\",\"\"],[\"Review terminology\",\"Terminology consistent?\",\"\"],[\"Terminology consistent?\",\"Deliver translation\",\"Yes\"],[\"Terminology consistent?\",\"Translation complete\",\"\"],[\"Terminology consistent?\",\"Revise word choices\",\"No\"],[\"Revise word choices\",\"Review terminology\",\"\"]]}",
+    "elapsed_seconds": 17.443570999999793,
+    "usage": {
+      "prompt_tokens": 462,
+      "completion_tokens": 152,
+      "total_tokens": 614
+    },
+    "finish_reason": "stop",
+    "backend": "llama-cpp-python",
+    "runtime_version": "0.3.36",
+    "model": "C:\\Users\\User\\Desktop\\учеба\\GenAI_Final_Project\\models\\qwen2.5-3b-instruct-q4_k_m.gguf",
+    "device": "cpu",
+    "seed": 241024,
+    "temperature": 0.0
+  },
+  "reference_access": false
+}

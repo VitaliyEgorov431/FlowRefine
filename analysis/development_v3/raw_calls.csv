@@ -1,0 +1,13 @@
+task_id,component,file,role,backend,model,elapsed_seconds,prompt_tokens,completion_tokens,cached,reference_access
+dev_branch_01,B0,dev_branch_01/B0/call_generate_0.json,generate,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-1.5b-instruct-q4_k_m.gguf,9.98388739999973,450,132,False,False
+dev_branch_01,B0,dev_branch_01/B0/call_generate_1.json,generate,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-1.5b-instruct-q4_k_m.gguf,9.917341799999122,615,129,False,False
+dev_chain_01,B0,dev_chain_01/B0/call_generate_0.json,generate,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-1.5b-instruct-q4_k_m.gguf,12.590885999999955,434,129,False,False
+dev_chain_01,B1,dev_chain_01/B1/call_repair_0.json,repair,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-1.5b-instruct-q4_k_m.gguf,17.194983200000934,653,167,False,False
+dev_chain_01,B2,dev_chain_01/B2/call_repair_0.json,repair,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-1.5b-instruct-q4_k_m.gguf,12.800680499998634,686,167,False,False
+dev_chain_01,B3,dev_chain_01/B3/call_repair_0.json,repair,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-1.5b-instruct-q4_k_m.gguf,12.329213799999707,692,167,False,False
+dev_chain_01,visual,dev_chain_01/visual/call_visual_0.json,visual,llama-cpp-python-mtmd,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\SmolVLM-256M-Instruct-Q8_0.gguf,15.292736499999592,644,37,False,False
+dev_chain_02,B0,dev_chain_02/B0/call_generate_0.json,generate,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-1.5b-instruct-q4_k_m.gguf,8.296449999999822,431,115,False,False
+dev_chain_02,B1,dev_chain_02/B1/call_repair_0.json,repair,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-1.5b-instruct-q4_k_m.gguf,12.842740799998865,629,150,False,False
+dev_chain_02,B2,dev_chain_02/B2/call_repair_0.json,repair,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-1.5b-instruct-q4_k_m.gguf,11.336726699999417,652,150,False,False
+dev_chain_02,B3,dev_chain_02/B3/call_repair_0.json,repair,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-1.5b-instruct-q4_k_m.gguf,10.45607740000014,658,150,False,False
+dev_chain_02,visual,dev_chain_02/visual/call_visual_0.json,visual,llama-cpp-python-mtmd,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\SmolVLM-256M-Instruct-Q8_0.gguf,14.807518900001014,640,26,False,False

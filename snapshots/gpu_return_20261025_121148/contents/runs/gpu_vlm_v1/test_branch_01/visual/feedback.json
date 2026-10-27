@@ -1,0 +1,3 @@
+{
+  "text": "1. Missing stage: \"Order begins\" should be at the top.\n2. Wrong arrow direction: The arrow from \"Check stock\" to \"Item available?\" should point downwards.\n3. Overlapping boxes: There is no overlap in the boxes.\n4. Readable text: All labels are clear and readable.\n\nCorrected flowchart:\n\n- Start (Order begins)\n- Check stock\n  - Item available?\n    - Yes: Reserve item\n    - No: Request replenishment\n      - Notify customer\n        - Order review complete"
+}

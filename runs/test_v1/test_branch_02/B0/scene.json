@@ -1,0 +1,115 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Expense review begins",
+      "type": "start",
+      "label": "Expense review begins",
+      "x": 280.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Read expense claim",
+      "type": "process",
+      "label": "Read expense claim",
+      "x": 280.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Receipt attached?",
+      "type": "decision",
+      "label": "Receipt attached?",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "Approve reimbursement",
+      "type": "process",
+      "label": "Approve reimbursement",
+      "x": 25.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Reject reimbursement",
+      "type": "process",
+      "label": "Reject reimbursement",
+      "x": 535.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Record decision",
+      "type": "process",
+      "label": "Record decision",
+      "x": 280.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Expense review complete",
+      "type": "end",
+      "label": "Expense review complete",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Expense review begins",
+      "target": "Read expense claim",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Read expense claim",
+      "target": "Receipt attached?",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Receipt attached?",
+      "target": "Approve reimbursement",
+      "label": "Yes"
+    },
+    {
+      "id": "e4",
+      "source": "Receipt attached?",
+      "target": "Reject reimbursement",
+      "label": "No"
+    },
+    {
+      "id": "e5",
+      "source": "Approve reimbursement",
+      "target": "Record decision",
+      "label": ""
+    },
+    {
+      "id": "e6",
+      "source": "Reject reimbursement",
+      "target": "Record decision",
+      "label": ""
+    },
+    {
+      "id": "e7",
+      "source": "Record decision",
+      "target": "Expense review complete",
+      "label": ""
+    }
+  ]
+}

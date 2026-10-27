@@ -1,0 +1,115 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Trip begins",
+      "type": "start",
+      "label": "Trip begins",
+      "x": 280.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Check forecast",
+      "type": "process",
+      "label": "Check forecast",
+      "x": 280.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Rain expected?",
+      "type": "decision",
+      "label": "Rain expected?",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "Pack umbrella",
+      "type": "process",
+      "label": "Pack umbrella",
+      "x": 25.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Pack sunglasses",
+      "type": "process",
+      "label": "Pack sunglasses",
+      "x": 535.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Leave home",
+      "type": "process",
+      "label": "Leave home",
+      "x": 280.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Trip prepared",
+      "type": "end",
+      "label": "Trip prepared",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Trip begins",
+      "target": "Check forecast",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Check forecast",
+      "target": "Rain expected?",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Rain expected?",
+      "target": "Pack umbrella",
+      "label": "Yes"
+    },
+    {
+      "id": "e4",
+      "source": "Rain expected?",
+      "target": "Pack sunglasses",
+      "label": "No"
+    },
+    {
+      "id": "e5",
+      "source": "Pack umbrella",
+      "target": "Leave home",
+      "label": ""
+    },
+    {
+      "id": "e6",
+      "source": "Pack sunglasses",
+      "target": "Leave home",
+      "label": ""
+    },
+    {
+      "id": "e7",
+      "source": "Leave home",
+      "target": "Trip prepared",
+      "label": ""
+    }
+  ]
+}

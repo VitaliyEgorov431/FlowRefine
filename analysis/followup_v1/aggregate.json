@@ -1,0 +1,484 @@
+{
+  "study_status": "post-test exploratory follow-up on the same 15 tasks",
+  "task_count": 15,
+  "arms": {
+    "B0": {
+      "task_count": 15,
+      "executed": 15,
+      "unexecuted": 0,
+      "valid": 15,
+      "invalid": 0,
+      "node_f1_mean": 1.0,
+      "edge_f1_mean": 0.9567765567765568,
+      "exact_semantic_mean": 0.7333333333333333,
+      "standalone_inference_seconds_mean": 16.51322464666652,
+      "geometry_errors_valid_mean": 0.3333333333333333,
+      "geometry_warnings_valid_mean": 0.6666666666666666
+    },
+    "B1": {
+      "task_count": 15,
+      "executed": 15,
+      "unexecuted": 0,
+      "valid": 15,
+      "invalid": 0,
+      "node_f1_mean": 1.0,
+      "edge_f1_mean": 0.9413431013431013,
+      "exact_semantic_mean": 0.7333333333333333,
+      "standalone_inference_seconds_mean": 37.1309078600003,
+      "geometry_errors_valid_mean": 0.3333333333333333,
+      "geometry_warnings_valid_mean": 0.6
+    },
+    "B2": {
+      "task_count": 15,
+      "executed": 15,
+      "unexecuted": 0,
+      "valid": 15,
+      "invalid": 0,
+      "node_f1_mean": 1.0,
+      "edge_f1_mean": 0.9117672197083961,
+      "exact_semantic_mean": 0.6,
+      "standalone_inference_seconds_mean": 48.55942593999959,
+      "geometry_errors_valid_mean": 0.5333333333333333,
+      "geometry_warnings_valid_mean": 0.7333333333333333
+    },
+    "B3": {
+      "task_count": 15,
+      "executed": 15,
+      "unexecuted": 0,
+      "valid": 15,
+      "invalid": 0,
+      "node_f1_mean": 1.0,
+      "edge_f1_mean": 0.8990716799540329,
+      "exact_semantic_mean": 0.4666666666666667,
+      "standalone_inference_seconds_mean": 50.154998559999875,
+      "geometry_errors_valid_mean": 0.8666666666666667,
+      "geometry_warnings_valid_mean": 0.7333333333333333
+    },
+    "C0": {
+      "task_count": 15,
+      "executed": 15,
+      "unexecuted": 0,
+      "valid": 15,
+      "invalid": 0,
+      "node_f1_mean": 1.0,
+      "edge_f1_mean": 0.9567765567765568,
+      "exact_semantic_mean": 0.7333333333333333,
+      "standalone_inference_seconds_mean": 41.048990140000264,
+      "geometry_errors_valid_mean": 0.3333333333333333,
+      "geometry_warnings_valid_mean": 0.6666666666666666
+    },
+    "L3": {
+      "task_count": 15,
+      "executed": 15,
+      "unexecuted": 0,
+      "valid": 15,
+      "invalid": 0,
+      "node_f1_mean": 1.0,
+      "edge_f1_mean": 0.9567765567765568,
+      "exact_semantic_mean": 0.7333333333333333,
+      "standalone_inference_seconds_mean": 54.475987140000264,
+      "geometry_errors_valid_mean": 0.4666666666666667,
+      "geometry_warnings_valid_mean": 0.7333333333333333
+    }
+  },
+  "paired_differences": {
+    "B1_minus_B0": {
+      "node_f1": {
+        "n": 15,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "edge_f1": {
+        "n": 15,
+        "mean": -0.01543345543345543,
+        "ci95": [
+          -0.06153846153846154,
+          0.01523809523809525
+        ]
+      },
+      "exact_semantic": {
+        "n": 15,
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "geometry_errors_valid_pairs": {
+        "n": 15,
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "edge_f1_changes": {
+        "improved": 1,
+        "same": 13,
+        "worse": 1
+      },
+      "exact_transitions": {
+        "fixed": 0,
+        "broken": 0,
+        "same": 15
+      }
+    },
+    "B2_minus_B0": {
+      "node_f1": {
+        "n": 15,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "edge_f1": {
+        "n": 15,
+        "mean": -0.0450093370681606,
+        "ci95": [
+          -0.1008870214752568,
+          -0.006022408963585421
+        ]
+      },
+      "exact_semantic": {
+        "n": 15,
+        "mean": -0.13333333333333333,
+        "ci95": [
+          -0.3333333333333333,
+          0
+        ]
+      },
+      "geometry_errors_valid_pairs": {
+        "n": 15,
+        "mean": 0.2,
+        "ci95": [
+          0,
+          0.4666666666666667
+        ]
+      },
+      "edge_f1_changes": {
+        "improved": 1,
+        "same": 10,
+        "worse": 4
+      },
+      "exact_transitions": {
+        "fixed": 0,
+        "broken": 2,
+        "same": 13
+      }
+    },
+    "B3_minus_B0": {
+      "node_f1": {
+        "n": 15,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "edge_f1": {
+        "n": 15,
+        "mean": -0.057704876822523885,
+        "ci95": [
+          -0.10367018602312722,
+          -0.017857142857142853
+        ]
+      },
+      "exact_semantic": {
+        "n": 15,
+        "mean": -0.26666666666666666,
+        "ci95": [
+          -0.4666666666666667,
+          -0.06666666666666667
+        ]
+      },
+      "geometry_errors_valid_pairs": {
+        "n": 15,
+        "mean": 0.5333333333333333,
+        "ci95": [
+          0.06666666666666667,
+          1.0666666666666667
+        ]
+      },
+      "edge_f1_changes": {
+        "improved": 1,
+        "same": 9,
+        "worse": 5
+      },
+      "exact_transitions": {
+        "fixed": 0,
+        "broken": 4,
+        "same": 11
+      }
+    },
+    "C0_minus_B0": {
+      "node_f1": {
+        "n": 15,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "edge_f1": {
+        "n": 15,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "exact_semantic": {
+        "n": 15,
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "geometry_errors_valid_pairs": {
+        "n": 15,
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "edge_f1_changes": {
+        "improved": 0,
+        "same": 15,
+        "worse": 0
+      },
+      "exact_transitions": {
+        "fixed": 0,
+        "broken": 0,
+        "same": 15
+      }
+    },
+    "L3_minus_B0": {
+      "node_f1": {
+        "n": 15,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "edge_f1": {
+        "n": 15,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "exact_semantic": {
+        "n": 15,
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "geometry_errors_valid_pairs": {
+        "n": 15,
+        "mean": 0.13333333333333333,
+        "ci95": [
+          0,
+          0.3333333333333333
+        ]
+      },
+      "edge_f1_changes": {
+        "improved": 0,
+        "same": 15,
+        "worse": 0
+      },
+      "exact_transitions": {
+        "fixed": 0,
+        "broken": 0,
+        "same": 15
+      }
+    },
+    "B1_minus_C0": {
+      "node_f1": {
+        "n": 15,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "edge_f1": {
+        "n": 15,
+        "mean": -0.01543345543345543,
+        "ci95": [
+          -0.06153846153846154,
+          0.01523809523809525
+        ]
+      },
+      "exact_semantic": {
+        "n": 15,
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "geometry_errors_valid_pairs": {
+        "n": 15,
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "edge_f1_changes": {
+        "improved": 1,
+        "same": 13,
+        "worse": 1
+      },
+      "exact_transitions": {
+        "fixed": 0,
+        "broken": 0,
+        "same": 15
+      }
+    },
+    "B2_minus_C0": {
+      "node_f1": {
+        "n": 15,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "edge_f1": {
+        "n": 15,
+        "mean": -0.0450093370681606,
+        "ci95": [
+          -0.1008870214752568,
+          -0.006022408963585421
+        ]
+      },
+      "exact_semantic": {
+        "n": 15,
+        "mean": -0.13333333333333333,
+        "ci95": [
+          -0.3333333333333333,
+          0
+        ]
+      },
+      "geometry_errors_valid_pairs": {
+        "n": 15,
+        "mean": 0.2,
+        "ci95": [
+          0,
+          0.4666666666666667
+        ]
+      },
+      "edge_f1_changes": {
+        "improved": 1,
+        "same": 10,
+        "worse": 4
+      },
+      "exact_transitions": {
+        "fixed": 0,
+        "broken": 2,
+        "same": 13
+      }
+    },
+    "B3_minus_C0": {
+      "node_f1": {
+        "n": 15,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "edge_f1": {
+        "n": 15,
+        "mean": -0.057704876822523885,
+        "ci95": [
+          -0.10367018602312722,
+          -0.017857142857142853
+        ]
+      },
+      "exact_semantic": {
+        "n": 15,
+        "mean": -0.26666666666666666,
+        "ci95": [
+          -0.4666666666666667,
+          -0.06666666666666667
+        ]
+      },
+      "geometry_errors_valid_pairs": {
+        "n": 15,
+        "mean": 0.5333333333333333,
+        "ci95": [
+          0.06666666666666667,
+          1.0666666666666667
+        ]
+      },
+      "edge_f1_changes": {
+        "improved": 1,
+        "same": 9,
+        "worse": 5
+      },
+      "exact_transitions": {
+        "fixed": 0,
+        "broken": 4,
+        "same": 11
+      }
+    }
+  },
+  "reference_access_violations": [],
+  "notes": [
+    "Unexecuted arms stay missing; invalid executed outputs score zero semantics and undefined geometry.",
+    "Bootstrap intervals: fixed-seed 1000 task-level resamples, descriptive only, no multiple-comparison correction.",
+    "C0 differs in instruction wording as well as feedback; comparisons are not a pure causal ablation.",
+    "L3 uses a different coordinate-only output grammar; topology retention is enforced by code, not learned model behavior.",
+    "Standalone costs include reused B0/visual dependencies. Actual baseline and new follow-up calls are counted separately. CPU validation/rendering excluded.",
+    "Original tuple-coordinate grammar failed and was stopped. Revised L3 is exploratory after this failure. Interrupted in-flight calls without a saved response have unknown latency/tokens; logged cost is a lower bound."
+  ],
+  "layout_version": "runs/layout_v2",
+  "layout_revision_after_failed_attempt": true,
+  "failed_layout_attempts": {
+    "run": "runs/followup_v1",
+    "executed": 8,
+    "valid": 0,
+    "invalid": 8,
+    "logged_calls": 16,
+    "logged_inference_seconds": 158.3289556000018,
+    "logged_prompt_tokens": 9609,
+    "logged_completion_tokens": 824,
+    "note": "Original tuple-coordinate grammar failed and was stopped. Revised L3 is exploratory after this failure. Interrupted in-flight calls without a saved response have unknown latency/tokens; logged cost is a lower bound."
+  },
+  "baseline_actual_logged_calls": 75,
+  "baseline_actual_logged_inference_seconds": 1312.8936631000033,
+  "baseline_actual_logged_prompt_tokens": 51263,
+  "baseline_actual_logged_completion_tokens": 10386,
+  "followup_actual_logged_calls": 46,
+  "followup_actual_logged_inference_seconds": 866.4172925000166,
+  "followup_actual_logged_prompt_tokens": 32894,
+  "followup_actual_logged_completion_tokens": 4470,
+  "followup_v1_actual_logged_calls": 31,
+  "followup_v1_actual_logged_inference_seconds": 526.365438000008,
+  "followup_v1_actual_logged_prompt_tokens": 19782,
+  "followup_v1_actual_logged_completion_tokens": 2990,
+  "layout_revision_actual_logged_calls": 15,
+  "layout_revision_actual_logged_inference_seconds": 340.05185450000863,
+  "layout_revision_actual_logged_prompt_tokens": 13112,
+  "layout_revision_actual_logged_completion_tokens": 1480,
+  "critic_audit": {
+    "tasks": 15,
+    "candidate_claim_counts": {
+      "uncertain": 121,
+      "supported_by_B0": 42,
+      "contradicted_by_B0": 17
+    }
+  }
+}

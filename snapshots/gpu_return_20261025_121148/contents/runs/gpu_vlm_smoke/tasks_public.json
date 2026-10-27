@@ -1,0 +1,8 @@
+[
+  {
+    "id": "dev_chain_01",
+    "split": "development",
+    "family": "chain",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Follow this exact sequence: \"Breakfast begins\" -> \"Boil water\" -> \"Add oats\" -> \"Cook porridge\" -> \"Serve breakfast\" -> \"Breakfast ready\"."
+  }
+]

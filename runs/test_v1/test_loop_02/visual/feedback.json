@@ -1,0 +1,3 @@
+{
+  "text": " Application begin is connected with Collect documents which is then connected with Review application which is further connected with Submit application. If Request missing documents are present then Submit application and if Request missing documents are No then Application complete? If Application complete? is No then Request missing documents and if Application workflow complete then Application workflow complete. Also, Submit application is connected with both Application workflow complete and Request missing documents. Also, Request missing documents is connected with both Collection documents and Revise application. Also, Revise application is connected with both Application workflow complete and Application application complete?"
+}

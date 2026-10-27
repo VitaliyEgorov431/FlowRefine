@@ -1,0 +1,115 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Delivery planning begins",
+      "type": "start",
+      "label": "Delivery planning begins",
+      "x": 280.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Read destination",
+      "type": "process",
+      "label": "Read destination",
+      "x": 280.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Destination local?",
+      "type": "decision",
+      "label": "Destination local?",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "Assign bicycle courier",
+      "type": "process",
+      "label": "Assign bicycle courier",
+      "x": 25.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Assign van courier",
+      "type": "process",
+      "label": "Assign van courier",
+      "x": 535.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Send route details",
+      "type": "process",
+      "label": "Send route details",
+      "x": 280.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Delivery planning complete",
+      "type": "end",
+      "label": "Delivery planning complete",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Delivery planning begins",
+      "target": "Read destination",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Read destination",
+      "target": "Destination local?",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Destination local?",
+      "target": "Assign bicycle courier",
+      "label": "Yes"
+    },
+    {
+      "id": "e4",
+      "source": "Destination local?",
+      "target": "Assign van courier",
+      "label": "No"
+    },
+    {
+      "id": "e5",
+      "source": "Assign bicycle courier",
+      "target": "Send route details",
+      "label": ""
+    },
+    {
+      "id": "e6",
+      "source": "Assign van courier",
+      "target": "Send route details",
+      "label": ""
+    },
+    {
+      "id": "e7",
+      "source": "Send route details",
+      "target": "Delivery planning complete",
+      "label": ""
+    }
+  ]
+}

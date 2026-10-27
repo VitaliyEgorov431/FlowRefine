@@ -1,0 +1,3 @@
+{
+  "text": " Waste sorting begins with Inspect container which is then connected with Use recycling bin which is then connected with Use general waste bin. If Use recycling bin is no then Use general waste bin and if Use recycling bin is yes then Container recyclable? If Container recyclable is no then Clean sorting area and if Container recyclable is complete then Waste sorting complete. Also, Clean sorting area is connected with Waste sorting complete."
+}

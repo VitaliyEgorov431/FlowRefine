@@ -1,0 +1,3 @@
+{
+  "text": "1. Missing stage: \"Knead dough\"\n2. Wrong arrow direction: From \"Inspect dough\" to \"Dough elastic?\" should be from \"Dough elastic?\" to \"Inspect dough\"\n3. Overlapping boxes: \"Inspect dough\" and \"Dough elastic?\" should be separate boxes\n4. Unreadable text: \"Bread making begins\" and \"Bread making complete\" should be clearly labeled\n\nCorrected labels:\n- Bread making begins\n- Mix ingredients\n- Inspect dough\n- Dough elastic?\n- Knead dough\n- Bake loaf\n- Bread making complete"
+}

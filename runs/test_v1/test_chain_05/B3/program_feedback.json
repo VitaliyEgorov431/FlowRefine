@@ -1,0 +1,11 @@
+[
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e7",
+      "Publish episode"
+    ],
+    "message": "Edge e7 crosses unrelated node Publish episode."
+  }
+]

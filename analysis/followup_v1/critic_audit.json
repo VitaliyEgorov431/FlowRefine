@@ -1,0 +1,2896 @@
+[
+  {
+    "task_id": "test_chain_01",
+    "feedback_available": true,
+    "text": " Parcel workflow begins with Receiver parcel connected with Wrought parcel which is then connected with Attach shipping label which is further connected with Dispatch parcel. Attach shipping label is connected with both Parcel workflow complete and Print shipping label which is then connected with both Parcel workflow and Dispatch parcel.",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Follow this exact sequence: \"Parcel workflow begins\" -> \"Receive parcel\" -> \"Weigh parcel\" -> \"Print shipping label\" -> \"Attach shipping label\" -> \"Dispatch parcel\" -> \"Parcel workflow complete\".",
+    "candidate_claims": [
+      {
+        "source": "Parcel workflow begins",
+        "target": "Attach shipping label",
+        "quote": "Parcel workflow begins with Receiver parcel connected with Wrought parcel which is then connected with Attach shipping label",
+        "span": [
+          1,
+          125
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Attach shipping label",
+        "target": "Dispatch parcel",
+        "quote": "Attach shipping label which is further connected with Dispatch parcel",
+        "span": [
+          104,
+          173
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Dispatch parcel",
+        "target": "Attach shipping label",
+        "quote": "Dispatch parcel. Attach shipping label",
+        "span": [
+          158,
+          196
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Attach shipping label",
+        "target": "Parcel workflow complete",
+        "quote": "Attach shipping label is connected with both Parcel workflow complete",
+        "span": [
+          175,
+          244
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Parcel workflow complete",
+        "target": "Print shipping label",
+        "quote": "Parcel workflow complete and Print shipping label",
+        "span": [
+          220,
+          269
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Print shipping label",
+        "target": "Dispatch parcel",
+        "quote": "Print shipping label which is then connected with both Parcel workflow and Dispatch parcel",
+        "span": [
+          249,
+          339
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      }
+    ],
+    "counts": {
+      "uncertain": 5,
+      "supported_by_B0": 1
+    },
+    "initial_missing_edges": [],
+    "initial_extra_edges": [],
+    "diagnosis_assessment": "No automatic diagnosis-quality score; graph description is not an explicit error diagnosis.",
+    "assistant_review_notes": "Пересказ с искажёнными Receiver/Wrought parcel. Фраза 'Attach shipping label is connected with both Parcel workflow complete and Print shipping label' при буквальном чтении описывает две связи, отсутствующие в B0 и задании. Рекомендации исправить конкретную ошибку нет; OCR-переходы неоднозначны.",
+    "editor_outcomes": {
+      "B0": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B2": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B3": {
+        "executed": true,
+        "edge_f1": 0.8571428571428571,
+        "exact_semantic": 0
+      }
+    }
+  },
+  {
+    "task_id": "test_chain_02",
+    "feedback_available": true,
+    "text": " Backup begins with Select Files which is then connected with Create archive which is then connected with Upload archive which is finally connected with Record backup location which is finally connected with Backup complete.",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Follow this exact sequence: \"Backup begins\" -> \"Select files\" -> \"Create archive\" -> \"Encrypt archive\" -> \"Upload archive\" -> \"Record backup location\" -> \"Backup complete\".",
+    "candidate_claims": [
+      {
+        "source": "Backup begins",
+        "target": "Select Files",
+        "quote": "Backup begins with Select Files",
+        "span": [
+          1,
+          32
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Select Files",
+        "target": "Create archive",
+        "quote": "Select Files which is then connected with Create archive",
+        "span": [
+          20,
+          76
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Create archive",
+        "target": "Upload archive",
+        "quote": "Create archive which is then connected with Upload archive",
+        "span": [
+          62,
+          120
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Upload archive",
+        "target": "Record backup location",
+        "quote": "Upload archive which is finally connected with Record backup location",
+        "span": [
+          106,
+          175
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Record backup location",
+        "target": "Backup complete",
+        "quote": "Record backup location which is finally connected with Backup complete",
+        "span": [
+          153,
+          223
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      }
+    ],
+    "counts": {
+      "supported_by_B0": 4,
+      "contradicted_by_B0": 1
+    },
+    "initial_missing_edges": [],
+    "initial_extra_edges": [],
+    "diagnosis_assessment": "No automatic diagnosis-quality score; graph description is not an explicit error diagnosis.",
+    "assistant_review_notes": "Пересказ большей части цепочки, но Create archive → Upload archive не является прямым ребром B0/задания: между ними Encrypt archive. Это ошибочное описание, а не подтверждённая диагностика недостатка схемы. Явного предложения исправления нет.",
+    "editor_outcomes": {
+      "B0": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B2": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B3": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      }
+    }
+  },
+  {
+    "task_id": "test_chain_03",
+    "feedback_available": true,
+    "text": " Library intake begins with Receive donated book which is then connected with Inspect book which is then connected with Assign catalogue number which is further connected with Attach shelf label which is finally connected with Place book on shelf which is finally connected with Library intake complete.",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Follow this exact sequence: \"Library intake begins\" -> \"Receive donated book\" -> \"Inspect book\" -> \"Assign catalogue number\" -> \"Attach shelf label\" -> \"Place book on shelf\" -> \"Library intake complete\".",
+    "candidate_claims": [
+      {
+        "source": "Library intake begins",
+        "target": "Receive donated book",
+        "quote": "Library intake begins with Receive donated book",
+        "span": [
+          1,
+          48
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Receive donated book",
+        "target": "Inspect book",
+        "quote": "Receive donated book which is then connected with Inspect book",
+        "span": [
+          28,
+          90
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Inspect book",
+        "target": "Assign catalogue number",
+        "quote": "Inspect book which is then connected with Assign catalogue number",
+        "span": [
+          78,
+          143
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Assign catalogue number",
+        "target": "Attach shelf label",
+        "quote": "Assign catalogue number which is further connected with Attach shelf label",
+        "span": [
+          120,
+          194
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Attach shelf label",
+        "target": "Place book on shelf",
+        "quote": "Attach shelf label which is finally connected with Place book on shelf",
+        "span": [
+          176,
+          246
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Place book on shelf",
+        "target": "Library intake complete",
+        "quote": "Place book on shelf which is finally connected with Library intake complete",
+        "span": [
+          227,
+          302
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      }
+    ],
+    "counts": {
+      "supported_by_B0": 6
+    },
+    "initial_missing_edges": [],
+    "initial_extra_edges": [],
+    "diagnosis_assessment": "No automatic diagnosis-quality score; graph description is not an explicit error diagnosis.",
+    "assistant_review_notes": "Пересказ всех шести последовательных связей согласуется с B0 и заданием. Ошибка или рекомендация не заявлена; точное описание правильной схемы само по себе не создаёт основания для изменения.",
+    "editor_outcomes": {
+      "B0": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B2": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B3": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      }
+    }
+  },
+  {
+    "task_id": "test_chain_04",
+    "feedback_available": true,
+    "text": " Experiment begins with Prepare sample which is then connected with Calibrate sensor which is then connected with Measure sample which is further connected with Save measurements which is finally connected with Clean equipment. Clean equipment is connected with Experiment complete which is finally connected with Measure sample.",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Follow this exact sequence: \"Experiment begins\" -> \"Prepare sample\" -> \"Calibrate sensor\" -> \"Measure sample\" -> \"Save measurements\" -> \"Clean equipment\" -> \"Experiment complete\".",
+    "candidate_claims": [
+      {
+        "source": "Experiment begins",
+        "target": "Prepare sample",
+        "quote": "Experiment begins with Prepare sample",
+        "span": [
+          1,
+          38
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Prepare sample",
+        "target": "Calibrate sensor",
+        "quote": "Prepare sample which is then connected with Calibrate sensor",
+        "span": [
+          24,
+          84
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Calibrate sensor",
+        "target": "Measure sample",
+        "quote": "Calibrate sensor which is then connected with Measure sample",
+        "span": [
+          68,
+          128
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Measure sample",
+        "target": "Save measurements",
+        "quote": "Measure sample which is further connected with Save measurements",
+        "span": [
+          114,
+          178
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Save measurements",
+        "target": "Clean equipment",
+        "quote": "Save measurements which is finally connected with Clean equipment",
+        "span": [
+          161,
+          226
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Clean equipment",
+        "target": "Clean equipment",
+        "quote": "Clean equipment. Clean equipment",
+        "span": [
+          211,
+          243
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Clean equipment",
+        "target": "Experiment complete",
+        "quote": "Clean equipment is connected with Experiment complete",
+        "span": [
+          228,
+          281
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Experiment complete",
+        "target": "Measure sample",
+        "quote": "Experiment complete which is finally connected with Measure sample",
+        "span": [
+          262,
+          328
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      }
+    ],
+    "counts": {
+      "supported_by_B0": 6,
+      "uncertain": 1,
+      "contradicted_by_B0": 1
+    },
+    "initial_missing_edges": [],
+    "initial_extra_edges": [],
+    "diagnosis_assessment": "No automatic diagnosis-quality score; graph description is not an explicit error diagnosis.",
+    "assistant_review_notes": "Большая часть цепочки описана верно. Последнее утверждение Experiment complete → Measure sample противоречит B0 и заданию: у конечного узла нет такого исходящего ребра. Предложения исправить реальную ошибку нет.",
+    "editor_outcomes": {
+      "B0": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B2": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B3": {
+        "executed": true,
+        "edge_f1": 0.7692307692307692,
+        "exact_semantic": 0
+      }
+    }
+  },
+  {
+    "task_id": "test_chain_05",
+    "feedback_available": true,
+    "text": " Podcast workflow begins with Record Interview which is then connected with Edit recording which is then connected with Normale audio which is further connected with Export Episode which is finally connected with Podcast workflow complete. Export Episode is connected with Publish episode which is then connected with Podcast workflow complete which is finally connected with Podcast workflow.",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Follow this exact sequence: \"Podcast workflow begins\" -> \"Record interview\" -> \"Edit recording\" -> \"Normalize audio\" -> \"Export episode\" -> \"Publish episode\" -> \"Podcast workflow complete\".",
+    "candidate_claims": [
+      {
+        "source": "Podcast workflow begins",
+        "target": "Record Interview",
+        "quote": "Podcast workflow begins with Record Interview",
+        "span": [
+          1,
+          46
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Record Interview",
+        "target": "Edit recording",
+        "quote": "Record Interview which is then connected with Edit recording",
+        "span": [
+          30,
+          90
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Edit recording",
+        "target": "Export Episode",
+        "quote": "Edit recording which is then connected with Normale audio which is further connected with Export Episode",
+        "span": [
+          76,
+          180
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Export Episode",
+        "target": "Podcast workflow complete",
+        "quote": "Export Episode which is finally connected with Podcast workflow complete",
+        "span": [
+          166,
+          238
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Podcast workflow complete",
+        "target": "Export Episode",
+        "quote": "Podcast workflow complete. Export Episode",
+        "span": [
+          213,
+          254
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Export Episode",
+        "target": "Publish episode",
+        "quote": "Export Episode is connected with Publish episode",
+        "span": [
+          240,
+          288
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Publish episode",
+        "target": "Podcast workflow complete",
+        "quote": "Publish episode which is then connected with Podcast workflow complete",
+        "span": [
+          273,
+          343
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      }
+    ],
+    "counts": {
+      "supported_by_B0": 4,
+      "uncertain": 2,
+      "contradicted_by_B0": 1
+    },
+    "initial_missing_edges": [],
+    "initial_extra_edges": [],
+    "diagnosis_assessment": "No automatic diagnosis-quality score; graph description is not an explicit error diagnosis.",
+    "assistant_review_notes": "Пересказ с Normale audio и усечённым Podcast workflow; эти имена неоднозначны. Прямое Export Episode → Podcast workflow complete ошибочно: B0 и задание требуют промежуточный Publish episode. Позже верная последовательность через Publish episode тоже упомянута. Явной диагностики нет.",
+    "editor_outcomes": {
+      "B0": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B2": {
+        "executed": true,
+        "edge_f1": 0.6666666666666666,
+        "exact_semantic": 0
+      },
+      "B3": {
+        "executed": true,
+        "edge_f1": 0.8571428571428571,
+        "exact_semantic": 0
+      }
+    }
+  },
+  {
+    "task_id": "test_branch_01",
+    "feedback_available": true,
+    "text": " Order Begins is connected with Check stock which is then connected with Item available? If Item available? is No then Reserve item and if Item available? is Yes then Request replenishment and if Item available? is Yes then Item available? Also, Reserve item is connected with both Order review complete and Order review complete which is then connected with both Order review complete and Order review complete. If Reservation dey is No then Reserve item and if Reservation dey is Yes then Request replenishment and if Reservation dey is No then Order review complete.",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Begin with \"Order begins\", then \"Check stock\", then the decision \"Item available?\". Its Yes branch goes to \"Reserve item\"; its No branch goes to \"Request replenishment\". Both alternative stages lead directly to \"Notify customer\", which leads to \"Order review complete\".",
+    "candidate_claims": [
+      {
+        "source": "Order Begins",
+        "target": "Check stock",
+        "quote": "Order Begins is connected with Check stock",
+        "span": [
+          1,
+          43
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Check stock",
+        "target": "Item available?",
+        "quote": "Check stock which is then connected with Item available?",
+        "span": [
+          32,
+          88
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Item available?",
+        "target": "Item available?",
+        "quote": "Item available? If Item available?",
+        "span": [
+          73,
+          107
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Item available?",
+        "target": "Reserve item",
+        "quote": "Item available? is No then Reserve item",
+        "span": [
+          92,
+          131
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Reserve item",
+        "target": "Item available?",
+        "quote": "Reserve item and if Item available?",
+        "span": [
+          119,
+          154
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Item available?",
+        "target": "Request replenishment",
+        "quote": "Item available? is Yes then Request replenishment",
+        "span": [
+          139,
+          188
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Request replenishment",
+        "target": "Item available?",
+        "quote": "Request replenishment and if Item available?",
+        "span": [
+          167,
+          211
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Item available?",
+        "target": "Item available?",
+        "quote": "Item available? is Yes then Item available?",
+        "span": [
+          196,
+          239
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Item available?",
+        "target": "Reserve item",
+        "quote": "Item available? Also, Reserve item",
+        "span": [
+          224,
+          258
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Reserve item",
+        "target": "Order review complete",
+        "quote": "Reserve item is connected with both Order review complete",
+        "span": [
+          246,
+          303
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Order review complete",
+        "target": "Order review complete",
+        "quote": "Order review complete and Order review complete",
+        "span": [
+          282,
+          329
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Order review complete",
+        "target": "Order review complete",
+        "quote": "Order review complete which is then connected with both Order review complete",
+        "span": [
+          308,
+          385
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Order review complete",
+        "target": "Order review complete",
+        "quote": "Order review complete and Order review complete",
+        "span": [
+          364,
+          411
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Order review complete",
+        "target": "Reserve item",
+        "quote": "Order review complete. If Reservation dey is No then Reserve item",
+        "span": [
+          390,
+          455
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Reserve item",
+        "target": "Request replenishment",
+        "quote": "Reserve item and if Reservation dey is Yes then Request replenishment",
+        "span": [
+          443,
+          512
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Request replenishment",
+        "target": "Order review complete",
+        "quote": "Request replenishment and if Reservation dey is No then Order review complete",
+        "span": [
+          491,
+          568
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      }
+    ],
+    "counts": {
+      "supported_by_B0": 2,
+      "uncertain": 14
+    },
+    "initial_missing_edges": [],
+    "initial_extra_edges": [],
+    "diagnosis_assessment": "No automatic diagnosis-quality score; graph description is not an explicit error diagnosis.",
+    "assistant_review_notes": "Начало описано верно, но текст меняет местами No/Yes для Reserve item и Request replenishment относительно B0 и задания. Повторяющийся Order review complete и Reservation dey делают остальные фразы неоднозначными. Ошибочные условия не сформулированы как предложения исправления.",
+    "editor_outcomes": {
+      "B0": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B2": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B3": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      }
+    }
+  },
+  {
+    "task_id": "test_branch_02",
+    "feedback_available": true,
+    "text": " Expense review begins with Read expense claim being connected with Receipt claim which if Receipt claim is No then Reject reimbursement which if Receipt claim is Yes then Approve reimbursement which if Receipt claim is Yes then Record decision which if Record decision is Expense review complete then Expense review complete. Also, Receive reimbursement is connected with Record decision which if Record decision is Expense review complete then Expense review complete.",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Begin with \"Expense review begins\", then \"Read expense claim\", then the decision \"Receipt attached?\". Its Yes branch goes to \"Approve reimbursement\"; its No branch goes to \"Reject reimbursement\". Both alternative stages lead directly to \"Record decision\", which leads to \"Expense review complete\".",
+    "candidate_claims": [
+      {
+        "source": "Expense review begins",
+        "target": "Read expense claim",
+        "quote": "Expense review begins with Read expense claim",
+        "span": [
+          1,
+          46
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Read expense claim",
+        "target": "Reject reimbursement",
+        "quote": "Read expense claim being connected with Receipt claim which if Receipt claim is No then Reject reimbursement",
+        "span": [
+          28,
+          136
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Reject reimbursement",
+        "target": "Approve reimbursement",
+        "quote": "Reject reimbursement which if Receipt claim is Yes then Approve reimbursement",
+        "span": [
+          116,
+          193
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Approve reimbursement",
+        "target": "Record decision",
+        "quote": "Approve reimbursement which if Receipt claim is Yes then Record decision",
+        "span": [
+          172,
+          244
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Record decision",
+        "target": "Record decision",
+        "quote": "Record decision which if Record decision",
+        "span": [
+          229,
+          269
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Record decision",
+        "target": "Expense review complete",
+        "quote": "Record decision is Expense review complete",
+        "span": [
+          254,
+          296
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Expense review complete",
+        "target": "Expense review complete",
+        "quote": "Expense review complete then Expense review complete",
+        "span": [
+          273,
+          325
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Expense review complete",
+        "target": "Record decision",
+        "quote": "Expense review complete. Also, Receive reimbursement is connected with Record decision",
+        "span": [
+          302,
+          388
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Record decision",
+        "target": "Record decision",
+        "quote": "Record decision which if Record decision",
+        "span": [
+          373,
+          413
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Record decision",
+        "target": "Expense review complete",
+        "quote": "Record decision is Expense review complete",
+        "span": [
+          398,
+          440
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Expense review complete",
+        "target": "Expense review complete",
+        "quote": "Expense review complete then Expense review complete",
+        "span": [
+          417,
+          469
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      }
+    ],
+    "counts": {
+      "supported_by_B0": 1,
+      "uncertain": 10
+    },
+    "initial_missing_edges": [],
+    "initial_extra_edges": [],
+    "diagnosis_assessment": "No automatic diagnosis-quality score; graph description is not an explicit error diagnosis.",
+    "assistant_review_notes": "Ответ содержит Receipt claim и Receive reimbursement вместо полных названий B0. При предположении, что Receipt claim означает Receipt attached?, направления Yes/No выглядят согласованными, но автоматическая замена имён не обоснована. Условия с Record decision/Expense review complete неясны. Подтверждённого конкретного замечания об ошибке нет.",
+    "editor_outcomes": {
+      "B0": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B2": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B3": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      }
+    }
+  },
+  {
+    "task_id": "test_branch_03",
+    "feedback_available": true,
+    "text": " Account recovery begins with Check security answer and If Check security answer is No then Answer correct? Also, If Answer correct? is Yes then Send reset link and If Answer correct? is No then Escalate to support. Also, If Answer correct? is Yes then Send reset link and If Answer correct? is No then Log recovery attempt. Also, If Log recovery attempt is Recovery attempt complete then Recovery attempt complete. If Recovery attempt complete is Yes then Send reset link and If Recovery attempt complete is No then Escalate to support. If Recovery attempt complete is Answer correct? then Recovery attempt and if Recovery attempt complete is No then Escalate to support.",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Begin with \"Account recovery begins\", then \"Check security answer\", then the decision \"Answer correct?\". Its Yes branch goes to \"Send reset link\"; its No branch goes to \"Escalate to support\". Both alternative stages lead directly to \"Log recovery attempt\", which leads to \"Recovery attempt complete\".",
+    "candidate_claims": [
+      {
+        "source": "Account recovery begins",
+        "target": "Check security answer",
+        "quote": "Account recovery begins with Check security answer",
+        "span": [
+          1,
+          51
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Check security answer",
+        "target": "Check security answer",
+        "quote": "Check security answer and If Check security answer",
+        "span": [
+          30,
+          80
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Check security answer",
+        "target": "Answer correct?",
+        "quote": "Check security answer is No then Answer correct?",
+        "span": [
+          59,
+          107
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Answer correct?",
+        "target": "Answer correct?",
+        "quote": "Answer correct? Also, If Answer correct?",
+        "span": [
+          92,
+          132
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Answer correct?",
+        "target": "Send reset link",
+        "quote": "Answer correct? is Yes then Send reset link",
+        "span": [
+          117,
+          160
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Send reset link",
+        "target": "Answer correct?",
+        "quote": "Send reset link and If Answer correct?",
+        "span": [
+          145,
+          183
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Answer correct?",
+        "target": "Escalate to support",
+        "quote": "Answer correct? is No then Escalate to support",
+        "span": [
+          168,
+          214
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Escalate to support",
+        "target": "Answer correct?",
+        "quote": "Escalate to support. Also, If Answer correct?",
+        "span": [
+          195,
+          240
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Answer correct?",
+        "target": "Send reset link",
+        "quote": "Answer correct? is Yes then Send reset link",
+        "span": [
+          225,
+          268
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Send reset link",
+        "target": "Answer correct?",
+        "quote": "Send reset link and If Answer correct?",
+        "span": [
+          253,
+          291
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Answer correct?",
+        "target": "Log recovery attempt",
+        "quote": "Answer correct? is No then Log recovery attempt",
+        "span": [
+          276,
+          323
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Log recovery attempt",
+        "target": "Log recovery attempt",
+        "quote": "Log recovery attempt. Also, If Log recovery attempt",
+        "span": [
+          303,
+          354
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Log recovery attempt",
+        "target": "Recovery attempt complete",
+        "quote": "Log recovery attempt is Recovery attempt complete",
+        "span": [
+          334,
+          383
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Recovery attempt complete",
+        "target": "Recovery attempt complete",
+        "quote": "Recovery attempt complete then Recovery attempt complete",
+        "span": [
+          358,
+          414
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Recovery attempt complete",
+        "target": "Recovery attempt complete",
+        "quote": "Recovery attempt complete. If Recovery attempt complete",
+        "span": [
+          389,
+          444
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Recovery attempt complete",
+        "target": "Send reset link",
+        "quote": "Recovery attempt complete is Yes then Send reset link",
+        "span": [
+          419,
+          472
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Send reset link",
+        "target": "Recovery attempt complete",
+        "quote": "Send reset link and If Recovery attempt complete",
+        "span": [
+          457,
+          505
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Recovery attempt complete",
+        "target": "Escalate to support",
+        "quote": "Recovery attempt complete is No then Escalate to support",
+        "span": [
+          480,
+          536
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Escalate to support",
+        "target": "Recovery attempt complete",
+        "quote": "Escalate to support. If Recovery attempt complete",
+        "span": [
+          517,
+          566
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Recovery attempt complete",
+        "target": "Answer correct?",
+        "quote": "Recovery attempt complete is Answer correct?",
+        "span": [
+          541,
+          585
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Answer correct?",
+        "target": "Recovery attempt complete",
+        "quote": "Answer correct? then Recovery attempt and if Recovery attempt complete",
+        "span": [
+          570,
+          640
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Recovery attempt complete",
+        "target": "Escalate to support",
+        "quote": "Recovery attempt complete is No then Escalate to support",
+        "span": [
+          615,
+          671
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      }
+    ],
+    "counts": {
+      "supported_by_B0": 1,
+      "uncertain": 21
+    },
+    "initial_missing_edges": [],
+    "initial_extra_edges": [],
+    "diagnosis_assessment": "No automatic diagnosis-quality score; graph description is not an explicit error diagnosis.",
+    "assistant_review_notes": "Часть условного пересказа верна: Answer correct? Yes → Send reset link и No → Escalate to support. Позже No → Log recovery attempt противоречит B0/заданию. Ветвления из Recovery attempt complete также не поддержаны графом. Рекомендации исправить реальную ошибку нет.",
+    "editor_outcomes": {
+      "B0": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B2": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B3": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      }
+    }
+  },
+  {
+    "task_id": "test_branch_04",
+    "feedback_available": true,
+    "text": " Waste sorting begins with Inspect container which is then connected with Use recycling bin which is then connected with Use general waste bin. If Use recycling bin is no then Use general waste bin and if Use recycling bin is yes then Container recyclable? If Container recyclable is no then Clean sorting area and if Container recyclable is complete then Waste sorting complete. Also, Clean sorting area is connected with Waste sorting complete.",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Begin with \"Waste sorting begins\", then \"Inspect container\", then the decision \"Container recyclable?\". Its Yes branch goes to \"Use recycling bin\"; its No branch goes to \"Use general waste bin\". Both alternative stages lead directly to \"Clean sorting area\", which leads to \"Waste sorting complete\".",
+    "candidate_claims": [
+      {
+        "source": "Waste sorting begins",
+        "target": "Inspect container",
+        "quote": "Waste sorting begins with Inspect container",
+        "span": [
+          1,
+          44
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Inspect container",
+        "target": "Use recycling bin",
+        "quote": "Inspect container which is then connected with Use recycling bin",
+        "span": [
+          27,
+          91
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Use recycling bin",
+        "target": "Use general waste bin",
+        "quote": "Use recycling bin which is then connected with Use general waste bin",
+        "span": [
+          74,
+          142
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Use general waste bin",
+        "target": "Use recycling bin",
+        "quote": "Use general waste bin. If Use recycling bin",
+        "span": [
+          121,
+          164
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Use recycling bin",
+        "target": "Use general waste bin",
+        "quote": "Use recycling bin is no then Use general waste bin",
+        "span": [
+          147,
+          197
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Use general waste bin",
+        "target": "Use recycling bin",
+        "quote": "Use general waste bin and if Use recycling bin",
+        "span": [
+          176,
+          222
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Use recycling bin",
+        "target": "Container recyclable?",
+        "quote": "Use recycling bin is yes then Container recyclable?",
+        "span": [
+          205,
+          256
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Container recyclable?",
+        "target": "Clean sorting area",
+        "quote": "Container recyclable? If Container recyclable is no then Clean sorting area",
+        "span": [
+          235,
+          310
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Clean sorting area",
+        "target": "Waste sorting complete",
+        "quote": "Clean sorting area and if Container recyclable is complete then Waste sorting complete",
+        "span": [
+          292,
+          378
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Waste sorting complete",
+        "target": "Clean sorting area",
+        "quote": "Waste sorting complete. Also, Clean sorting area",
+        "span": [
+          356,
+          404
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Clean sorting area",
+        "target": "Waste sorting complete",
+        "quote": "Clean sorting area is connected with Waste sorting complete",
+        "span": [
+          386,
+          445
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      }
+    ],
+    "counts": {
+      "supported_by_B0": 2,
+      "contradicted_by_B0": 2,
+      "uncertain": 7
+    },
+    "initial_missing_edges": [],
+    "initial_extra_edges": [],
+    "diagnosis_assessment": "No automatic diagnosis-quality score; graph description is not an explicit error diagnosis.",
+    "assistant_review_notes": "Текст утверждает Inspect container → Use recycling bin и Use recycling bin → Use general waste bin: оба прямых ребра отсутствуют в B0 и задании. Clean sorting area → Waste sorting complete описано правильно. Условия остальных фраз неоднозначны; диагностики геометрии или предложения исправления нет.",
+    "editor_outcomes": {
+      "B0": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B2": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B3": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      }
+    }
+  },
+  {
+    "task_id": "test_branch_05",
+    "feedback_available": true,
+    "text": " Delivery planning begins with Read destination which is then connected with Desioution which is then connected with Assign bicycle courier. If Assign bicycle courier is No then Send route detailed and if Assign van courier is No then Assign van courier. Also, Send route detailed is connected with Delivery planning complete which if Delivery planning complete is Delivery planning complete then Assign bicycle courier and if Delivery planning complete is Delivery planning complete then Send route detailed. Also, Send route detailed is connected with Delivery planning complete which if Delivery planning complete is Delivery planning complete then Assign bicycle courier and if Delivery planning complete is Delivery planning complete then Assign van courier.",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Begin with \"Delivery planning begins\", then \"Read destination\", then the decision \"Destination local?\". Its Yes branch goes to \"Assign bicycle courier\"; its No branch goes to \"Assign van courier\". Both alternative stages lead directly to \"Send route details\", which leads to \"Delivery planning complete\".",
+    "candidate_claims": [
+      {
+        "source": "Delivery planning begins",
+        "target": "Read destination",
+        "quote": "Delivery planning begins with Read destination",
+        "span": [
+          1,
+          47
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Read destination",
+        "target": "Assign bicycle courier",
+        "quote": "Read destination which is then connected with Desioution which is then connected with Assign bicycle courier",
+        "span": [
+          31,
+          139
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Assign bicycle courier",
+        "target": "Assign bicycle courier",
+        "quote": "Assign bicycle courier. If Assign bicycle courier",
+        "span": [
+          117,
+          166
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Assign bicycle courier",
+        "target": "Assign van courier",
+        "quote": "Assign bicycle courier is No then Send route detailed and if Assign van courier",
+        "span": [
+          144,
+          223
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Assign van courier",
+        "target": "Assign van courier",
+        "quote": "Assign van courier is No then Assign van courier",
+        "span": [
+          205,
+          253
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Assign van courier",
+        "target": "Delivery planning complete",
+        "quote": "Assign van courier. Also, Send route detailed is connected with Delivery planning complete",
+        "span": [
+          235,
+          325
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Delivery planning complete",
+        "target": "Delivery planning complete",
+        "quote": "Delivery planning complete which if Delivery planning complete",
+        "span": [
+          299,
+          361
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Delivery planning complete",
+        "target": "Delivery planning complete",
+        "quote": "Delivery planning complete is Delivery planning complete",
+        "span": [
+          335,
+          391
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Delivery planning complete",
+        "target": "Assign bicycle courier",
+        "quote": "Delivery planning complete then Assign bicycle courier",
+        "span": [
+          365,
+          419
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Assign bicycle courier",
+        "target": "Delivery planning complete",
+        "quote": "Assign bicycle courier and if Delivery planning complete",
+        "span": [
+          397,
+          453
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Delivery planning complete",
+        "target": "Delivery planning complete",
+        "quote": "Delivery planning complete is Delivery planning complete",
+        "span": [
+          427,
+          483
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Delivery planning complete",
+        "target": "Delivery planning complete",
+        "quote": "Delivery planning complete then Send route detailed. Also, Send route detailed is connected with Delivery planning complete",
+        "span": [
+          457,
+          580
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Delivery planning complete",
+        "target": "Delivery planning complete",
+        "quote": "Delivery planning complete which if Delivery planning complete",
+        "span": [
+          554,
+          616
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Delivery planning complete",
+        "target": "Delivery planning complete",
+        "quote": "Delivery planning complete is Delivery planning complete",
+        "span": [
+          590,
+          646
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Delivery planning complete",
+        "target": "Assign bicycle courier",
+        "quote": "Delivery planning complete then Assign bicycle courier",
+        "span": [
+          620,
+          674
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Assign bicycle courier",
+        "target": "Delivery planning complete",
+        "quote": "Assign bicycle courier and if Delivery planning complete",
+        "span": [
+          652,
+          708
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Delivery planning complete",
+        "target": "Delivery planning complete",
+        "quote": "Delivery planning complete is Delivery planning complete",
+        "span": [
+          682,
+          738
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Delivery planning complete",
+        "target": "Assign van courier",
+        "quote": "Delivery planning complete then Assign van courier",
+        "span": [
+          712,
+          762
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      }
+    ],
+    "counts": {
+      "supported_by_B0": 1,
+      "uncertain": 17
+    },
+    "initial_missing_edges": [],
+    "initial_extra_edges": [],
+    "diagnosis_assessment": "No automatic diagnosis-quality score; graph description is not an explicit error diagnosis.",
+    "assistant_review_notes": "Первый переход Delivery planning begins → Read destination верен. Desioution и Send route detailed не соответствуют точным именам; их трактовка требует догадок. Условия из конечного Delivery planning complete не поддержаны B0/заданием. Явной рекомендации нет.",
+    "editor_outcomes": {
+      "B0": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B2": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B3": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      }
+    }
+  },
+  {
+    "task_id": "test_loop_01",
+    "feedback_available": true,
+    "text": " Software release begins with Prepare build which is then connected with All tests pass? which is then connected with Publish release which is finally connected with Software release complete. Fix implementation is connected with All tests pass? which is then connected with Publish release which is finally connected with Software release complete. Also, Fix implementation is connected with All tests pass? which is then connected with Publish release which is finally connected with Software release complete.",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Begin with \"Software release begins\", then \"Prepare build\", then \"Run test suite\", then the decision \"All tests pass?\". On No, perform \"Fix implementation\" and return directly to \"Run test suite\" before evaluating the decision again. On Yes, perform \"Publish release\", then finish at \"Software release complete\".",
+    "candidate_claims": [
+      {
+        "source": "Software release begins",
+        "target": "Prepare build",
+        "quote": "Software release begins with Prepare build",
+        "span": [
+          1,
+          43
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Prepare build",
+        "target": "All tests pass?",
+        "quote": "Prepare build which is then connected with All tests pass?",
+        "span": [
+          30,
+          88
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "All tests pass?",
+        "target": "Publish release",
+        "quote": "All tests pass? which is then connected with Publish release",
+        "span": [
+          73,
+          133
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Publish release",
+        "target": "Software release complete",
+        "quote": "Publish release which is finally connected with Software release complete",
+        "span": [
+          118,
+          191
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Software release complete",
+        "target": "Fix implementation",
+        "quote": "Software release complete. Fix implementation",
+        "span": [
+          166,
+          211
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Fix implementation",
+        "target": "All tests pass?",
+        "quote": "Fix implementation is connected with All tests pass?",
+        "span": [
+          193,
+          245
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "All tests pass?",
+        "target": "Publish release",
+        "quote": "All tests pass? which is then connected with Publish release",
+        "span": [
+          230,
+          290
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Publish release",
+        "target": "Software release complete",
+        "quote": "Publish release which is finally connected with Software release complete",
+        "span": [
+          275,
+          348
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Software release complete",
+        "target": "Fix implementation",
+        "quote": "Software release complete. Also, Fix implementation",
+        "span": [
+          323,
+          374
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Fix implementation",
+        "target": "All tests pass?",
+        "quote": "Fix implementation is connected with All tests pass?",
+        "span": [
+          356,
+          408
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "All tests pass?",
+        "target": "Publish release",
+        "quote": "All tests pass? which is then connected with Publish release",
+        "span": [
+          393,
+          453
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Publish release",
+        "target": "Software release complete",
+        "quote": "Publish release which is finally connected with Software release complete",
+        "span": [
+          438,
+          511
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      }
+    ],
+    "counts": {
+      "supported_by_B0": 7,
+      "contradicted_by_B0": 3,
+      "uncertain": 2
+    },
+    "initial_missing_edges": [
+      [
+        "fix implementation",
+        "run test suite",
+        ""
+      ]
+    ],
+    "initial_extra_edges": [],
+    "diagnosis_assessment": "No automatic diagnosis-quality score; graph description is not an explicit error diagnosis.",
+    "assistant_review_notes": "Prepare build → All tests pass? и Fix implementation → All tests pass? не являются прямыми рёбрами B0 или задания. Реальный пропуск B0 — возврат Fix implementation → Run test suite — не назван отсутствующей связью. Пересказ не диагностирует этот дефект.",
+    "editor_outcomes": {
+      "B0": {
+        "executed": true,
+        "edge_f1": 0.923076923076923,
+        "exact_semantic": 0
+      },
+      "B2": {
+        "executed": true,
+        "edge_f1": 0.923076923076923,
+        "exact_semantic": 0
+      },
+      "B3": {
+        "executed": true,
+        "edge_f1": 0.923076923076923,
+        "exact_semantic": 0
+      }
+    }
+  },
+  {
+    "task_id": "test_loop_02",
+    "feedback_available": true,
+    "text": " Application begin is connected with Collect documents which is then connected with Review application which is further connected with Submit application. If Request missing documents are present then Submit application and if Request missing documents are No then Application complete? If Application complete? is No then Request missing documents and if Application workflow complete then Application workflow complete. Also, Submit application is connected with both Application workflow complete and Request missing documents. Also, Request missing documents is connected with both Collection documents and Revise application. Also, Revise application is connected with both Application workflow complete and Application application complete?",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Begin with \"Application begins\", then \"Collect documents\", then \"Review application\", then the decision \"Application complete?\". On No, perform \"Request missing documents\" and return directly to \"Review application\" before evaluating the decision again. On Yes, perform \"Submit application\", then finish at \"Application workflow complete\".",
+    "candidate_claims": [
+      {
+        "source": "Collect documents",
+        "target": "Review application",
+        "quote": "Collect documents which is then connected with Review application",
+        "span": [
+          37,
+          102
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Review application",
+        "target": "Submit application",
+        "quote": "Review application which is further connected with Submit application",
+        "span": [
+          84,
+          153
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Submit application",
+        "target": "Request missing documents",
+        "quote": "Submit application. If Request missing documents",
+        "span": [
+          135,
+          183
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Request missing documents",
+        "target": "Submit application",
+        "quote": "Request missing documents are present then Submit application",
+        "span": [
+          158,
+          219
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Submit application",
+        "target": "Request missing documents",
+        "quote": "Submit application and if Request missing documents",
+        "span": [
+          201,
+          252
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Request missing documents",
+        "target": "Application complete?",
+        "quote": "Request missing documents are No then Application complete?",
+        "span": [
+          227,
+          286
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Application complete?",
+        "target": "Application complete?",
+        "quote": "Application complete? If Application complete?",
+        "span": [
+          265,
+          311
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Application complete?",
+        "target": "Request missing documents",
+        "quote": "Application complete? is No then Request missing documents",
+        "span": [
+          290,
+          348
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Request missing documents",
+        "target": "Application workflow complete",
+        "quote": "Request missing documents and if Application workflow complete",
+        "span": [
+          323,
+          385
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Application workflow complete",
+        "target": "Application workflow complete",
+        "quote": "Application workflow complete then Application workflow complete",
+        "span": [
+          356,
+          420
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Application workflow complete",
+        "target": "Submit application",
+        "quote": "Application workflow complete. Also, Submit application",
+        "span": [
+          391,
+          446
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Submit application",
+        "target": "Application workflow complete",
+        "quote": "Submit application is connected with both Application workflow complete",
+        "span": [
+          428,
+          499
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Application workflow complete",
+        "target": "Request missing documents",
+        "quote": "Application workflow complete and Request missing documents",
+        "span": [
+          470,
+          529
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Request missing documents",
+        "target": "Request missing documents",
+        "quote": "Request missing documents. Also, Request missing documents",
+        "span": [
+          504,
+          562
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Request missing documents",
+        "target": "Application workflow complete",
+        "quote": "Request missing documents is connected with both Collection documents and Revise application. Also, Revise application is connected with both Application workflow complete",
+        "span": [
+          537,
+          708
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Application workflow complete",
+        "target": "application complete?",
+        "quote": "Application workflow complete and Application application complete?",
+        "span": [
+          679,
+          746
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      }
+    ],
+    "counts": {
+      "supported_by_B0": 1,
+      "contradicted_by_B0": 1,
+      "uncertain": 14
+    },
+    "initial_missing_edges": [
+      [
+        "submit application",
+        "application workflow complete",
+        ""
+      ]
+    ],
+    "initial_extra_edges": [
+      [
+        "application complete",
+        "application workflow complete",
+        ""
+      ]
+    ],
+    "diagnosis_assessment": "No automatic diagnosis-quality score; graph description is not an explicit error diagnosis.",
+    "assistant_review_notes": "Collect documents → Review application описано верно, Review application → Submit application ошибочно как прямое ребро B0/задания. В тексте есть желательная Submit application → Application workflow complete в конструкции 'both', но она не отмечена как отсутствующая в B0. Поэтому нельзя засчитать успешное обнаружение реальной ошибки; названия также искажены.",
+    "editor_outcomes": {
+      "B0": {
+        "executed": true,
+        "edge_f1": 0.8571428571428571,
+        "exact_semantic": 0
+      },
+      "B2": {
+        "executed": true,
+        "edge_f1": 0.8750000000000001,
+        "exact_semantic": 0
+      },
+      "B3": {
+        "executed": true,
+        "edge_f1": 0.8750000000000001,
+        "exact_semantic": 0
+      }
+    }
+  },
+  {
+    "task_id": "test_loop_03",
+    "feedback_available": true,
+    "text": " Bread making begins with Mix Ingredients which is then connected with Dough elastic? which if Dough elastic? is No then Knead dough which is then connected with Bake loaf which is further connected with Bread making complete. Also, Bread making complete is connected with Dough elastic? which if Dough elastic? is No then Knead dough which is then connected with Bake loaf which is further connected with Bread making complete.",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Begin with \"Bread making begins\", then \"Mix ingredients\", then \"Inspect dough\", then the decision \"Dough elastic?\". On No, perform \"Knead dough\" and return directly to \"Inspect dough\" before evaluating the decision again. On Yes, perform \"Bake loaf\", then finish at \"Bread making complete\".",
+    "candidate_claims": [
+      {
+        "source": "Bread making begins",
+        "target": "Mix Ingredients",
+        "quote": "Bread making begins with Mix Ingredients",
+        "span": [
+          1,
+          41
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Mix Ingredients",
+        "target": "Dough elastic?",
+        "quote": "Mix Ingredients which is then connected with Dough elastic?",
+        "span": [
+          26,
+          85
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Dough elastic?",
+        "target": "Dough elastic?",
+        "quote": "Dough elastic? which if Dough elastic?",
+        "span": [
+          71,
+          109
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Dough elastic?",
+        "target": "Knead dough",
+        "quote": "Dough elastic? is No then Knead dough",
+        "span": [
+          95,
+          132
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Knead dough",
+        "target": "Bake loaf",
+        "quote": "Knead dough which is then connected with Bake loaf",
+        "span": [
+          121,
+          171
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Bake loaf",
+        "target": "Bread making complete",
+        "quote": "Bake loaf which is further connected with Bread making complete",
+        "span": [
+          162,
+          225
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Bread making complete",
+        "target": "Bread making complete",
+        "quote": "Bread making complete. Also, Bread making complete",
+        "span": [
+          204,
+          254
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Bread making complete",
+        "target": "Dough elastic?",
+        "quote": "Bread making complete is connected with Dough elastic?",
+        "span": [
+          233,
+          287
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Dough elastic?",
+        "target": "Dough elastic?",
+        "quote": "Dough elastic? which if Dough elastic?",
+        "span": [
+          273,
+          311
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Dough elastic?",
+        "target": "Knead dough",
+        "quote": "Dough elastic? is No then Knead dough",
+        "span": [
+          297,
+          334
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Knead dough",
+        "target": "Bake loaf",
+        "quote": "Knead dough which is then connected with Bake loaf",
+        "span": [
+          323,
+          373
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Bake loaf",
+        "target": "Bread making complete",
+        "quote": "Bake loaf which is further connected with Bread making complete",
+        "span": [
+          364,
+          427
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      }
+    ],
+    "counts": {
+      "supported_by_B0": 3,
+      "contradicted_by_B0": 4,
+      "uncertain": 5
+    },
+    "initial_missing_edges": [
+      [
+        "knead dough",
+        "inspect dough",
+        ""
+      ],
+      [
+        "dough elastic",
+        "bake loaf",
+        "yes"
+      ]
+    ],
+    "initial_extra_edges": [
+      [
+        "knead dough",
+        "inspect dough",
+        "yes"
+      ],
+      [
+        "inspect dough",
+        "bake loaf",
+        ""
+      ]
+    ],
+    "diagnosis_assessment": "No automatic diagnosis-quality score; graph description is not an explicit error diagnosis.",
+    "assistant_review_notes": "Mix Ingredients → Dough elastic?, Knead dough → Bake loaf и Bread making complete → Dough elastic? не являются прямыми рёбрами B0/задания. Реальные дефекты B0 (неверная подпись возврата Yes и переход к выпечке от Inspect dough вместо решения) явно не диагностированы. Ответ повторяет ошибочный пересказ.",
+    "editor_outcomes": {
+      "B0": {
+        "executed": true,
+        "edge_f1": 0.7142857142857143,
+        "exact_semantic": 0
+      },
+      "B2": {
+        "executed": true,
+        "edge_f1": 0.588235294117647,
+        "exact_semantic": 0
+      },
+      "B3": {
+        "executed": true,
+        "edge_f1": 0.7142857142857143,
+        "exact_semantic": 0
+      }
+    }
+  },
+  {
+    "task_id": "test_loop_04",
+    "feedback_available": true,
+    "text": " Translation Beginner is connected with Draft Translation which is then connected with Review terminology which is further connected with Terminology Consist? Also, Review terminology is connected with Deliver translation which is then connected with Translator complete. Also, Translator complete is connected with Revise word choices which is then connected with Submit translation. Also, Submit translation is connected with Translator complete which is finally connected with Translator complete.",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Begin with \"Translation begins\", then \"Draft translation\", then \"Review terminology\", then the decision \"Terminology consistent?\". On No, perform \"Revise word choices\" and return directly to \"Review terminology\" before evaluating the decision again. On Yes, perform \"Deliver translation\", then finish at \"Translation complete\".",
+    "candidate_claims": [
+      {
+        "source": "Draft Translation",
+        "target": "Review terminology",
+        "quote": "Draft Translation which is then connected with Review terminology",
+        "span": [
+          40,
+          105
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Review terminology",
+        "target": "Review terminology",
+        "quote": "Review terminology which is further connected with Terminology Consist? Also, Review terminology",
+        "span": [
+          87,
+          183
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Review terminology",
+        "target": "Deliver translation",
+        "quote": "Review terminology is connected with Deliver translation",
+        "span": [
+          165,
+          221
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Deliver translation",
+        "target": "Revise word choices",
+        "quote": "Deliver translation which is then connected with Translator complete. Also, Translator complete is connected with Revise word choices",
+        "span": [
+          202,
+          335
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      }
+    ],
+    "counts": {
+      "supported_by_B0": 1,
+      "uncertain": 2,
+      "contradicted_by_B0": 1
+    },
+    "initial_missing_edges": [
+      [
+        "deliver translation",
+        "translation complete",
+        ""
+      ]
+    ],
+    "initial_extra_edges": [
+      [
+        "terminology consistent",
+        "translation complete",
+        ""
+      ]
+    ],
+    "diagnosis_assessment": "No automatic diagnosis-quality score; graph description is not an explicit error diagnosis.",
+    "assistant_review_notes": "Draft Translation → Review terminology описано верно. Review terminology → Deliver translation отсутствует и в B0, и в задании. Translation Beginner/Translator complete/Submit translation не разрешены точным сопоставлением. Реальные лишнее ребро решения к завершению и недостающее Deliver translation → Translation complete явно не названы ошибками.",
+    "editor_outcomes": {
+      "B0": {
+        "executed": true,
+        "edge_f1": 0.8571428571428571,
+        "exact_semantic": 0
+      },
+      "B2": {
+        "executed": true,
+        "edge_f1": 0.7999999999999999,
+        "exact_semantic": 0
+      },
+      "B3": {
+        "executed": true,
+        "edge_f1": 0.6666666666666666,
+        "exact_semantic": 0
+      }
+    }
+  },
+  {
+    "task_id": "test_loop_05",
+    "feedback_available": true,
+    "text": " Maintenance Begins is connected with Isolate machine which is then connected with Measure vibration which if Measure vibration is Vibration Acceptable? then Restore machine service and if Measure vibration is No then Adjust alignment. Also, Maintenance complete is connected with Adjust alignment which if Maintenance complete is Yes then Restore machine service and if Maintenance complete is No then Vibration Acceptable? Also, Maintenance complete is connected with Vibration Acceptable? If Vibration Acceptable? is No then Restore machine service and if Vibration Acceptable? is Yes then Adjust alignment. Also, Maintenance complete is connected with Measure vibration which if Measure vibration is Vibration Acceptable? is Yes then Restore machine service and if Measure vibration is No then Adjust alignment.",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Begin with \"Maintenance begins\", then \"Isolate machine\", then \"Measure vibration\", then the decision \"Vibration acceptable?\". On No, perform \"Adjust alignment\" and return directly to \"Measure vibration\" before evaluating the decision again. On Yes, perform \"Restore machine service\", then finish at \"Maintenance complete\".",
+    "candidate_claims": [
+      {
+        "source": "Maintenance Begins",
+        "target": "Isolate machine",
+        "quote": "Maintenance Begins is connected with Isolate machine",
+        "span": [
+          1,
+          53
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Isolate machine",
+        "target": "Measure vibration",
+        "quote": "Isolate machine which is then connected with Measure vibration",
+        "span": [
+          38,
+          100
+        ],
+        "assessment": "supported_by_B0",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Measure vibration",
+        "target": "Measure vibration",
+        "quote": "Measure vibration which if Measure vibration",
+        "span": [
+          83,
+          127
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Measure vibration",
+        "target": "Vibration Acceptable?",
+        "quote": "Measure vibration is Vibration Acceptable?",
+        "span": [
+          110,
+          152
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Vibration Acceptable?",
+        "target": "Restore machine service",
+        "quote": "Vibration Acceptable? then Restore machine service",
+        "span": [
+          131,
+          181
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Restore machine service",
+        "target": "Measure vibration",
+        "quote": "Restore machine service and if Measure vibration",
+        "span": [
+          158,
+          206
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Measure vibration",
+        "target": "Adjust alignment",
+        "quote": "Measure vibration is No then Adjust alignment",
+        "span": [
+          189,
+          234
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Adjust alignment",
+        "target": "Maintenance complete",
+        "quote": "Adjust alignment. Also, Maintenance complete",
+        "span": [
+          218,
+          262
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Maintenance complete",
+        "target": "Adjust alignment",
+        "quote": "Maintenance complete is connected with Adjust alignment",
+        "span": [
+          242,
+          297
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Adjust alignment",
+        "target": "Maintenance complete",
+        "quote": "Adjust alignment which if Maintenance complete",
+        "span": [
+          281,
+          327
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Maintenance complete",
+        "target": "Restore machine service",
+        "quote": "Maintenance complete is Yes then Restore machine service",
+        "span": [
+          307,
+          363
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Restore machine service",
+        "target": "Maintenance complete",
+        "quote": "Restore machine service and if Maintenance complete",
+        "span": [
+          340,
+          391
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Maintenance complete",
+        "target": "Vibration Acceptable?",
+        "quote": "Maintenance complete is No then Vibration Acceptable?",
+        "span": [
+          371,
+          424
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Vibration Acceptable?",
+        "target": "Maintenance complete",
+        "quote": "Vibration Acceptable? Also, Maintenance complete",
+        "span": [
+          403,
+          451
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Maintenance complete",
+        "target": "Vibration Acceptable?",
+        "quote": "Maintenance complete is connected with Vibration Acceptable?",
+        "span": [
+          431,
+          491
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Vibration Acceptable?",
+        "target": "Vibration Acceptable?",
+        "quote": "Vibration Acceptable? If Vibration Acceptable?",
+        "span": [
+          470,
+          516
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Vibration Acceptable?",
+        "target": "Restore machine service",
+        "quote": "Vibration Acceptable? is No then Restore machine service",
+        "span": [
+          495,
+          551
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Restore machine service",
+        "target": "Vibration Acceptable?",
+        "quote": "Restore machine service and if Vibration Acceptable?",
+        "span": [
+          528,
+          580
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Vibration Acceptable?",
+        "target": "Adjust alignment",
+        "quote": "Vibration Acceptable? is Yes then Adjust alignment",
+        "span": [
+          559,
+          609
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Adjust alignment",
+        "target": "Maintenance complete",
+        "quote": "Adjust alignment. Also, Maintenance complete",
+        "span": [
+          593,
+          637
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Maintenance complete",
+        "target": "Measure vibration",
+        "quote": "Maintenance complete is connected with Measure vibration",
+        "span": [
+          617,
+          673
+        ],
+        "assessment": "contradicted_by_B0",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Measure vibration",
+        "target": "Measure vibration",
+        "quote": "Measure vibration which if Measure vibration",
+        "span": [
+          656,
+          700
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Measure vibration",
+        "target": "Vibration Acceptable?",
+        "quote": "Measure vibration is Vibration Acceptable?",
+        "span": [
+          683,
+          725
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Vibration Acceptable?",
+        "target": "Restore machine service",
+        "quote": "Vibration Acceptable? is Yes then Restore machine service",
+        "span": [
+          704,
+          761
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": true,
+        "edge_required": true,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Restore machine service",
+        "target": "Measure vibration",
+        "quote": "Restore machine service and if Measure vibration",
+        "span": [
+          738,
+          786
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      },
+      {
+        "source": "Measure vibration",
+        "target": "Adjust alignment",
+        "quote": "Measure vibration is No then Adjust alignment",
+        "span": [
+          769,
+          814
+        ],
+        "assessment": "uncertain",
+        "edge_present_in_B0": false,
+        "edge_required": false,
+        "branch_label_assessment": "not_inferred"
+      }
+    ],
+    "counts": {
+      "supported_by_B0": 2,
+      "uncertain": 21,
+      "contradicted_by_B0": 3
+    },
+    "initial_missing_edges": [],
+    "initial_extra_edges": [],
+    "diagnosis_assessment": "No automatic diagnosis-quality score; graph description is not an explicit error diagnosis.",
+    "assistant_review_notes": "Maintenance Begins → Isolate machine → Measure vibration описано верно. Maintenance complete → Adjust alignment, → Vibration Acceptable? и → Measure vibration отсутствуют в B0/задании. Фраза Vibration Acceptable? No → Restore machine service и Yes → Adjust alignment переворачивает реальные подписи ветвей. Конкретного полезного замечания нет.",
+    "editor_outcomes": {
+      "B0": {
+        "executed": true,
+        "edge_f1": 1.0,
+        "exact_semantic": 1
+      },
+      "B2": {
+        "executed": true,
+        "edge_f1": 0.8235294117647058,
+        "exact_semantic": 0
+      },
+      "B3": {
+        "executed": true,
+        "edge_f1": 0.8235294117647058,
+        "exact_semantic": 0
+      }
+    }
+  }
+]

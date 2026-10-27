@@ -1,0 +1,3 @@
+{
+  "text": " Delivery planning begins with Read destination which is then connected with Desioution which is then connected with Assign bicycle courier. If Assign bicycle courier is No then Send route detailed and if Assign van courier is No then Assign van courier. Also, Send route detailed is connected with Delivery planning complete which if Delivery planning complete is Delivery planning complete then Assign bicycle courier and if Delivery planning complete is Delivery planning complete then Send route detailed. Also, Send route detailed is connected with Delivery planning complete which if Delivery planning complete is Delivery planning complete then Assign bicycle courier and if Delivery planning complete is Delivery planning complete then Assign van courier."
+}

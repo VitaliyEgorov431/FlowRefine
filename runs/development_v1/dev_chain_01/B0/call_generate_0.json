@@ -1,0 +1,30 @@
+{
+  "role": "generate",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You create accurate editable flowcharts. Return ONLY a JSON object in this compact format:\n{\"nodes\":[[\"id\",\"type\",\"short label\",column,row]],\"edges\":[[\"source_id\",\"target_id\",\"branch label\"]]}\nTypes: start, end, process, decision. Column: 0,1,2; row: 0..7.\nInclude exactly one start and one end. Use each explicit stage name in the request.\nEach id must be unique and each edge endpoint must exist. Use an empty string for\nordinary edge labels, and Yes/No on decision branches. Preserve loops and direction.\nPlace nodes on different grid cells. Prefer downward flow and short edges.\nDo not add explanations, markdown, or numeric scores."
+    },
+    {
+      "role": "user",
+      "content": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Follow this exact sequence: \"Breakfast begins\" -> \"Boil water\" -> \"Add oats\" -> \"Cook porridge\" -> \"Serve breakfast\" -> \"Breakfast ready\"."
+    }
+  ],
+  "response": {
+    "text": "{\"nodes\":[[\"Breakfast begins\",\"start\",\"Breakfast begins\",0,0],[\"Boil water\",\"process\",\"Boil water\",0,1],[\"Add oats\",\"process\",\"Add oats\",0,2],[\"Cook porridge\",\"process\",\"Cook porridge\",0,3],[\"Serve breakfast\",\"process\",\"Serve breakfast\",0,4],[\"Breakfast ready\",\"end\",\"Breakfast ready\",0,5]],\"edges\":[[\"Breakfast begins\",\"Boil water\",\"\"],[\"Boil water\",\"Add oats\",\"Yes\"],[\"Add oats\",\"Cook porridge\",\"\"],[\"Cook porridge\",\"Serve breakfast\",\"\"],[\"Serve breakfast\",\"Breakfast ready\",\"\"],[\"Breakfast ready\",\"Breakfast ready\",\"\"]]}",
+    "elapsed_seconds": 18.86978959999942,
+    "usage": {
+      "prompt_tokens": 264,
+      "completion_tokens": 150,
+      "total_tokens": 414
+    },
+    "finish_reason": "stop",
+    "backend": "llama-cpp-python",
+    "runtime_version": "0.3.36",
+    "model": "C:\\Users\\User\\Desktop\\учеба\\GenAI_Final_Project\\models\\qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "device": "cpu",
+    "seed": 241024,
+    "temperature": 0.0
+  },
+  "reference_access": false
+}

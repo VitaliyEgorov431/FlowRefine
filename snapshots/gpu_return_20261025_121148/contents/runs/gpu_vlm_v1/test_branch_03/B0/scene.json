@@ -1,0 +1,115 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Account recovery begins",
+      "type": "start",
+      "label": "Account recovery begins",
+      "x": 280.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Check security answer",
+      "type": "process",
+      "label": "Check security answer",
+      "x": 280.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Answer correct?",
+      "type": "decision",
+      "label": "Answer correct?",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "Send reset link",
+      "type": "process",
+      "label": "Send reset link",
+      "x": 25.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Escalate to support",
+      "type": "process",
+      "label": "Escalate to support",
+      "x": 535.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Log recovery attempt",
+      "type": "process",
+      "label": "Log recovery attempt",
+      "x": 280.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Recovery attempt complete",
+      "type": "end",
+      "label": "Recovery attempt complete",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Account recovery begins",
+      "target": "Check security answer",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Check security answer",
+      "target": "Answer correct?",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Answer correct?",
+      "target": "Send reset link",
+      "label": "Yes"
+    },
+    {
+      "id": "e4",
+      "source": "Answer correct?",
+      "target": "Escalate to support",
+      "label": "No"
+    },
+    {
+      "id": "e5",
+      "source": "Send reset link",
+      "target": "Log recovery attempt",
+      "label": ""
+    },
+    {
+      "id": "e6",
+      "source": "Escalate to support",
+      "target": "Log recovery attempt",
+      "label": ""
+    },
+    {
+      "id": "e7",
+      "source": "Log recovery attempt",
+      "target": "Recovery attempt complete",
+      "label": ""
+    }
+  ]
+}

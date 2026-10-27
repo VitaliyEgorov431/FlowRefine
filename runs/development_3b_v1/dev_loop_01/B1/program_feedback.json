@@ -1,0 +1,11 @@
+[
+  {
+    "code": "edge_label_overlap",
+    "severity": "warning",
+    "affected_ids": [
+      "e4",
+      "Soil moist?"
+    ],
+    "message": "Label of edge e4 overlaps node Soil moist? description."
+  }
+]

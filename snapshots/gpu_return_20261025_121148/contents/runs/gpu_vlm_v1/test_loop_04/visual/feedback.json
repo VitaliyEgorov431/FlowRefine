@@ -1,0 +1,3 @@
+{
+  "text": "1. **Missing stage**: There should be a \"Draft translation\" stage after \"Translation begins\".\n2. **Wrong arrow direction or branch**: There should be an arrow from \"Review terminology\" to \"Terminology consistent?\".\n3. **Overlapping boxes**: There should be no overlapping boxes in the flowchart.\n4. **Unreadable text**: The text \"Terminology consistent?\" is clear and readable.\n\n**Corrected flowchart:**\n\n- Start: Translation begins\n- Draft translation\n- Review terminology\n  - Terminology consistent?\n    - Yes: Deliver translation\n    - No: Revise word choices\n      - Review terminology\n- Translation complete"
+}

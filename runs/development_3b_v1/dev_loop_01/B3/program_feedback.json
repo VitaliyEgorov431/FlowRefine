@@ -1,0 +1,20 @@
+[
+  {
+    "code": "edge_label_overlap",
+    "severity": "warning",
+    "affected_ids": [
+      "e4",
+      "Soil moist?"
+    ],
+    "message": "Label of edge e4 overlaps node Soil moist? description."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e7",
+      "Store watering can"
+    ],
+    "message": "Edge e7 crosses unrelated node Store watering can."
+  }
+]

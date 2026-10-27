@@ -1,0 +1,121 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Translation begins",
+      "type": "start",
+      "label": "Translation begins",
+      "x": 280.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Draft translation",
+      "type": "process",
+      "label": "Draft translation",
+      "x": 280.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Review terminology",
+      "type": "process",
+      "label": "Review terminology",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Terminology consistent?",
+      "type": "decision",
+      "label": "Terminology consistent?",
+      "x": 280.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "Revise word choices",
+      "type": "process",
+      "label": "Revise word choices",
+      "x": 25.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Deliver translation",
+      "type": "process",
+      "label": "Deliver translation",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Translation complete",
+      "type": "end",
+      "label": "Translation complete",
+      "x": 280.0,
+      "y": 1050.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Translation begins",
+      "target": "Draft translation",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Draft translation",
+      "target": "Review terminology",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Review terminology",
+      "target": "Terminology consistent?",
+      "label": ""
+    },
+    {
+      "id": "e4",
+      "source": "Terminology consistent?",
+      "target": "Deliver translation",
+      "label": "Yes"
+    },
+    {
+      "id": "e5",
+      "source": "Terminology consistent?",
+      "target": "Translation complete",
+      "label": "No"
+    },
+    {
+      "id": "e6",
+      "source": "Review terminology",
+      "target": "Revise word choices",
+      "label": "No"
+    },
+    {
+      "id": "e7",
+      "source": "Deliver translation",
+      "target": "Translation complete",
+      "label": ""
+    },
+    {
+      "id": "e8",
+      "source": "Revise word choices",
+      "target": "Review terminology",
+      "label": ""
+    }
+  ]
+}

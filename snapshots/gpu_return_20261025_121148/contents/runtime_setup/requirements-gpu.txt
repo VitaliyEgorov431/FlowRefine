@@ -1,0 +1,8 @@
+# Windows x64, Python 3.12. Torch/torchvision installed from cu126 separately.
+transformers==4.57.1
+accelerate==1.11.0
+huggingface-hub==0.36.0
+numpy==2.2.6
+Pillow==12.2.0
+matplotlib==3.10.9
+llama-cpp-python==0.3.36

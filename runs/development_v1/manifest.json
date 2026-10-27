@@ -1,0 +1,35 @@
+{
+  "tasks_sha256": "5b4a89d561cf7ad223fe951cbfabf9d0808b6b57cbb27cc8ebf1497fe72f9353",
+  "settings": {
+    "text_model": "C:\\Users\\User\\Desktop\\учеба\\GenAI_Final_Project\\models\\qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "vision_model": null,
+    "vision_projector": null,
+    "vision_backend": "mtmd",
+    "threads": 4,
+    "max_tokens": 900,
+    "vision_max_tokens": 180,
+    "modes": "B1,B2,B3",
+    "format_repairs": 1,
+    "temperature": 0.0,
+    "cached_visual_feedback": true
+  },
+  "prompt_version": "compact-grid-v1",
+  "created_at_utc": "2026-10-24T10:56:18.696083+00:00",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_sha256": {
+    "backends.py": "5d83b9080ff6e7abe2f29ee9e788d0d54e0e80fb32b254fccb9d5969b6127d47",
+    "cli.py": "4312510593e5177fd98944e7705690154cc8f18c7248fa94e222bc1ca5adcfea",
+    "compact.py": "57c7abf074404759ed49725e0961897bb391da1e3bd714d37566e0cc97933121",
+    "dataset.py": "f6811e28f1d164979c04580f8b381ceb487096f9abb4884543e6ad7a284a30da",
+    "evaluation.py": "82d01806a9d986a4f5c1c9ce270228d7dd8006d349eead5e2075682e8e2a255c",
+    "prompts.py": "10ef3288443526427d430ab3e7f10b2de35e7f47d6051eb3dcb3577910366381",
+    "rendering.py": "252ab8935c074ee83c135673a0e5d96438534cbcd2e3528fe80f99258b956f9d",
+    "runner.py": "41a36ac5a4a619fc2828efbf929b53c25796168e32b34bd34c3358f231272f78",
+    "schema.py": "3a42e03de331c2ceb871b13c6bbc9faa0fc3e11e220431c037423540a30e9011",
+    "validators.py": "a1eaba028b5707c14b98a4884391378f968d7aac7341b34297fa559174ee022f",
+    "__init__.py": "464c895911ec044ee0152335a5b279b1dd39aaa0155a653966147e2b8f3606c9"
+  },
+  "reference_access": "analysis phase only",
+  "provenance": "real_model_inference"
+}

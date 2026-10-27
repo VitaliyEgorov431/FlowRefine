@@ -1,0 +1,27 @@
+from PIL import Image, ImageDraw, ImageFont
+
+
+image = Image.new("RGB", (640, 470), "white")
+draw = ImageDraw.Draw(image)
+font = ImageFont.truetype("C:/Windows/Fonts/arial.ttf", 18)
+
+draw.rounded_rectangle((240, 20, 400, 78), radius=24, outline="black", width=3)
+draw.text((294, 38), "START", fill="black", font=font)
+draw.rectangle((195, 120, 445, 180), outline="black", width=3)
+draw.text((253, 138), "READ NUMBER", fill="black", font=font)
+draw.polygon([(320, 205), (440, 265), (320, 325), (200, 265)], outline="black", fill="white")
+draw.text((278, 253), "EVEN?", fill="black", font=font)
+draw.rectangle((35, 365, 245, 430), outline="black", width=3)
+draw.text((66, 384), "PRINT EVEN", fill="black", font=font)
+draw.rectangle((395, 365, 605, 430), outline="black", width=3)
+draw.text((429, 384), "PRINT ODD", fill="black", font=font)
+draw.line((320, 78, 320, 120), fill="black", width=3)
+draw.line((320, 180, 320, 205), fill="black", width=3)
+draw.line((200, 265, 140, 265), fill="black", width=3)
+draw.line((140, 265, 140, 365), fill="black", width=3)
+draw.text((153, 275), "YES", fill="black", font=font)
+draw.line((440, 265, 500, 265), fill="black", width=3)
+draw.line((500, 265, 500, 365), fill="black", width=3)
+draw.text((448, 275), "NO", fill="black", font=font)
+image.save("runtime_setup/sample_flowchart.png")
+print("Created runtime_setup/sample_flowchart.png")

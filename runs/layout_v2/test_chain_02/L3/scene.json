@@ -1,0 +1,109 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Backup begins",
+      "type": "start",
+      "label": "Backup begins",
+      "x": 280,
+      "y": 30,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Select files",
+      "type": "process",
+      "label": "Select files",
+      "x": 280,
+      "y": 200,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Create archive",
+      "type": "process",
+      "label": "Create archive",
+      "x": 280,
+      "y": 370,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Encrypt archive",
+      "type": "process",
+      "label": "Encrypt archive",
+      "x": 280,
+      "y": 540,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Upload archive",
+      "type": "process",
+      "label": "Upload archive",
+      "x": 280,
+      "y": 710,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Record backup location",
+      "type": "process",
+      "label": "Record backup location",
+      "x": 280,
+      "y": 880,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Backup complete",
+      "type": "end",
+      "label": "Backup complete",
+      "x": 280,
+      "y": 1050,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Backup begins",
+      "target": "Select files",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Select files",
+      "target": "Create archive",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Create archive",
+      "target": "Encrypt archive",
+      "label": ""
+    },
+    {
+      "id": "e4",
+      "source": "Encrypt archive",
+      "target": "Upload archive",
+      "label": ""
+    },
+    {
+      "id": "e5",
+      "source": "Upload archive",
+      "target": "Record backup location",
+      "label": ""
+    },
+    {
+      "id": "e6",
+      "source": "Record backup location",
+      "target": "Backup complete",
+      "label": ""
+    }
+  ]
+}

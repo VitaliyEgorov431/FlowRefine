@@ -1,0 +1,65 @@
+[
+  {
+    "code": "node_overlap",
+    "severity": "error",
+    "affected_ids": [
+      "Breakfast ready",
+      "Yes"
+    ],
+    "message": "Bounding boxes of Breakfast ready and Yes overlap by 220.0x72.0px."
+  },
+  {
+    "code": "node_overlap",
+    "severity": "error",
+    "affected_ids": [
+      "Breakfast ready",
+      "No"
+    ],
+    "message": "Bounding boxes of Breakfast ready and No overlap by 220.0x72.0px."
+  },
+  {
+    "code": "node_overlap",
+    "severity": "error",
+    "affected_ids": [
+      "Yes",
+      "No"
+    ],
+    "message": "Bounding boxes of Yes and No overlap by 220.0x72.0px."
+  },
+  {
+    "code": "edge_label_overlap",
+    "severity": "warning",
+    "affected_ids": [
+      "e5",
+      "Is porridge ready?"
+    ],
+    "message": "Label of edge e5 overlaps node Is porridge ready? description."
+  },
+  {
+    "code": "edge_label_overlap",
+    "severity": "warning",
+    "affected_ids": [
+      "e6",
+      "Is porridge ready?"
+    ],
+    "message": "Label of edge e6 overlaps node Is porridge ready? description."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e7",
+      "Is porridge ready?"
+    ],
+    "message": "Edge e7 crosses unrelated node Is porridge ready?."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e8",
+      "Is porridge ready?"
+    ],
+    "message": "Edge e8 crosses unrelated node Is porridge ready?."
+  }
+]

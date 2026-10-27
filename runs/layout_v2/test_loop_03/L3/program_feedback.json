@@ -1,0 +1,37 @@
+[
+  {
+    "code": "edge_label_overlap",
+    "severity": "warning",
+    "affected_ids": [
+      "e4",
+      "Dough elastic?"
+    ],
+    "message": "Label of edge e4 overlaps node Dough elastic? description."
+  },
+  {
+    "code": "edge_label_out_of_bounds",
+    "severity": "warning",
+    "affected_ids": [
+      "e5"
+    ],
+    "message": "Label of edge e5 leaves the canvas."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e6",
+      "Dough elastic?"
+    ],
+    "message": "Edge e6 crosses unrelated node Dough elastic?."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e6",
+      "Knead dough"
+    ],
+    "message": "Edge e6 crosses unrelated node Knead dough."
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "archive_sha256": "1f8f88dd0ccebd2fb7ba12d8a020942ba8b6c5317517488cbac871a8a6f427dc",
+  "baseline_files_identical": 180,
+  "baseline_mismatches": 0,
+  "independent_semantic_recalculation": "passed",
+  "test_tasks": 15,
+  "original_results_overwritten": false
+}

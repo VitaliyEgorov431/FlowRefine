@@ -1,0 +1,24 @@
+{
+  "frozen_at_utc": "2026-10-24T11:29:11.593263+00:00",
+  "task_count": 15,
+  "development_run": "development_3b_v1",
+  "text_model": "Qwen2.5-3B-Instruct-Q4_K_M",
+  "vision_model": "SmolVLM-256M-Instruct-Q8_0",
+  "max_edit_rounds": 1,
+  "arms": [
+    "B0",
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "shared_initial_scene": true,
+  "cached_common_vision_feedback": true,
+  "max_format_repairs": 1,
+  "temperature": 0.0,
+  "seed": 241024,
+  "reference_access": "analysis only",
+  "test_tasks_sha256": "cb3cbbd64ebb2896d2bfe970c8dc8720d8b4ffcdd7789ef680276849b39dfe22",
+  "test_metrics_inspected_before_freeze": false,
+  "development_selection": "3B produced5/5valid initial scenes with viable semantic variation;1.5B development format failures saved separately",
+  "no_human_blinded_evaluation": true
+}

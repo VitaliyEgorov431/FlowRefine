@@ -1,0 +1,3 @@
+{
+  "text": " Trip begins is connected with Check forecast which is then connected with Rain expected? If Rain expected? is No then Pack umbrella and if Rain expected? is Yes then Pack sunglasses and if Rain expected? is Yes then Leave home. Also, Pack umbrella is connected with Pack sunglasses and if Pack umbrella is No then Trip prepared. Also, Trip prepared is connected with Pack sunglasses."
+}

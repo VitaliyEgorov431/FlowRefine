@@ -1,0 +1,63 @@
+Saved custom result: C:\Users\User\AppData\Local\Temp\tmps42s2g5a\custom\index.html
+FOLLOWUP L3 fixture
+FOLLOWUP L3 fixture
+GENERATE fixture
+CRITIQUE fixture
+GENERATE fixture
+GENERATE fixture
+GENERATE fixture
+GENERATE fixture
+GENERATE fixture
+GENERATE fixture
+CRITIQUE fixture
+CRITIQUE fixture
+test_missing_invalid_and_costs (test_analysis.AnalysisTests.test_missing_invalid_and_costs) ... ok
+test_ask_creates_public_custom_task_without_reference_and_builds_gallery (test_cli.CLITests.test_ask_creates_public_custom_task_without_reference_and_builds_gallery) ... ok
+test_run_all_invokes_all_phases_in_order_and_closes_models (test_cli.CLITests.test_run_all_invokes_all_phases_in_order_and_closes_models) ... ok
+test_run_closes_backend_when_phase_raises (test_cli.CLITests.test_run_closes_backend_when_phase_raises) ... ok
+test_run_individual_phase_dispatch (test_cli.CLITests.test_run_individual_phase_dispatch) ... ok
+test_cycles_and_reverse_edges_are_supported (test_core.CriticTests.test_cycles_and_reverse_edges_are_supported) ... ok
+test_detects_overlap_bounds_text_and_crossing (test_core.CriticTests.test_detects_overlap_bounds_text_and_crossing) ... ok
+test_full_explicit_polyline_and_detachment (test_core.CriticTests.test_full_explicit_polyline_and_detachment) ... ok
+test_known_good_has_no_issues (test_core.CriticTests.test_known_good_has_no_issues) ... ok
+test_renders_png_svg_with_escaped_labels_and_no_active_markup (test_core.RenderTests.test_renders_png_svg_with_escaped_labels_and_no_active_markup) ... ok
+test_reverse_and_self_loop_render (test_core.RenderTests.test_reverse_and_self_loop_render) ... ok
+test_touching_nodes_do_not_produce_zero_length_edge (test_core.RenderTests.test_touching_nodes_do_not_produce_zero_length_edge) ... ok
+test_normalization_is_safe_copy (test_core.SchemaTests.test_normalization_is_safe_copy) ... ok
+test_rejects_broken_graphs (test_core.SchemaTests.test_rejects_broken_graphs) ... ok
+test_rejects_dangerous_or_invalid_geometry (test_core.SchemaTests.test_rejects_dangerous_or_invalid_geometry) ... ok
+test_arbitrary_node_ids (test_evaluation.EvaluationTests.test_arbitrary_node_ids) ... ok
+test_dataset_shapes (test_evaluation.EvaluationTests.test_dataset_shapes) ... ok
+test_empty (test_evaluation.EvaluationTests.test_empty) ... ok
+test_exact_and_punctuation (test_evaluation.EvaluationTests.test_exact_and_punctuation) ... ok
+test_extra_edge (test_evaluation.EvaluationTests.test_extra_edge) ... ok
+test_missing_node (test_evaluation.EvaluationTests.test_missing_node) ... ok
+test_reversed_edge (test_evaluation.EvaluationTests.test_reversed_edge) ... ok
+test_wrong_branch (test_evaluation.EvaluationTests.test_wrong_branch) ... ok
+test_wrong_type (test_evaluation.EvaluationTests.test_wrong_type) ... ok
+test_layout_preserves_loop_branch_labels_ids_types_dimensions_and_input (test_followup.FollowupTests.test_layout_preserves_loop_branch_labels_ids_types_dimensions_and_input) ... ok
+test_layout_recovers_cached_call_after_render_failure_and_skips_completed (test_followup.FollowupTests.test_layout_recovers_cached_call_after_render_failure_and_skips_completed) ... ok
+test_layout_rejects_semantic_injection_and_ambiguous_coordinates (test_followup.FollowupTests.test_layout_rejects_semantic_injection_and_ambiguous_coordinates) ... ok
+test_prompts_expose_feedback_only_to_layout_arm (test_followup.FollowupTests.test_prompts_expose_feedback_only_to_layout_arm) ... ok
+test_resume_rejects_changed_baseline_model_settings_or_source (test_followup.FollowupTests.test_resume_rejects_changed_baseline_model_settings_or_source) ... ok
+test_claim_checks_image_and_requirement_separately (test_followup_analysis.FollowupAnalysisTests.test_claim_checks_image_and_requirement_separately) ... ok
+test_coverage_failure_transitions_and_shared_costs (test_followup_analysis.FollowupAnalysisTests.test_coverage_failure_transitions_and_shared_costs) ... ok
+test_empty_pairs_not_fabricated (test_followup_analysis.FollowupAnalysisTests.test_empty_pairs_not_fabricated) ... ok
+test_ocr_intermediate_nodes_never_become_direct_claim (test_followup_analysis.FollowupAnalysisTests.test_ocr_intermediate_nodes_never_become_direct_claim) ... ok
+test_coordinates_change_while_loop_and_branch_content_remain_identical (test_layout_followup.ObjectLayoutTests.test_coordinates_change_while_loop_and_branch_content_remain_identical) ... ok
+test_invalid_both_attempts_has_no_silent_fallback (test_layout_followup.ObjectLayoutTests.test_invalid_both_attempts_has_no_silent_fallback) ... ok
+test_manifest_resume_rejects_changed_failed_run_provenance (test_layout_followup.ObjectLayoutTests.test_manifest_resume_rejects_changed_failed_run_provenance) ... ok
+test_missing_keys_semantic_injection_and_out_of_range_values_rejected (test_layout_followup.ObjectLayoutTests.test_missing_keys_semantic_injection_and_out_of_range_values_rejected) ... ok
+test_per_node_schema_uses_enum_and_required_fixed_keys (test_layout_followup.ObjectLayoutTests.test_per_node_schema_uses_enum_and_required_fixed_keys) ... ok
+test_truncation_retry_logs_both_calls_and_resume_does_not_reinfer (test_layout_followup.ObjectLayoutTests.test_truncation_retry_logs_both_calls_and_resume_does_not_reinfer) ... ok
+test_changed_inference_fingerprint_rejected_but_unchanged_resume_allowed (test_runner.RunnerTests.test_changed_inference_fingerprint_rejected_but_unchanged_resume_allowed) ... ok
+test_critique_before_generation_does_not_poison_later_run (test_runner.RunnerTests.test_critique_before_generation_does_not_poison_later_run) ... ok
+test_failed_text_call_is_logged_without_invented_output_and_not_replayed (test_runner.RunnerTests.test_failed_text_call_is_logged_without_invented_output_and_not_replayed) ... ok
+test_interrupted_render_recovers_cached_response_without_new_model_call (test_runner.RunnerTests.test_interrupted_render_recovers_cached_response_without_new_model_call) ... ok
+test_successful_generation_resume_skips_model (test_runner.RunnerTests.test_successful_generation_resume_skips_model) ... ok
+test_visual_retry_preserves_both_attempts_and_cost_accounting (test_runner.RunnerTests.test_visual_retry_preserves_both_attempts_and_cost_accounting) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 3.535s
+
+OK

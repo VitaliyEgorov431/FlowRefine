@@ -1,0 +1,3 @@
+{
+  "text": "1. **Missing stage**: There should be a \"Start\" node at the beginning.\n2. **Wrong arrow direction or branch**: There should be an \"End\" node at the end.\n3. **Overlapping boxes**: The \"Yes\" and \"No\" branches under the decision node should be separate.\n4. **Unreadable text**: The text in the decision node should be clear and legible.\n\nVisible labels involved: Account recovery begins, Check security answer, Answer correct?, Send reset link, Escalate to support, Log recovery attempt, Recovery attempt complete."
+}

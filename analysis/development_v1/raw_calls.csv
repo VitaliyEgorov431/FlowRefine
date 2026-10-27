@@ -1,0 +1,6 @@
+task_id,component,file,role,backend,model,elapsed_seconds,prompt_tokens,completion_tokens,cached,reference_access
+dev_branch_01,B0,dev_branch_01/B0/call_generate_0.json,generate,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-1.5b-instruct-q4_k_m.gguf,7.991771999999401,280,94,False,False
+dev_branch_01,B0,dev_branch_01/B0/call_generate_1.json,generate,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-1.5b-instruct-q4_k_m.gguf,14.125265100001343,412,165,False,False
+dev_chain_01,B0,dev_chain_01/B0/call_generate_0.json,generate,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-1.5b-instruct-q4_k_m.gguf,18.86978959999942,264,150,False,False
+dev_chain_02,B0,dev_chain_02/B0/call_generate_0.json,generate,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-1.5b-instruct-q4_k_m.gguf,16.53012049999961,261,139,False,False
+dev_chain_02,B0,dev_chain_02/B0/call_generate_1.json,generate,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-1.5b-instruct-q4_k_m.gguf,14.848150200001328,434,139,False,False

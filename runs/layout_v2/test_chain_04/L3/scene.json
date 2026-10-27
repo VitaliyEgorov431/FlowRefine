@@ -1,0 +1,109 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Experiment begins",
+      "type": "start",
+      "label": "Experiment begins",
+      "x": 280,
+      "y": 30,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Prepare sample",
+      "type": "process",
+      "label": "Prepare sample",
+      "x": 280,
+      "y": 200,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Calibrate sensor",
+      "type": "process",
+      "label": "Calibrate sensor",
+      "x": 280,
+      "y": 370,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Measure sample",
+      "type": "process",
+      "label": "Measure sample",
+      "x": 280,
+      "y": 540,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Save measurements",
+      "type": "process",
+      "label": "Save measurements",
+      "x": 280,
+      "y": 710,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Clean equipment",
+      "type": "process",
+      "label": "Clean equipment",
+      "x": 280,
+      "y": 880,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Experiment complete",
+      "type": "end",
+      "label": "Experiment complete",
+      "x": 280,
+      "y": 1050,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Experiment begins",
+      "target": "Prepare sample",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Prepare sample",
+      "target": "Calibrate sensor",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Calibrate sensor",
+      "target": "Measure sample",
+      "label": ""
+    },
+    {
+      "id": "e4",
+      "source": "Measure sample",
+      "target": "Save measurements",
+      "label": ""
+    },
+    {
+      "id": "e5",
+      "source": "Save measurements",
+      "target": "Clean equipment",
+      "label": ""
+    },
+    {
+      "id": "e6",
+      "source": "Clean equipment",
+      "target": "Experiment complete",
+      "label": ""
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "role": "repair",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You edit flowcharts. Return ONLY a JSON object in this compact format:\n{\"nodes\":[[\"exact stage label\",\"type\",column,row]],\"edges\":[[\"exact source label\",\"exact target label\",\"branch label\"]]}\nTypes: start, end, process, decision. Column: 0,1,2; row: 0..7.\nInclude exactly one start and one end. Use each explicit stage name in the request.\nEach stage label must be unique and each edge endpoint must be a stage label. Use an empty string for\nordinary edge labels, and Yes/No on decision branches. Preserve loops and direction.\nPlace nodes on different grid cells. Prefer downward flow and short edges.\nDo not add explanations, markdown, or numeric scores.\nExample only (use the actual requested stages instead):\nRequest: Start -> Check form -> Valid?; Yes -> Accept; No -> Reject; both -> Finish.\nOutput: {\"nodes\":[[\"Start\",\"start\",1,0],[\"Check form\",\"process\",1,1],[\"Valid?\",\"decision\",1,2],[\"Accept\",\"process\",0,3],[\"Reject\",\"process\",2,3],[\"Finish\",\"end\",1,4]],\"edges\":[[\"Start\",\"Check form\",\"\"],[\"Check form\",\"Valid?\",\"\"],[\"Valid?\",\"Accept\",\"Yes\"],[\"Valid?\",\"Reject\",\"No\"],[\"Accept\",\"Finish\",\"\"],[\"Reject\",\"Finish\",\"\"]]}\nEvery edge has exactly 3 entries. Ordinary edge labels are empty strings.\nNever add a self-loop at the end. Include ALL nodes AND edges."
+    },
+    {
+      "role": "user",
+      "content": "Requested process:\nCreate a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Follow this exact sequence: \"Backup begins\" -> \"Select files\" -> \"Create archive\" -> \"Encrypt archive\" -> \"Upload archive\" -> \"Record backup location\" -> \"Backup complete\".\n\nCurrent flowchart:\n{\"nodes\": [[\"Backup begins\", \"start\", 1.0, 0.0], [\"Select files\", \"process\", 1.0, 1.0], [\"Create archive\", \"process\", 1.0, 2.0], [\"Encrypt archive\", \"process\", 1.0, 3.0], [\"Upload archive\", \"process\", 1.0, 4.0], [\"Record backup location\", \"process\", 1.0, 5.0], [\"Backup complete\", \"end\", 1.0, 6.0]], \"edges\": [[\"Backup begins\", \"Select files\", \"\"], [\"Select files\", \"Create archive\", \"\"], [\"Create archive\", \"Encrypt archive\", \"\"], [\"Encrypt archive\", \"Upload archive\", \"\"], [\"Upload archive\", \"Record backup location\", \"\"], [\"Record backup location\", \"Backup complete\", \"\"]]}\n\nCorrect this chart using the original requested process. Preserve correct stages and connections."
+    }
+  ],
+  "response": {
+    "text": "{\"nodes\":[[\"Backup begins\",\"start\",1,0],[\"Select files\",\"process\",1,1],[\"Create archive\",\"process\",1,2],[\"Encrypt archive\",\"process\",1,3],[\"Upload archive\",\"process\",1,4],[\"Record backup location\",\"process\",1,5],[\"Backup complete\",\"end\",1,6]],\"edges\":[[\"Backup begins\",\"Select files\",\"\"],[\"Select files\",\"Create archive\",\"\"],[\"Create archive\",\"Encrypt archive\",\"\"],[\"Encrypt archive\",\"Upload archive\",\"\"],[\"Upload archive\",\"Record backup location\",\"\"],[\"Record backup location\",\"Backup complete\",\"\"]]}",
+    "elapsed_seconds": 20.392610599999898,
+    "usage": {
+      "prompt_tokens": 645,
+      "completion_tokens": 123,
+      "total_tokens": 768
+    },
+    "finish_reason": "stop",
+    "backend": "llama-cpp-python",
+    "runtime_version": "0.3.36",
+    "model": "C:\\Users\\User\\Desktop\\учеба\\GenAI_Final_Project\\models\\qwen2.5-3b-instruct-q4_k_m.gguf",
+    "device": "cpu",
+    "seed": 241024,
+    "temperature": 0.0
+  },
+  "reference_access": false
+}

@@ -1,0 +1,41 @@
+﻿**********************
+Начало записи сценария Windows PowerShell
+Время начала: 20261025120206
+Имя пользователя: DESKTOP-8SJ4PBL\vital
+Запуск от имени пользователя: DESKTOP-8SJ4PBL\vital
+Имя конфигурации: 
+Компьютер: DESKTOP-8SJ4PBL (Microsoft Windows NT 10.0.26200.0)
+Ведущее приложение: powershell.exe -NoProfile -ExecutionPolicy Bypass -File D:\FlowRefine_GPU_3060\FlowRefine_GPU\run_gpu.ps1
+ИД процесса: 13284
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Checking one saved DEVELOPMENT chart before the 15 test charts.
+Saved isolated experiment: D:\FlowRefine_GPU_3060\FlowRefine_GPU\runs\gpu_vlm_smoke
+Starting frozen 15-task VLM comparison. Existing completed tasks are reused.
+REPAIR B3 test_branch_03
+REPAIR B2 test_branch_04
+REPAIR B3 test_branch_04
+REPAIR B2 test_branch_05
+REPAIR B3 test_branch_05
+REPAIR B2 test_loop_01
+REPAIR B3 test_loop_01
+REPAIR B2 test_loop_02
+REPAIR B3 test_loop_02
+REPAIR B2 test_loop_03
+REPAIR B3 test_loop_03
+REPAIR B2 test_loop_04
+REPAIR B3 test_loop_04
+REPAIR B2 test_loop_05
+REPAIR B3 test_loop_05
+Saved isolated experiment: D:\FlowRefine_GPU_3060\FlowRefine_GPU\runs\gpu_vlm_v1
+**********************
+Конец записи протокола Windows PowerShell
+Время окончания: 20261025121118
+**********************

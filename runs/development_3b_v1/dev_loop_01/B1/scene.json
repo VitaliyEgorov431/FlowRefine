@@ -1,0 +1,109 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Garden work begins",
+      "type": "start",
+      "label": "Garden work begins",
+      "x": 280.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Fill watering can",
+      "type": "process",
+      "label": "Fill watering can",
+      "x": 280.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Check soil",
+      "type": "process",
+      "label": "Check soil",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Soil moist?",
+      "type": "decision",
+      "label": "Soil moist?",
+      "x": 280.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "Water plant",
+      "type": "process",
+      "label": "Water plant",
+      "x": 25.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Store watering can",
+      "type": "process",
+      "label": "Store watering can",
+      "x": 535.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Garden work complete",
+      "type": "end",
+      "label": "Garden work complete",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Garden work begins",
+      "target": "Fill watering can",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Fill watering can",
+      "target": "Check soil",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Check soil",
+      "target": "Soil moist?",
+      "label": ""
+    },
+    {
+      "id": "e4",
+      "source": "Soil moist?",
+      "target": "Water plant",
+      "label": "No"
+    },
+    {
+      "id": "e5",
+      "source": "Soil moist?",
+      "target": "Store watering can",
+      "label": "Yes"
+    },
+    {
+      "id": "e6",
+      "source": "Store watering can",
+      "target": "Garden work complete",
+      "label": ""
+    }
+  ]
+}

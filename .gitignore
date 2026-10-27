@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.cache/
+models/
+*.gguf
+*.log
+*.partial
+.env
+
+.venv-gpu/
+.deck_build/
+.runtime_cache/
+.chart-data-*/
+tmp/
+*.zip
+.env.*

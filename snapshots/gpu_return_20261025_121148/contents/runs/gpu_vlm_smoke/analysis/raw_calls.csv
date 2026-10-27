@@ -1,0 +1,6 @@
+task_id,component,file,role,backend,model,elapsed_seconds,prompt_tokens,completion_tokens,cached,reference_access
+dev_chain_01,B0,dev_chain_01/B0/call_generate_0.json,generate,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-3b-instruct-q4_k_m.gguf,25.22583780000059,434,113,False,False
+dev_chain_01,B1,dev_chain_01/B1/call_repair_0.json,repair,llama-cpp-python,C:\Users\User\Desktop\учеба\GenAI_Final_Project\models\qwen2.5-3b-instruct-q4_k_m.gguf,22.193913499999326,627,113,False,False
+dev_chain_01,B2,dev_chain_01/B2/call_repair_0.json,repair,llama-cpp-python,D:\FlowRefine_GPU_3060\FlowRefine_GPU\models\qwen2.5-3b-instruct-q4_k_m.gguf,36.09463790000882,691,139,False,False
+dev_chain_01,B3,dev_chain_01/B3/call_repair_0.json,repair,llama-cpp-python,D:\FlowRefine_GPU_3060\FlowRefine_GPU\models\qwen2.5-3b-instruct-q4_k_m.gguf,24.777896499959752,697,171,False,False
+dev_chain_01,visual,dev_chain_01/visual/call_visual_0.json,visual,transformers-qwen2.5-vl,D:\FlowRefine_GPU_3060\FlowRefine_GPU\models\Qwen2.5-VL-3B-Instruct,31.58721709996462,1175,68,False,False

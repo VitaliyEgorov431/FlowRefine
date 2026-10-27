@@ -1,0 +1,20 @@
+[
+  {
+    "id": "dev_chain_01",
+    "split": "development",
+    "family": "chain",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Follow this exact sequence: \"Breakfast begins\" -> \"Boil water\" -> \"Add oats\" -> \"Cook porridge\" -> \"Serve breakfast\" -> \"Breakfast ready\"."
+  },
+  {
+    "id": "dev_chain_02",
+    "split": "development",
+    "family": "chain",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Follow this exact sequence: \"Letter begins\" -> \"Write message\" -> \"Fold paper\" -> \"Seal envelope\" -> \"Post letter\" -> \"Letter sent\"."
+  },
+  {
+    "id": "dev_branch_01",
+    "split": "development",
+    "family": "branch",
+    "prompt": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Begin with \"Trip begins\", then \"Check forecast\", then the decision \"Rain expected?\". Its Yes branch goes to \"Pack umbrella\"; its No branch goes to \"Pack sunglasses\". Both alternative stages lead directly to \"Leave home\", which leads to \"Trip prepared\"."
+  }
+]

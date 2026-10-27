@@ -1,0 +1,109 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Application begins",
+      "type": "start",
+      "label": "Application begins",
+      "x": 280.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Collect documents",
+      "type": "process",
+      "label": "Collect documents",
+      "x": 280.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Review application",
+      "type": "process",
+      "label": "Review application",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Application complete?",
+      "type": "decision",
+      "label": "Application complete?",
+      "x": 280.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "Request missing documents",
+      "type": "process",
+      "label": "Request missing documents",
+      "x": 25.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Submit application",
+      "type": "process",
+      "label": "Submit application",
+      "x": 535.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Application workflow complete",
+      "type": "end",
+      "label": "Application workflow complete",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Application begins",
+      "target": "Collect documents",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Collect documents",
+      "target": "Review application",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Review application",
+      "target": "Application complete?",
+      "label": ""
+    },
+    {
+      "id": "e4",
+      "source": "Application complete?",
+      "target": "Submit application",
+      "label": "Yes"
+    },
+    {
+      "id": "e5",
+      "source": "Application complete?",
+      "target": "Application workflow complete",
+      "label": ""
+    },
+    {
+      "id": "e6",
+      "source": "Application complete?",
+      "target": "Request missing documents",
+      "label": "No"
+    }
+  ]
+}

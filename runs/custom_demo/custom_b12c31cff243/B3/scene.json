@@ -1,0 +1,100 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Start booking",
+      "type": "start",
+      "label": "Start booking",
+      "x": 280.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Choose date",
+      "type": "process",
+      "label": "Choose date",
+      "x": 280.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Enter contact details",
+      "type": "process",
+      "label": "Enter contact details",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Review booking",
+      "type": "process",
+      "label": "Review booking",
+      "x": 280.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Confirm booking",
+      "type": "process",
+      "label": "Confirm booking",
+      "x": 280.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Booking complete",
+      "type": "end",
+      "label": "Booking complete",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Start booking",
+      "target": "Choose date",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Choose date",
+      "target": "Enter contact details",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Enter contact details",
+      "target": "Review booking",
+      "label": ""
+    },
+    {
+      "id": "e4",
+      "source": "Review booking",
+      "target": "Confirm booking",
+      "label": ""
+    },
+    {
+      "id": "e5",
+      "source": "Confirm booking",
+      "target": "Booking complete",
+      "label": "Yes"
+    },
+    {
+      "id": "e6",
+      "source": "Booking complete",
+      "target": "Booking complete",
+      "label": "No"
+    }
+  ]
+}

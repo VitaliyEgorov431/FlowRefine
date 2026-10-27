@@ -1,0 +1,7 @@
+{
+  "valid": false,
+  "parse_errors": [
+    "Duplicate or invalid node index",
+    "Grid position outside columns 0..2 and rows 0..7"
+  ]
+}

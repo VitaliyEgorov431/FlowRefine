@@ -1,0 +1,31 @@
+{
+  "tasks_sha256": "5b4a89d561cf7ad223fe951cbfabf9d0808b6b57cbb27cc8ebf1497fe72f9353",
+  "settings": {
+    "text_model": "C:\\Users\\User\\Desktop\\учеба\\GenAI_Final_Project\\models\\qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "vision_model": "C:\\Users\\User\\Desktop\\учеба\\GenAI_Final_Project\\models\\SmolVLM-256M-Instruct-Q8_0.gguf",
+    "vision_projector": "C:\\Users\\User\\Desktop\\учеба\\GenAI_Final_Project\\models\\mmproj-SmolVLM-256M-Instruct-f16.gguf",
+    "vision_backend": "mtmd",
+    "threads": 4,
+    "max_tokens": 900,
+    "vision_max_tokens": 180,
+    "modes": "B1,B2,B3",
+    "format_repairs": 1,
+    "temperature": 0.0,
+    "cached_visual_feedback": true
+  },
+  "prompt_version": "compact-grid-v3",
+  "created_at_utc": "2026-10-24T11:03:11.306414+00:00",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_sha256": {
+    "backends.py": "fb11191ee92b323759c21b44aa275429cc588fe4d5da58614ffee87cf2308d85",
+    "compact.py": "03fac9e895fa898ab340d46690047b89bd94fb509a03c0e3909655771097083f",
+    "prompts.py": "ecc07927d1816bf1ec7d59c1ddc24cc3acda2fdd2dd5941f887c707446900c64",
+    "rendering.py": "252ab8935c074ee83c135673a0e5d96438534cbcd2e3528fe80f99258b956f9d",
+    "runner.py": "2b9788fe148fd2bbb4ddb769f9920febb4891535f63891c728531ffda1e6199f",
+    "schema.py": "3a42e03de331c2ceb871b13c6bbc9faa0fc3e11e220431c037423540a30e9011",
+    "validators.py": "a1eaba028b5707c14b98a4884391378f968d7aac7341b34297fa559174ee022f"
+  },
+  "reference_access": "analysis phase only",
+  "provenance": "real_model_inference"
+}

@@ -1,0 +1,7 @@
+{
+  "valid": false,
+  "parse_errors": [
+    "Model response has no JSON object with nodes and edges",
+    "Model response has no JSON object with nodes and edges"
+  ]
+}

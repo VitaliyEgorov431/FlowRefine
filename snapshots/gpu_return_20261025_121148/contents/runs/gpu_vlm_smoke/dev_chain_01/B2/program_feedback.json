@@ -1,0 +1,37 @@
+[
+  {
+    "code": "out_of_bounds",
+    "severity": "error",
+    "affected_ids": [
+      "No"
+    ],
+    "message": "Node No is outside the 790x1440 canvas."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e1",
+      "Add oats"
+    ],
+    "message": "Edge e1 crosses unrelated node Add oats."
+  },
+  {
+    "code": "edge_label_overlap",
+    "severity": "warning",
+    "affected_ids": [
+      "e4",
+      "Is porridge ready?"
+    ],
+    "message": "Label of edge e4 overlaps node Is porridge ready? description."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e5",
+      "Yes"
+    ],
+    "message": "Edge e5 crosses unrelated node Yes."
+  }
+]

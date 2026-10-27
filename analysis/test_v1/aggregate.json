@@ -1,0 +1,176 @@
+{
+  "provenance": "real_model_inference",
+  "task_count": 15,
+  "arms": {
+    "B0": {
+      "task_count": 15,
+      "executed": 15,
+      "unexecuted": 0,
+      "valid": 15,
+      "invalid": 0,
+      "exact_semantic_mean": 0.7333333333333333,
+      "node_f1_mean": 1.0,
+      "edge_f1_mean": 0.9567765567765568,
+      "geometry_errors_valid_mean": 0.3333333333333333,
+      "geometry_warnings_valid_mean": 0.6666666666666666,
+      "standalone_inference_seconds_mean": 16.51322464666652
+    },
+    "B1": {
+      "task_count": 15,
+      "executed": 15,
+      "unexecuted": 0,
+      "valid": 15,
+      "invalid": 0,
+      "exact_semantic_mean": 0.7333333333333333,
+      "node_f1_mean": 1.0,
+      "edge_f1_mean": 0.9413431013431013,
+      "geometry_errors_valid_mean": 0.3333333333333333,
+      "geometry_warnings_valid_mean": 0.6,
+      "standalone_inference_seconds_mean": 37.1309078600003
+    },
+    "B2": {
+      "task_count": 15,
+      "executed": 15,
+      "unexecuted": 0,
+      "valid": 15,
+      "invalid": 0,
+      "exact_semantic_mean": 0.6,
+      "node_f1_mean": 1.0,
+      "edge_f1_mean": 0.9117672197083961,
+      "geometry_errors_valid_mean": 0.5333333333333333,
+      "geometry_warnings_valid_mean": 0.7333333333333333,
+      "standalone_inference_seconds_mean": 48.55942593999959
+    },
+    "B3": {
+      "task_count": 15,
+      "executed": 15,
+      "unexecuted": 0,
+      "valid": 15,
+      "invalid": 0,
+      "exact_semantic_mean": 0.4666666666666667,
+      "node_f1_mean": 1.0,
+      "edge_f1_mean": 0.8990716799540329,
+      "geometry_errors_valid_mean": 0.8666666666666667,
+      "geometry_warnings_valid_mean": 0.7333333333333333,
+      "standalone_inference_seconds_mean": 50.154998559999875
+    }
+  },
+  "paired_differences": {
+    "B1_minus_B0": {
+      "node_f1": {
+        "n": 15,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "edge_f1": {
+        "n": 15,
+        "mean": -0.01543345543345543,
+        "ci95": [
+          -0.06153846153846154,
+          0.01523809523809525
+        ]
+      },
+      "exact_semantic": {
+        "n": 15,
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "geometry_errors_valid_pairs": {
+        "n": 15,
+        "mean": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      }
+    },
+    "B2_minus_B0": {
+      "node_f1": {
+        "n": 15,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "edge_f1": {
+        "n": 15,
+        "mean": -0.0450093370681606,
+        "ci95": [
+          -0.1008870214752568,
+          -0.006022408963585421
+        ]
+      },
+      "exact_semantic": {
+        "n": 15,
+        "mean": -0.13333333333333333,
+        "ci95": [
+          -0.3333333333333333,
+          0
+        ]
+      },
+      "geometry_errors_valid_pairs": {
+        "n": 15,
+        "mean": 0.2,
+        "ci95": [
+          0,
+          0.4666666666666667
+        ]
+      }
+    },
+    "B3_minus_B0": {
+      "node_f1": {
+        "n": 15,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "edge_f1": {
+        "n": 15,
+        "mean": -0.057704876822523885,
+        "ci95": [
+          -0.10367018602312722,
+          -0.017857142857142853
+        ]
+      },
+      "exact_semantic": {
+        "n": 15,
+        "mean": -0.26666666666666666,
+        "ci95": [
+          -0.4666666666666667,
+          -0.06666666666666667
+        ]
+      },
+      "geometry_errors_valid_pairs": {
+        "n": 15,
+        "mean": 0.5333333333333333,
+        "ci95": [
+          0.06666666666666667,
+          1.0666666666666667
+        ]
+      }
+    }
+  },
+  "actual_logged_calls": 75,
+  "actual_cached_calls": 0,
+  "actual_logged_inference_seconds": 1312.8936631000033,
+  "actual_logged_prompt_tokens": 51263,
+  "actual_logged_completion_tokens": 10386,
+  "reference_access_violations": [],
+  "notes": [
+    "Pilot on a small template-based dataset; no population-level claim.",
+    "Unexecuted arms are excluded, never assigned zero quality.",
+    "Executed invalid scenes score zero semantics; geometry is undefined.",
+    "Standalone arm costs reuse shared initial generation and visual critique costs; actual total counts each saved call once.",
+    "Intervals use 1000 task-level bootstrap resamples with a fixed seed; not corrected for multiple comparisons.",
+    "Model latency excludes local CPU validation and rendering."
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "arms": {
+    "B2": {
+      "selected": 1,
+      "historical_executed": 1,
+      "new_executed": 1,
+      "paired": 1,
+      "paired_mean_delta": {
+        "node_f1": -0.11904761904761907,
+        "edge_f1": -0.8000000000000002,
+        "exact_semantic": 0.0
+      }
+    },
+    "B3": {
+      "selected": 1,
+      "historical_executed": 1,
+      "new_executed": 1,
+      "paired": 1,
+      "paired_mean_delta": {
+        "node_f1": -0.16666666666666663,
+        "edge_f1": -0.49230769230769245,
+        "exact_semantic": 0.0
+      }
+    }
+  },
+  "rows": [
+    {
+      "task_id": "dev_chain_01",
+      "arm": "B2",
+      "historical_executed": true,
+      "historical_valid": true,
+      "historical_node_f1": 0.8333333333333334,
+      "historical_edge_f1": 0.8000000000000002,
+      "historical_exact_semantic": 0,
+      "new_executed": true,
+      "new_valid": true,
+      "new_node_f1": 0.7142857142857143,
+      "new_edge_f1": 0.0,
+      "new_exact_semantic": 0,
+      "paired": true,
+      "node_f1_delta": -0.11904761904761907,
+      "edge_f1_delta": -0.8000000000000002,
+      "exact_semantic_delta": 0
+    },
+    {
+      "task_id": "dev_chain_01",
+      "arm": "B3",
+      "historical_executed": true,
+      "historical_valid": true,
+      "historical_node_f1": 0.8333333333333334,
+      "historical_edge_f1": 0.8000000000000002,
+      "historical_exact_semantic": 0,
+      "new_executed": true,
+      "new_valid": true,
+      "new_node_f1": 0.6666666666666667,
+      "new_edge_f1": 0.3076923076923077,
+      "new_exact_semantic": 0,
+      "paired": true,
+      "node_f1_delta": -0.16666666666666663,
+      "edge_f1_delta": -0.49230769230769245,
+      "exact_semantic_delta": 0
+    }
+  ],
+  "costs": {
+    "historical_reused": {
+      "calls": 2,
+      "seconds": 47.419751299999916
+    },
+    "newly_executed": {
+      "calls": 3,
+      "seconds": 92.45975149993319
+    }
+  },
+  "notes": [
+    "Only paired executed tasks enter deltas; invalid executions score zero semantics.",
+    "Unexecuted arms remain unavailable, not zero.",
+    "B0/B1 and their exact call logs are historical reused artifacts.",
+    "Shared analysis totals mix historical and new calls; use costs here for new experiment time.",
+    "Different machines and mixed historical costs do not support a speed comparison."
+  ]
+}

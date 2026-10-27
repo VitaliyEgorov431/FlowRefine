@@ -1,0 +1,4 @@
+llama-cpp-python==0.3.36
+huggingface-hub==2.3.0
+numpy==2.5.4
+Pillow==12.2.0

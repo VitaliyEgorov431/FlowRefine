@@ -1,0 +1,38 @@
+{
+  "role": "generate",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You create accurate editable flowcharts. Return ONLY a JSON object in this compact format:\n{\"nodes\":[[\"id\",\"type\",\"short label\",column,row]],\"edges\":[[\"source_id\",\"target_id\",\"branch label\"]]}\nTypes: start, end, process, decision. Column: 0,1,2; row: 0..7.\nInclude exactly one start and one end. Use each explicit stage name in the request.\nEach id must be unique and each edge endpoint must exist. Use an empty string for\nordinary edge labels, and Yes/No on decision branches. Preserve loops and direction.\nPlace nodes on different grid cells. Prefer downward flow and short edges.\nDo not add explanations, markdown, or numeric scores.\nExample only (use the actual requested stages instead):\nRequest: Start -> Check form -> Valid?; Yes -> Accept; No -> Reject; both -> Finish.\nOutput: {\"nodes\":[[\"s\",\"start\",\"Start\",1,0],[\"c\",\"process\",\"Check form\",1,1],[\"d\",\"decision\",\"Valid?\",1,2],[\"a\",\"process\",\"Accept\",0,3],[\"r\",\"process\",\"Reject\",2,3],[\"f\",\"end\",\"Finish\",1,4]],\"edges\":[[\"s\",\"c\",\"\"],[\"c\",\"d\",\"\"],[\"d\",\"a\",\"Yes\"],[\"d\",\"r\",\"No\"],[\"a\",\"f\",\"\"],[\"r\",\"f\",\"\"]]}\nEvery edge has exactly 3 entries. Ordinary edge labels are empty strings.\nNever add a self-loop at the end. Include ALL nodes AND edges."
+    },
+    {
+      "role": "user",
+      "content": "Create a readable directed flowchart for the following process. Use exactly the quoted stage labels. The first stage is a start node, the last is an end node, any explicitly named decision is a decision node, and all other stages are process nodes. Label decision branches exactly Yes and No. Do not add stages or connections. Begin with \"Trip begins\", then \"Check forecast\", then the decision \"Rain expected?\". Its Yes branch goes to \"Pack umbrella\"; its No branch goes to \"Pack sunglasses\". Both alternative stages lead directly to \"Leave home\", which leads to \"Trip prepared\"."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"nodes\":[[\"s\",\"start\",\"Trip begins\",1,0],[\"c\",\"process\",\"Check forecast\",1,1],[\"d\",\"decision\",\"Rain expected?\",1,2],[\"u\",\"process\",\"Pack umbrella\",0,3],[\"s\",\"process\",\"Pack sunglasses\",2,3],[\"l\",\"end\",\"Leave home\",1,4],[\"p\",\"end\",\"Trip prepared\",0,5]],\"edges\":[[\"s\",\"c\",\"\"],[\"c\",\"d\",\"Yes\"],[\"c\",\"d\",\"No\"],[\"d\",\"u\",\"\"],[\"d\",\"s\",\"\"],[\"u\",\"l\",\"\"],[\"s\",\"p\",\"\"],[\"p\",\"l\",\"\"]]}"
+    },
+    {
+      "role": "user",
+      "content": "The JSON could not be rendered: duplicate ID: s. Return a valid complete compact flowchart JSON only."
+    }
+  ],
+  "response": {
+    "text": "{\"nodes\":[[\"s\",\"start\",\"Trip begins\",1,0],[\"c\",\"process\",\"Check forecast\",1,1],[\"d\",\"decision\",\"Rain expected?\",1,2],[\"u\",\"process\",\"Pack umbrella\",0,3],[\"s\",\"process\",\"Pack sunglasses\",2,3],[\"l\",\"end\",\"Leave home\",1,4],[\"p\",\"end\",\"Trip prepared\",0,5]],\"edges\":[[\"s\",\"c\",\"\"],[\"c\",\"d\",\"Yes\"],[\"c\",\"d\",\"No\"],[\"d\",\"u\",\"\"],[\"d\",\"s\",\"\"],[\"u\",\"l\",\"\"],[\"s\",\"p\",\"\"],[\"p\",\"l\",\"\"]]}",
+    "elapsed_seconds": 9.958016200000202,
+    "usage": {
+      "prompt_tokens": 617,
+      "completion_tokens": 134,
+      "total_tokens": 751
+    },
+    "finish_reason": "stop",
+    "backend": "llama-cpp-python",
+    "runtime_version": "0.3.36",
+    "model": "C:\\Users\\User\\Desktop\\учеба\\GenAI_Final_Project\\models\\qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "device": "cpu",
+    "seed": 241024,
+    "temperature": 0.0
+  },
+  "reference_access": false
+}

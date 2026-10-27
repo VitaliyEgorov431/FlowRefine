@@ -1,0 +1,25 @@
+{
+  "test_task_count": 15,
+  "test_model_calls": 75,
+  "valid_test_scenes": 60,
+  "test_runtime": "CPU only, llama-cpp-python 0.3.36",
+  "tests_passed": 30,
+  "browser_gallery": "15 tasks, 3 edited modes, SVG download checked",
+  "notebook_replay": "7 code cells executed, no errors, inference disabled",
+  "sources_and_metrics": "independently reviewed; all7 frozen source hashes match",
+  "model_errors": 0,
+  "finish_reasons": "75 stop responses",
+  "shell_diagnostic_note": "Windows PowerShell wrapped native MTMD stderr as NativeCommandError; saved outputs complete; clean resume exited0 with no new calls",
+  "deliverable_sha256": {
+    "demo/index.html": "1605b4baf170196c9ead500691798c0a69cc558982097655e9b3e6179120733d",
+    "submission/report.pdf": "99a73eece369f93158bad755d409e5733c5104c1d63fb4555973eb7462528fa6",
+    "submission/report.md": "2b95fde36faf0b293b1de34f8df76202250e2bdccccf68f760ce1cd8ebafa433",
+    "submission/presentation_final.pptx": "6927db80ddb7eb86ee96df91c2934f876e6b31a1985bbce27b1aba26826d999e",
+    "submission/DEFENSE_NOTES_RU.md": "337b18a3a3e49909a5d480b6b3208fa92b451e72a5179f62f9387b8e878c5aa7",
+    "notebooks/FlowRefine_CPU_executed.ipynb": "e0b6190e9af9341e29bd12d3f656857685d498a16baf1ba2aedb38af627f8f17",
+    "README.md": "82708da611c5f1ef0219699c0899a19f20f7f1f483350ff86537653bdde2692b",
+    "configs/model_lock.json": "465e5d8e98c2ad7a2bc99c4c1ed23b2c9578dcfdab2af94e82fe3e27e50ef82a"
+  },
+  "weights_included": false,
+  "notes": "No publication or submission to the course performed. Author name was not supplied."
+}

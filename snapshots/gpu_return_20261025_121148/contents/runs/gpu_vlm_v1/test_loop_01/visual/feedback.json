@@ -1,0 +1,3 @@
+{
+  "text": "1. **Wrong arrow direction**: The arrow from \"Prepare build\" should point to \"Run test suite\".\n2. **Wrong arrow direction**: The arrow from \"Fix implementation\" should point back to \"Run test suite\".\n3. **Overlapping boxes**: The \"Prepare build\" box and the \"Run test suite\" box overlap.\n4. **Unreadable text**: The text in the \"Prepare build\" box is not clear.\n\n**Corrected labels:**\n- Prepare build\n- Run test suite\n- All tests pass?\n- Fix implementation\n- Publish release\n- Software release complete"
+}

@@ -1,0 +1,3 @@
+# Core rendering and analysis; model runtimes are optional and separately pinned.
+Pillow>=10
+matplotlib>=3.7

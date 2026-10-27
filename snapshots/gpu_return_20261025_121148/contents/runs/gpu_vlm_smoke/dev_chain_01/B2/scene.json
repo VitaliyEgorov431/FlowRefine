@@ -1,0 +1,112 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Breakfast ready",
+      "type": "end",
+      "label": "Breakfast ready",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Boil water",
+      "type": "process",
+      "label": "Boil water",
+      "x": 280.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Add oats",
+      "type": "process",
+      "label": "Add oats",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Cook porridge",
+      "type": "process",
+      "label": "Cook porridge",
+      "x": 280.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Is porridge ready?",
+      "type": "decision",
+      "label": "Is porridge ready?",
+      "x": 280.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "Serve breakfast",
+      "type": "process",
+      "label": "Serve breakfast",
+      "x": 25.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Yes",
+      "type": "decision",
+      "label": "Yes",
+      "x": 535.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "No",
+      "type": "decision",
+      "label": "No",
+      "x": 790.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 140.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Boil water",
+      "target": "Cook porridge",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Cook porridge",
+      "target": "Serve breakfast",
+      "label": "Yes"
+    },
+    {
+      "id": "e3",
+      "source": "Serve breakfast",
+      "target": "Is porridge ready?",
+      "label": ""
+    },
+    {
+      "id": "e4",
+      "source": "Is porridge ready?",
+      "target": "Yes",
+      "label": "No"
+    },
+    {
+      "id": "e5",
+      "source": "Is porridge ready?",
+      "target": "No",
+      "label": ""
+    }
+  ]
+}

@@ -1,0 +1,1467 @@
+{
+  "dev_chain_01": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Breakfast begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Boil water",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Add oats",
+        "type": "process"
+      },
+      {
+        "id": "n3",
+        "label": "Cook porridge",
+        "type": "process"
+      },
+      {
+        "id": "n4",
+        "label": "Serve breakfast",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Breakfast ready",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n4",
+        "label": ""
+      },
+      {
+        "source": "n4",
+        "target": "n5",
+        "label": ""
+      }
+    ]
+  },
+  "dev_chain_02": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Letter begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Write message",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Fold paper",
+        "type": "process"
+      },
+      {
+        "id": "n3",
+        "label": "Seal envelope",
+        "type": "process"
+      },
+      {
+        "id": "n4",
+        "label": "Post letter",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Letter sent",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n4",
+        "label": ""
+      },
+      {
+        "source": "n4",
+        "target": "n5",
+        "label": ""
+      }
+    ]
+  },
+  "dev_branch_01": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Trip begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Check forecast",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Rain expected?",
+        "type": "decision"
+      },
+      {
+        "id": "n3",
+        "label": "Pack umbrella",
+        "type": "process"
+      },
+      {
+        "id": "n4",
+        "label": "Pack sunglasses",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Leave home",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Trip prepared",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": "Yes"
+      },
+      {
+        "source": "n2",
+        "target": "n4",
+        "label": "No"
+      },
+      {
+        "source": "n3",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n4",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "dev_branch_02": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Visit begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Read admission rules",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Member?",
+        "type": "decision"
+      },
+      {
+        "id": "n3",
+        "label": "Show membership card",
+        "type": "process"
+      },
+      {
+        "id": "n4",
+        "label": "Buy ticket",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Enter gallery",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Admission complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": "Yes"
+      },
+      {
+        "source": "n2",
+        "target": "n4",
+        "label": "No"
+      },
+      {
+        "source": "n3",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n4",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "dev_loop_01": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Garden work begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Fill watering can",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Check soil",
+        "type": "process"
+      },
+      {
+        "id": "n3",
+        "label": "Soil moist?",
+        "type": "decision"
+      },
+      {
+        "id": "n4",
+        "label": "Water plant",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Store watering can",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Garden work complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n4",
+        "label": "No"
+      },
+      {
+        "source": "n4",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n5",
+        "label": "Yes"
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "test_chain_01": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Parcel workflow begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Receive parcel",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Weigh parcel",
+        "type": "process"
+      },
+      {
+        "id": "n3",
+        "label": "Print shipping label",
+        "type": "process"
+      },
+      {
+        "id": "n4",
+        "label": "Attach shipping label",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Dispatch parcel",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Parcel workflow complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n4",
+        "label": ""
+      },
+      {
+        "source": "n4",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "test_chain_02": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Backup begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Select files",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Create archive",
+        "type": "process"
+      },
+      {
+        "id": "n3",
+        "label": "Encrypt archive",
+        "type": "process"
+      },
+      {
+        "id": "n4",
+        "label": "Upload archive",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Record backup location",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Backup complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n4",
+        "label": ""
+      },
+      {
+        "source": "n4",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "test_chain_03": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Library intake begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Receive donated book",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Inspect book",
+        "type": "process"
+      },
+      {
+        "id": "n3",
+        "label": "Assign catalogue number",
+        "type": "process"
+      },
+      {
+        "id": "n4",
+        "label": "Attach shelf label",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Place book on shelf",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Library intake complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n4",
+        "label": ""
+      },
+      {
+        "source": "n4",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "test_chain_04": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Experiment begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Prepare sample",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Calibrate sensor",
+        "type": "process"
+      },
+      {
+        "id": "n3",
+        "label": "Measure sample",
+        "type": "process"
+      },
+      {
+        "id": "n4",
+        "label": "Save measurements",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Clean equipment",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Experiment complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n4",
+        "label": ""
+      },
+      {
+        "source": "n4",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "test_chain_05": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Podcast workflow begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Record interview",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Edit recording",
+        "type": "process"
+      },
+      {
+        "id": "n3",
+        "label": "Normalize audio",
+        "type": "process"
+      },
+      {
+        "id": "n4",
+        "label": "Export episode",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Publish episode",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Podcast workflow complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n4",
+        "label": ""
+      },
+      {
+        "source": "n4",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "test_branch_01": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Order begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Check stock",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Item available?",
+        "type": "decision"
+      },
+      {
+        "id": "n3",
+        "label": "Reserve item",
+        "type": "process"
+      },
+      {
+        "id": "n4",
+        "label": "Request replenishment",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Notify customer",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Order review complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": "Yes"
+      },
+      {
+        "source": "n2",
+        "target": "n4",
+        "label": "No"
+      },
+      {
+        "source": "n3",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n4",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "test_branch_02": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Expense review begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Read expense claim",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Receipt attached?",
+        "type": "decision"
+      },
+      {
+        "id": "n3",
+        "label": "Approve reimbursement",
+        "type": "process"
+      },
+      {
+        "id": "n4",
+        "label": "Reject reimbursement",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Record decision",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Expense review complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": "Yes"
+      },
+      {
+        "source": "n2",
+        "target": "n4",
+        "label": "No"
+      },
+      {
+        "source": "n3",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n4",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "test_branch_03": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Account recovery begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Check security answer",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Answer correct?",
+        "type": "decision"
+      },
+      {
+        "id": "n3",
+        "label": "Send reset link",
+        "type": "process"
+      },
+      {
+        "id": "n4",
+        "label": "Escalate to support",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Log recovery attempt",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Recovery attempt complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": "Yes"
+      },
+      {
+        "source": "n2",
+        "target": "n4",
+        "label": "No"
+      },
+      {
+        "source": "n3",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n4",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "test_branch_04": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Waste sorting begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Inspect container",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Container recyclable?",
+        "type": "decision"
+      },
+      {
+        "id": "n3",
+        "label": "Use recycling bin",
+        "type": "process"
+      },
+      {
+        "id": "n4",
+        "label": "Use general waste bin",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Clean sorting area",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Waste sorting complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": "Yes"
+      },
+      {
+        "source": "n2",
+        "target": "n4",
+        "label": "No"
+      },
+      {
+        "source": "n3",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n4",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "test_branch_05": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Delivery planning begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Read destination",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Destination local?",
+        "type": "decision"
+      },
+      {
+        "id": "n3",
+        "label": "Assign bicycle courier",
+        "type": "process"
+      },
+      {
+        "id": "n4",
+        "label": "Assign van courier",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Send route details",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Delivery planning complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": "Yes"
+      },
+      {
+        "source": "n2",
+        "target": "n4",
+        "label": "No"
+      },
+      {
+        "source": "n3",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n4",
+        "target": "n5",
+        "label": ""
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "test_loop_01": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Software release begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Prepare build",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Run test suite",
+        "type": "process"
+      },
+      {
+        "id": "n3",
+        "label": "All tests pass?",
+        "type": "decision"
+      },
+      {
+        "id": "n4",
+        "label": "Fix implementation",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Publish release",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Software release complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n4",
+        "label": "No"
+      },
+      {
+        "source": "n4",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n5",
+        "label": "Yes"
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "test_loop_02": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Application begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Collect documents",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Review application",
+        "type": "process"
+      },
+      {
+        "id": "n3",
+        "label": "Application complete?",
+        "type": "decision"
+      },
+      {
+        "id": "n4",
+        "label": "Request missing documents",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Submit application",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Application workflow complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n4",
+        "label": "No"
+      },
+      {
+        "source": "n4",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n5",
+        "label": "Yes"
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "test_loop_03": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Bread making begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Mix ingredients",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Inspect dough",
+        "type": "process"
+      },
+      {
+        "id": "n3",
+        "label": "Dough elastic?",
+        "type": "decision"
+      },
+      {
+        "id": "n4",
+        "label": "Knead dough",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Bake loaf",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Bread making complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n4",
+        "label": "No"
+      },
+      {
+        "source": "n4",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n5",
+        "label": "Yes"
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "test_loop_04": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Translation begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Draft translation",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Review terminology",
+        "type": "process"
+      },
+      {
+        "id": "n3",
+        "label": "Terminology consistent?",
+        "type": "decision"
+      },
+      {
+        "id": "n4",
+        "label": "Revise word choices",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Deliver translation",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Translation complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n4",
+        "label": "No"
+      },
+      {
+        "source": "n4",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n5",
+        "label": "Yes"
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  },
+  "test_loop_05": {
+    "nodes": [
+      {
+        "id": "n0",
+        "label": "Maintenance begins",
+        "type": "start"
+      },
+      {
+        "id": "n1",
+        "label": "Isolate machine",
+        "type": "process"
+      },
+      {
+        "id": "n2",
+        "label": "Measure vibration",
+        "type": "process"
+      },
+      {
+        "id": "n3",
+        "label": "Vibration acceptable?",
+        "type": "decision"
+      },
+      {
+        "id": "n4",
+        "label": "Adjust alignment",
+        "type": "process"
+      },
+      {
+        "id": "n5",
+        "label": "Restore machine service",
+        "type": "process"
+      },
+      {
+        "id": "n6",
+        "label": "Maintenance complete",
+        "type": "end"
+      }
+    ],
+    "edges": [
+      {
+        "source": "n0",
+        "target": "n1",
+        "label": ""
+      },
+      {
+        "source": "n1",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n2",
+        "target": "n3",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n4",
+        "label": "No"
+      },
+      {
+        "source": "n4",
+        "target": "n2",
+        "label": ""
+      },
+      {
+        "source": "n3",
+        "target": "n5",
+        "label": "Yes"
+      },
+      {
+        "source": "n5",
+        "target": "n6",
+        "label": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Parcel workflow begins",
+      "type": "start",
+      "label": "Parcel workflow begins",
+      "x": 280,
+      "y": 30,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Receive parcel",
+      "type": "process",
+      "label": "Receive parcel",
+      "x": 280,
+      "y": 200,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Weigh parcel",
+      "type": "process",
+      "label": "Weigh parcel",
+      "x": 280,
+      "y": 370,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Print shipping label",
+      "type": "process",
+      "label": "Print shipping label",
+      "x": 280,
+      "y": 540,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Attach shipping label",
+      "type": "process",
+      "label": "Attach shipping label",
+      "x": 280,
+      "y": 710,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Dispatch parcel",
+      "type": "process",
+      "label": "Dispatch parcel",
+      "x": 280,
+      "y": 880,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Parcel workflow complete",
+      "type": "end",
+      "label": "Parcel workflow complete",
+      "x": 280,
+      "y": 1050,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Parcel workflow begins",
+      "target": "Receive parcel",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Receive parcel",
+      "target": "Weigh parcel",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Weigh parcel",
+      "target": "Print shipping label",
+      "label": ""
+    },
+    {
+      "id": "e4",
+      "source": "Print shipping label",
+      "target": "Attach shipping label",
+      "label": ""
+    },
+    {
+      "id": "e5",
+      "source": "Attach shipping label",
+      "target": "Dispatch parcel",
+      "label": ""
+    },
+    {
+      "id": "e6",
+      "source": "Dispatch parcel",
+      "target": "Parcel workflow complete",
+      "label": ""
+    }
+  ]
+}

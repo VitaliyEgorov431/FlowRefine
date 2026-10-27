@@ -1,0 +1,115 @@
+{
+  "canvas": {
+    "width": 790,
+    "height": 1440
+  },
+  "nodes": [
+    {
+      "id": "Maintenance begins",
+      "type": "start",
+      "label": "Maintenance begins",
+      "x": 280.0,
+      "y": 30.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Isolate machine",
+      "type": "process",
+      "label": "Isolate machine",
+      "x": 280.0,
+      "y": 200.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Measure vibration",
+      "type": "process",
+      "label": "Measure vibration",
+      "x": 280.0,
+      "y": 370.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Vibration acceptable?",
+      "type": "decision",
+      "label": "Vibration acceptable?",
+      "x": 280.0,
+      "y": 540.0,
+      "width": 220.0,
+      "height": 140.0
+    },
+    {
+      "id": "Adjust alignment",
+      "type": "process",
+      "label": "Adjust alignment",
+      "x": 25.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Restore machine service",
+      "type": "process",
+      "label": "Restore machine service",
+      "x": 535.0,
+      "y": 710.0,
+      "width": 220.0,
+      "height": 72.0
+    },
+    {
+      "id": "Maintenance complete",
+      "type": "end",
+      "label": "Maintenance complete",
+      "x": 280.0,
+      "y": 880.0,
+      "width": 220.0,
+      "height": 72.0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "Maintenance begins",
+      "target": "Isolate machine",
+      "label": ""
+    },
+    {
+      "id": "e2",
+      "source": "Isolate machine",
+      "target": "Measure vibration",
+      "label": ""
+    },
+    {
+      "id": "e3",
+      "source": "Measure vibration",
+      "target": "Vibration acceptable?",
+      "label": ""
+    },
+    {
+      "id": "e4",
+      "source": "Vibration acceptable?",
+      "target": "Adjust alignment",
+      "label": "No"
+    },
+    {
+      "id": "e5",
+      "source": "Vibration acceptable?",
+      "target": "Restore machine service",
+      "label": "Yes"
+    },
+    {
+      "id": "e6",
+      "source": "Adjust alignment",
+      "target": "Measure vibration",
+      "label": ""
+    },
+    {
+      "id": "e7",
+      "source": "Restore machine service",
+      "target": "Maintenance complete",
+      "label": ""
+    }
+  ]
+}

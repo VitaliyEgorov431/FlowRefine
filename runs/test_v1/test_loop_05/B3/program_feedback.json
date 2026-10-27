@@ -1,0 +1,47 @@
+[
+  {
+    "code": "edge_label_overlap",
+    "severity": "warning",
+    "affected_ids": [
+      "e4",
+      "Vibration acceptable?"
+    ],
+    "message": "Label of edge e4 overlaps node Vibration acceptable? description."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e6",
+      "Restore machine service"
+    ],
+    "message": "Edge e6 crosses unrelated node Restore machine service."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e8",
+      "Restore machine service"
+    ],
+    "message": "Edge e8 crosses unrelated node Restore machine service."
+  },
+  {
+    "code": "edge_label_overlap",
+    "severity": "warning",
+    "affected_ids": [
+      "e9",
+      "Restore machine service"
+    ],
+    "message": "Label of edge e9 overlaps node Restore machine service description."
+  },
+  {
+    "code": "edge_through_node",
+    "severity": "error",
+    "affected_ids": [
+      "e10",
+      "Restore machine service"
+    ],
+    "message": "Edge e10 crosses unrelated node Restore machine service."
+  }
+]
